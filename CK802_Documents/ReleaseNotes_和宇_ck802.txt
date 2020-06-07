@@ -1,0 +1,40 @@
+
+1. CPU 代码/相关手册
+   代码： CK802 RTL Version：CFN-20200316-01-CK802_HEYU_20200318_v1         
+   手册： CK802集成手册_v1.4.0.pdf
+          CK802紧耦合IP用户手册_v1.6.pdf
+          CK802用户手册_v1.2.17.pdf
+          硬件调试（HAD）参考手册_v1.3.pdf
+          软核使用手册_v1.3.pdf
+          SmartL用户手册_v1.3.pdf
+          C-SKY Test Suit L用户手册_v1.0.pdf
+	
+其他配套工具及参考资料如下：
+1. Linux版本工具链：请选择V3.10.17中的 elf工具链：csky-elfabiv2-tools-x86_64-minilibc  csky-elfabiv2-tools-i386-minilibc
+   工具链用户手册v6.3：gcc/gdb/as/ld/binutils 
+   软件开发指南_1219
+   ReleaseNotes-V3.10.7为工具链的release notes
+   https://occ.t-head.cn/community/download_detail?id=616214865157029888
+      	
+2. CDK集成开发环境，CDK2.0.4版本
+   https://occ.t-head.cn/community/download_detail?id=575997419775328256
+
+3. CSI-RTOS SDK 及手册
+   CSI-API手册 v1.6    
+   CSI-RTOS_Smart_SDK(v1.6)_User_Guide  (v1.6)
+   https://occ.t-head.cn/community/download_detail?id=580568627539443712
+ 
+4. DebugServer及使用手册
+   CSkyDebugServer V5.8.20, 你可以单独安装或者是安装在linux环境中
+   C-Sky Debugger Server User Guide 手册 v5.6.0
+   https://occ.t-head.cn/community/download_detail?id=616215132330000384
+
+5. Qemu Simulator及手册
+   Qemu Simulator V2.6.3.    
+   Qemu User Guide Release  v2.0    
+   CPU User Guide v1.3
+   https://occ.t-head.cn/community/download_detail?id=636946310057951232
+
+6. CKLink设备使用指南 v2017.12
+   https://occ.t-head.cn/community/download_detail?id=659030440358707200
+

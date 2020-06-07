@@ -1,0 +1,4 @@
+./CK802_20200318.v
+../INST_LIB/gated_clk_cell.v
+../LIB/HVT_CLKLANQHDV8.v
+../LIB/DW02_mult.v

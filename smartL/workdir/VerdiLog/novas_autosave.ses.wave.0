@@ -1,0 +1,103 @@
+Magic 271485
+Revision Verdi_N-2017.12-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 28 1920 391 100 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/stu02/project/smartL/workdir/vg_dump.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 520279.452307 542824.500000
+cursor 532050.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 8
+; marker line index
+markerPos 19
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/stu02/project/smartL/workdir/vg_dump.fsdb"
+addSignal -h 15 -UNSIGNED -HEX /tb/x_soc/biu_pad_lpmd_b[1:0]
+addSignal -h 15 /tb/x_soc/x_apb/apb_pmu_psel
+addSignal -h 15 -holdScope apb_tim_psel
+addSignal -h 15 -UNSIGNED -HEX -holdScope apb_xx_paddr[31:0]
+addSignal -h 15 -holdScope apb_xx_penable
+addSignal -h 15 -UNSIGNED -HEX -holdScope apb_xx_pwdata[31:0]
+addSignal -h 15 -holdScope apb_xx_pwrite
+addSignal -h 15 -UNSIGNED -HEX /tb/x_soc/x_apb/x_pmu/cur_state[2:0]
+addSignal -h 15 -holdScope gate_en0
+addSignal -h 15 -holdScope gate_en1
+addSignal -h 15 -holdScope intraw_vld
+addSignal -h 15 -UNSIGNED -HEX /tb/x_soc/x_apb/pad_vic_int_vld[31:0]
+addSignal -h 15 -holdScope pad_clk
+addSignal -h 15 /tb/x_soc/x_cpu_sub_system_ahb/x_ck802/had_iu_int_vld
+addSignal -h 15 -UNSIGNED -HEX -holdScope pad_vic_int_cfg[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope pad_vic_int_vld[31:0]
+addSignal -h 15 /tb/x_soc/x_cpu_sub_system_ahb/x_ck802/x_nm_tcipif_top/x_nm_intc_top/x_nm_intc_arb/intraw_vld
+addSignal -h 15 -holdScope vic_pad_int_b
+addSignal -h 15 -UNSIGNED -HEX -holdScope intraw_req[31:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/stu02/project/smartL/workdir/vg_dump.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/tb"
+"/tb/x_soc"
+"/tb/x_soc/x_cpu_sub_system_ahb"
+"/tb/x_soc/x_cpu_sub_system_ahb/x_ck802"
+"/tb/x_soc/x_cpu_sub_system_ahb/x_ck802/x_nm_tcipif_top"
+"/tb/x_soc/x_cpu_sub_system_ahb/x_ck802/x_nm_tcipif_top/x_nm_intc_top"
+"/tb/x_soc/x_cpu_sub_system_ahb/x_ck802/x_nm_tcipif_top/x_nm_intc_top/x_nm_intc_arb"
+
+SCOPE_LIST_BEGIN
+"/tb"
+"/tb/x_soc"
+"/tb/x_soc/x_apb"
+"/tb/x_soc/x_apb/x_smpu_top"
+"/tb/x_soc/x_apb/x_pmu"
+"/tb/x_soc/x_cpu_sub_system_ahb"
+"/tb/x_soc/x_cpu_sub_system_ahb/x_ck802"
+"/tb/x_soc/x_err_gen"
+"/tb/x_soc/x_cpu_sub_system_ahb/x_iahb_mem_ctrl"
+"/tb/x_soc/x_cpu_sub_system_ahb/x_ck802/x_nm_tcipif_top"
+"/tb/x_soc/x_cpu_sub_system_ahb/x_ck802/x_nm_tcipif_top/x_nm_intc_top"
+"/tb/x_soc/x_cpu_sub_system_ahb/x_ck802/x_nm_tcipif_top/x_nm_intc_top/x_nm_intc_arb"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

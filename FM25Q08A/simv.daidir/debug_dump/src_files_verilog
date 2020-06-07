@@ -1,0 +1,9 @@
+/home/stu02/project/FM25Q08A/code/FM_TOP.v
+/home/stu02/project/FM25Q08A/include/FM_Decoders.h
+/home/stu02/project/FM25Q08A/include/FM_DevParam.h
+/home/stu02/project/FM25Q08A/include/FM_TimingData.h
+/home/stu02/project/FM25Q08A/stim/onebyte.v
+/home/stu02/project/FM25Q08A/top/ClockGenerator.v
+/home/stu02/project/FM25Q08A/top/StimGen_interface.h
+/home/stu02/project/FM25Q08A/top/StimTasks.v
+/home/stu02/project/FM25Q08A/top/Testbench.v

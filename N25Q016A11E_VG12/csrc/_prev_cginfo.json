@@ -1,0 +1,735 @@
+{
+    "cycles_program_begin": 20304151134688252,
+    "PrevCompiledModules": {
+        "NonVolatileConfigurationRegister": {
+            "jJhtT_d": {
+                "mode": 4,
+                "bytes": 30628,
+                "mod": "NonVolatileConfigurationRegister",
+                "out": "jJhtT_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "StatusRegister": {
+            "cebzP_d": {
+                "mode": 4,
+                "bytes": 56088,
+                "mod": "StatusRegister",
+                "out": "cebzP_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "FlashDiscoveryParameter": {
+            "gp9Va_d": {
+                "mode": 4,
+                "bytes": 25306,
+                "mod": "FlashDiscoveryParameter",
+                "out": "gp9Va_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "VolatileEnhancedConfigurationRegister": {
+            "h49xc_d": {
+                "mode": 4,
+                "bytes": 33454,
+                "mod": "VolatileEnhancedConfigurationRegister",
+                "out": "h49xc_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "paramConfig": {
+            "tW6GT_d": {
+                "mode": 4,
+                "bytes": 7156,
+                "mod": "paramConfig",
+                "out": "tW6GT_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "LockManager": {
+            "y4gzn_d": {
+                "mode": 4,
+                "bytes": 72410,
+                "mod": "LockManager",
+                "out": "y4gzn_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "StimTasksConfig": {
+            "Y9Zj3_d": {
+                "mode": 4,
+                "bytes": 15896,
+                "mod": "StimTasksConfig",
+                "out": "Y9Zj3_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "VolatileConfigurationRegister": {
+            "CJs6b_d": {
+                "mode": 4,
+                "bytes": 30100,
+                "mod": "VolatileConfigurationRegister",
+                "out": "CJs6b_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "PLRSpart2Detect": {
+            "vAFMw_d": {
+                "mode": 4,
+                "bytes": 28232,
+                "mod": "PLRSpart2Detect",
+                "out": "vAFMw_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "CUIdecoder": {
+            "rfDph_d": {
+                "mode": 4,
+                "bytes": 75396,
+                "mod": "CUIdecoder",
+                "out": "rfDph_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "Read": {
+            "ZwmA6_d": {
+                "mode": 4,
+                "bytes": 140912,
+                "mod": "Read",
+                "out": "ZwmA6_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "DebugModule": {
+            "K4GyS_d": {
+                "mode": 4,
+                "bytes": 24480,
+                "mod": "DebugModule",
+                "out": "K4GyS_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "mode": 4,
+                "bytes": 41562,
+                "mod": "std",
+                "out": "reYIK_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "DualQuadOps": {
+            "F6uVY_d": {
+                "mode": 4,
+                "bytes": 199004,
+                "mod": "DualQuadOps",
+                "out": "F6uVY_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "PLRSpart1Detect": {
+            "S2Q1F_d": {
+                "mode": 4,
+                "bytes": 24476,
+                "mod": "PLRSpart1Detect",
+                "out": "S2Q1F_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "SetConfig": {
+            "rkpgE_d": {
+                "mode": 4,
+                "bytes": 15898,
+                "mod": "SetConfig",
+                "out": "rkpgE_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "N25Qxxx": {
+            "E6kFe_d": {
+                "mode": 4,
+                "bytes": 428184,
+                "mod": "N25Qxxx",
+                "out": "E6kFe_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "UtilFunctions": {
+            "FfcvD_d": {
+                "mode": 4,
+                "bytes": 51412,
+                "mod": "UtilFunctions",
+                "out": "FfcvD_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "ClockGenerator": {
+            "PF3UL_d": {
+                "mode": 4,
+                "bytes": 18622,
+                "mod": "ClockGenerator",
+                "out": "PF3UL_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "mode": 4,
+                "bytes": 9176,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "checksum": 0
+            }
+        },
+        "OTP_memory": {
+            "wtFGP_d": {
+                "mode": 4,
+                "bytes": 31330,
+                "mod": "OTP_memory",
+                "out": "wtFGP_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "StimTasks": {
+            "qWs9n_d": {
+                "mode": 4,
+                "bytes": 794740,
+                "mod": "StimTasks",
+                "out": "qWs9n_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "Memory": {
+            "f0K8C_d": {
+                "mode": 4,
+                "bytes": 52252,
+                "mod": "Memory",
+                "out": "f0K8C_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "ProtectionManagementRegister": {
+            "ZNcgq_d": {
+                "mode": 4,
+                "bytes": 29146,
+                "mod": "ProtectionManagementRegister",
+                "out": "ZNcgq_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "Stimuli": {
+            "wdNLp_d": {
+                "mode": 4,
+                "bytes": 26452,
+                "mod": "Stimuli",
+                "out": "wdNLp_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "Program": {
+            "DbPB7_d": {
+                "mode": 4,
+                "bytes": 314454,
+                "mod": "Program",
+                "out": "DbPB7_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "Testbench": {
+            "qVPGR_d": {
+                "mode": 4,
+                "bytes": 19298,
+                "mod": "Testbench",
+                "out": "qVPGR_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "TimingCheck": {
+            "gS5z5_d": {
+                "mode": 4,
+                "bytes": 47702,
+                "mod": "TimingCheck",
+                "out": "gS5z5_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        },
+        "FlagStatusRegister": {
+            "Ng4Qf_d": {
+                "mode": 4,
+                "bytes": 55932,
+                "mod": "FlagStatusRegister",
+                "out": "Ng4Qf_d.o",
+                "checksum": 0,
+                "archive": "archive.6/_1366_archive_1.a"
+            }
+        }
+    },
+    "perf": [
+        [
+            0.13097000122070312,
+            0.032204999999999998,
+            0.023501999999999999,
+            226080,
+            226880,
+            1587467985.74754,
+            20304151485522910,
+            "doParsingAndDesignResolution",
+            "entry"
+        ],
+        [
+            0.30397891998291016,
+            0.19681999999999999,
+            0.031808999999999997,
+            232252,
+            232900,
+            1587467985.9205489,
+            20304152021830710,
+            "doParsingAndDesignResolution",
+            "exit"
+        ],
+        [
+            0.30880498886108398,
+            0.20164699999999999,
+            0.031808999999999997,
+            232252,
+            232900,
+            1587467985.925375,
+            20304152036756194,
+            "doPostDesignResolutionToVir2Vcs",
+            "entry"
+        ],
+        [
+            0.3639531135559082,
+            0.25675799999999999,
+            0.031844999999999998,
+            232736,
+            232900,
+            1587467985.9805231,
+            20304152207731342,
+            "doUptoVir2VcsNoSepCleanup",
+            "entry"
+        ],
+        [
+            0.62691402435302734,
+            0.49082999999999999,
+            0.044893000000000002,
+            236176,
+            249028,
+            1587467986.243484,
+            20304153022896590,
+            "doUptoVir2VcsNoSepCleanup",
+            "exit"
+        ],
+        [
+            0.62699389457702637,
+            0.49090499999999998,
+            0.044899000000000001,
+            236176,
+            249028,
+            1587467986.2435639,
+            20304153023089340,
+            "doRadify_vir2vcsAll",
+            "entry"
+        ],
+        [
+            0.6595919132232666,
+            0.520536,
+            0.047864999999999998,
+            238940,
+            249028,
+            1587467986.2761619,
+            20304153124183820,
+            "doRadify_vir2vcsAll",
+            "exit"
+        ],
+        [
+            0.65963602066040039,
+            0.52057699999999996,
+            0.047869000000000002,
+            238940,
+            249028,
+            1587467986.276206,
+            20304153124270062,
+            "doPostDesignResolutionToVir2Vcs",
+            "exit"
+        ],
+        [
+            0.65966391563415527,
+            0.52060300000000004,
+            0.047870999999999997,
+            238940,
+            249028,
+            1587467986.2762339,
+            20304153124353378,
+            "doGAToPass2",
+            "entry"
+        ],
+        [
+            0.68665409088134766,
+            0.52428600000000003,
+            0.048840000000000001,
+            236996,
+            249028,
+            1587467986.3032241,
+            20304153208048210,
+            "DoPass2",
+            "entry"
+        ],
+        [
+            1.5811669826507568,
+            1.3813489999999999,
+            0.083899000000000001,
+            250112,
+            251348,
+            1587467987.197737,
+            20304155980926306,
+            "DoPass2",
+            "exit"
+        ]
+    ],
+    "stat": {
+        "cpu_cycles_cgstart": 20304153208241822,
+        "ru_self_cgstart": {
+            "ru_stime_sec": 0.048847000000000002,
+            "ru_utime_sec": 0.52436400000000005,
+            "ru_nvcsw": 32,
+            "ru_maxrss_kb": 83740,
+            "ru_minflt": 28668,
+            "ru_majflt": 0,
+            "ru_nivcsw": 23
+        },
+        "peak_mem_kb": 251348,
+        "ru_childs_cgstart": {
+            "ru_stime_sec": 0.020173,
+            "ru_utime_sec": 0.017673000000000001,
+            "ru_nvcsw": 26,
+            "ru_maxrss_kb": 32708,
+            "ru_minflt": 10515,
+            "ru_majflt": 0,
+            "ru_nivcsw": 22
+        },
+        "quadSpeed": 91667.500529405879,
+        "nMops": 235263,
+        "outputSizePerQuad": 36.145943338748985,
+        "nQuads": 78784,
+        "totalObjSize": 2847722,
+        "ru_self_end": {
+            "ru_stime_sec": 0.084889000000000006,
+            "ru_utime_sec": 1.383818,
+            "ru_nvcsw": 33,
+            "ru_maxrss_kb": 98584,
+            "ru_minflt": 35890,
+            "ru_majflt": 0,
+            "ru_nivcsw": 50
+        },
+        "cpu_cycles_total": 4856882690,
+        "Frontend(%)": 37.892555234864702,
+        "ru_childs_end": {
+            "ru_stime_sec": 0.021673000000000001,
+            "ru_utime_sec": 0.018419000000000001,
+            "ru_nvcsw": 28,
+            "ru_maxrss_kb": 33088,
+            "ru_minflt": 11099,
+            "ru_majflt": 0,
+            "ru_nivcsw": 24
+        },
+        "mop/quad": 2.9861773964256701,
+        "cpu_cycles_end": 20304155991570942,
+        "mopSpeed": 273735.41806775,
+        "CodeGen(%)": 62.107444765135291
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "std",
+        "std",
+        "paramConfig",
+        "paramConfig",
+        "N25Qxxx",
+        "N25Qxxx",
+        "CUIdecoder",
+        "CUIdecoder",
+        "Memory",
+        "Memory",
+        "UtilFunctions",
+        "UtilFunctions",
+        "Program",
+        "Program",
+        "StatusRegister",
+        "StatusRegister",
+        "FlagStatusRegister",
+        "FlagStatusRegister",
+        "ProtectionManagementRegister",
+        "ProtectionManagementRegister",
+        "NonVolatileConfigurationRegister",
+        "NonVolatileConfigurationRegister",
+        "VolatileConfigurationRegister",
+        "VolatileConfigurationRegister",
+        "VolatileEnhancedConfigurationRegister",
+        "VolatileEnhancedConfigurationRegister",
+        "Read",
+        "Read",
+        "FlashDiscoveryParameter",
+        "FlashDiscoveryParameter",
+        "LockManager",
+        "LockManager",
+        "DualQuadOps",
+        "DualQuadOps",
+        "OTP_memory",
+        "OTP_memory",
+        "TimingCheck",
+        "TimingCheck",
+        "PLRSpart1Detect",
+        "PLRSpart1Detect",
+        "PLRSpart2Detect",
+        "PLRSpart2Detect",
+        "DebugModule",
+        "DebugModule",
+        "SetConfig",
+        "SetConfig",
+        "Stimuli",
+        "Stimuli",
+        "ClockGenerator",
+        "ClockGenerator",
+        "StimTasksConfig",
+        "StimTasksConfig",
+        "StimTasks",
+        "StimTasks",
+        "Testbench",
+        "Testbench"
+    ],
+    "Misc": {
+        "master_pid": 1366,
+        "VCS_HOME": "/root/synopsys/vcs-mx/N-2017.12-SP2",
+        "default_output_dir": "csrc",
+        "cwd": "/home/stu02/project/N25Q016A11E_VG12",
+        "csrc": "csrc",
+        "csrc_abs": "/home/stu02/project/N25Q016A11E_VG12/csrc",
+        "daidir": "/home/stu02/project/N25Q016A11E_VG12/./sim/simv.daidir",
+        "daidir_abs": "/home/stu02/project/N25Q016A11E_VG12/sim/simv.daidir",
+        "archive_dir": "archive.6"
+    },
+    "MlibObjs": {},
+    "CompileStrategy": "fullobj",
+    "NameTable": {
+        "DebugModule": [
+            "DebugModule",
+            "K4GyS",
+            "module",
+            21
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module",
+            29
+        ],
+        "Read": [
+            "Read",
+            "ZwmA6",
+            "module",
+            13
+        ],
+        "FlagStatusRegister": [
+            "FlagStatusRegister",
+            "Ng4Qf",
+            "module",
+            8
+        ],
+        "LockManager": [
+            "LockManager",
+            "y4gzn",
+            "module",
+            15
+        ],
+        "paramConfig": [
+            "paramConfig",
+            "tW6GT",
+            "module",
+            1
+        ],
+        "ClockGenerator": [
+            "ClockGenerator",
+            "PF3UL",
+            "module",
+            24
+        ],
+        "UtilFunctions": [
+            "UtilFunctions",
+            "FfcvD",
+            "module",
+            5
+        ],
+        "N25Qxxx": [
+            "N25Qxxx",
+            "E6kFe",
+            "module",
+            2
+        ],
+        "PLRSpart2Detect": [
+            "PLRSpart2Detect",
+            "vAFMw",
+            "module",
+            20
+        ],
+        "CUIdecoder": [
+            "CUIdecoder",
+            "rfDph",
+            "module",
+            3
+        ],
+        "VolatileConfigurationRegister": [
+            "VolatileConfigurationRegister",
+            "CJs6b",
+            "module",
+            11
+        ],
+        "VolatileEnhancedConfigurationRegister": [
+            "VolatileEnhancedConfigurationRegister",
+            "h49xc",
+            "module",
+            12
+        ],
+        "FlashDiscoveryParameter": [
+            "FlashDiscoveryParameter",
+            "gp9Va",
+            "module",
+            14
+        ],
+        "Stimuli": [
+            "Stimuli",
+            "wdNLp",
+            "module",
+            23
+        ],
+        "Program": [
+            "Program",
+            "DbPB7",
+            "module",
+            6
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module",
+            28
+        ],
+        "StimTasks": [
+            "StimTasks",
+            "qWs9n",
+            "module",
+            26
+        ],
+        "OTP_memory": [
+            "OTP_memory",
+            "wtFGP",
+            "module",
+            17
+        ],
+        "Memory": [
+            "Memory",
+            "f0K8C",
+            "module",
+            4
+        ],
+        "StatusRegister": [
+            "StatusRegister",
+            "cebzP",
+            "module",
+            7
+        ],
+        "NonVolatileConfigurationRegister": [
+            "NonVolatileConfigurationRegister",
+            "jJhtT",
+            "module",
+            10
+        ],
+        "ProtectionManagementRegister": [
+            "ProtectionManagementRegister",
+            "ZNcgq",
+            "module",
+            9
+        ],
+        "PLRSpart1Detect": [
+            "PLRSpart1Detect",
+            "S2Q1F",
+            "module",
+            19
+        ],
+        "DualQuadOps": [
+            "DualQuadOps",
+            "F6uVY",
+            "module",
+            16
+        ],
+        "TimingCheck": [
+            "TimingCheck",
+            "gS5z5",
+            "module",
+            18
+        ],
+        "SetConfig": [
+            "SetConfig",
+            "rkpgE",
+            "module",
+            22
+        ],
+        "StimTasksConfig": [
+            "StimTasksConfig",
+            "Y9Zj3",
+            "module",
+            25
+        ],
+        "Testbench": [
+            "Testbench",
+            "qVPGR",
+            "module",
+            27
+        ]
+    },
+    "CompileProcesses": [
+        "cgproc.1366.json"
+    ],
+    "cpu_cycles_pass2_start": 20304153208067492,
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 159242,
+        "archive": "archive.6/_1366_archive_1.a"
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "rlimit": {
+        "data": -1,
+        "stack": -1
+    },
+    "CompileStatus": "Successful"
+}

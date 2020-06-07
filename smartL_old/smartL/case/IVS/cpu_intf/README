@@ -1,0 +1,5 @@
+step1: please set the path of each module top signal
+step2: modify the list of SOC layer signal name
+step3: run the case :ck8xx_connect.s
+
+If you want to test for the connection of a separate unit siggles ,you can directly run the test file:xxxx_interface.s. 

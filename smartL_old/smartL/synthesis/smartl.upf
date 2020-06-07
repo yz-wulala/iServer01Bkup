@@ -1,0 +1,106 @@
+# ****************************************************************************
+# *                                                                          *
+# * C-Sky Microsystems Confidential                                          *
+# * -------------------------------                                          *
+# * This file and all its contents are properties of C-Sky Microsystems. The *
+# * information contained herein is confidential and proprietary and is not  *
+# * to be disclosed outside of C-Sky Microsystems except under a             *
+# * Non-Disclosure Agreement (NDA).                                          *
+# *                                                                          *
+# ****************************************************************************
+# FILE NAME : 
+# AUTHOR    : Jiang Peng
+# FUNCTION  : upf for SMART
+# VERSION   : 
+#
+#-------------------------------------------------------------------------
+
+#------------------------------------------------------------
+# Create the power domains
+#------------------------------------------------------------
+#create_power_domain PD_SOC -include_scope
+#create_power_domain PD_CPU -elements {ck_cpu_inst}
+#set_design_top  {x_soc}
+#create_power_domain PD_SOC -elements {x_soc}
+create_power_domain PD_SOC 
+create_power_domain PD_CPU -elements {x_cpu_sub_system_ahb/x_ck803s}
+
+#------------------------------------------------------------
+# Supply port & net
+#------------------------------------------------------------
+create_supply_port VDD 
+create_supply_net  VDD   -domain PD_SOC
+create_supply_net VDD    -domain PD_CPU -reuse
+connect_supply_net VDD   -ports VDD
+
+create_supply_net  VDD_CPU  -domain PD_CPU -resolve parallel
+
+create_supply_port VSS 
+create_supply_net  VSS   -domain PD_SOC
+create_supply_net  VSS   -domain PD_CPU -reuse
+connect_supply_net VSS   -ports VSS
+
+set_domain_supply_net PD_SOC -primary_power_net VDD     -primary_ground_net VSS
+set_domain_supply_net PD_CPU -primary_power_net VDD_CPU -primary_ground_net VSS
+#------------------------------------------------------------
+# Create the power switch net
+#------------------------------------------------------------
+create_power_switch PD_CPU_SW \
+    -domain PD_CPU \
+    -input_supply_port {vin VDD}  \
+    -output_supply_port {vout VDD_CPU} \
+    -control_port {SLEEP x_cpu_sub_system_ahb/x_ck803s/pmu_corec_sleep_in} \
+    -ack_port {SLEEPOUT x_cpu_sub_system_ahb/x_ck803s/corec_pmu_sleep_out {SLEEP}} \
+    -on_state {on vin {!SLEEP}} \
+    -off_state {off {SLEEP}}
+
+#------------------------------------------------------------
+# Isolation cells
+#------------------------------------------------------------
+
+set_isolation PD_CPU_ISO_0 \
+  -domain PD_CPU \
+  -isolation_power_net VDD \
+  -isolation_ground_net VSS \
+  -clamp_value 0 \
+  -applies_to outputs
+
+set_isolation_control PD_CPU_ISO_0 \
+  -domain PD_CPU \
+  -isolation_signal x_cpu_sub_system_ahb/x_ck803s/pmu_corec_isolation \
+  -isolation_sense high \
+  -location parent
+
+
+set_isolation PD_CPU_ISO_1 \
+  -domain PD_CPU \
+  -isolation_power_net VDD \
+  -isolation_ground_net VSS \
+  -clamp_value 1 \
+  -elements { x_cpu_sub_system_ahb/x_ck803s/had_pad_jdb_ack_b \
+              x_cpu_sub_system_ahb/x_ck803s/sysio_pad_dbg_b \
+              x_cpu_sub_system_ahb/x_ck803s/sysio_pad_ipend_b \
+              x_cpu_sub_system_ahb/x_ck803s/sysio_pad_wakeup_b \
+            }
+
+set_isolation_control PD_CPU_ISO_1 \
+  -domain PD_CPU \
+  -isolation_signal x_cpu_sub_system_ahb/x_ck803s/pmu_corec_isolation \
+  -isolation_sense high \
+  -location parent
+#-----------------------------------------------------------------
+# Define port states
+#-----------------------------------------------------------------
+add_port_state VDD      -state {VDD1p2 1.2}
+add_port_state PD_CPU_SW/vout  -state {CPU_ON   1.2}\
+                               -state {CPU_OFF  off}
+add_port_state VSS      -state {GND    0.0}
+
+#-----------------------------------------------------------------
+# Define PST states
+#-----------------------------------------------------------------
+create_pst      cpuPst    -supplies              {VDD      PD_CPU_SW/vout         VSS}
+add_pst_state   CPU_ON    -pst cpuPst -state     {VDD1p2   CPU_ON          GND}
+add_pst_state   CPU_DOWN  -pst cpuPst -state     {VDD1p2   CPU_OFF         GND}
+
+

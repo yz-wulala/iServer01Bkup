@@ -1,0 +1,19 @@
+debImport "-f" "tb.filelist"
+verdiDockWidgetDisplay -dock widgetDock_WelcomePage
+verdiDockWidgetHide -dock widgetDock_WelcomePage
+srcHBSelect "tb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb" -delim "."
+srcHBSelect "tb.x_soc" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb.x_soc" -delim "."
+srcHBSelect "tb.x_soc.x_cpu_sub_system_ahb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb.x_soc.x_cpu_sub_system_ahb" -delim "."
+nsMsgSelect -range {0 8-8}
+nsMsgAction -tab cmpl -index {0 8}
+nsMsgSelect -range {0 8-8}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 79 -pos 7 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 79 -pos 7 -win $_nTrace1
+srcAction -pos 79 7 1 -win $_nTrace1 -name "clk" -ctrlKey off
+debExit

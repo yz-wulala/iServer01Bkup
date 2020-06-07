@@ -1,0 +1,31 @@
+verdiWindowResize -win $_Verdi_1 "0" "31" "1920" "971"
+debImport "+v2k" "+incdir+./top+./stim+./code" "FM25Q08A_debug.fsdb"
+wvCreateWindow
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 {/home/stu02/project/FM25Q08A/FM25Q08A_debug.fsdb}
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/Testbench"
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/Testbench/CLK} \
+{/Testbench/CS} \
+{/Testbench/DI_DQ0} \
+{/Testbench/DO_DQ1} \
+{/Testbench/VCC\[31:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 )} 
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvGetSignalClose -win $_nWave2
+wvZoomAll -win $_nWave2
+wvSelectGroup -win $_nWave2 {G2}
+wvSelectSignal -win $_nWave2 {( "G1" 5 )} 
+wvSetCursor -win $_nWave2 116007238.012955 -snap {("G2" 0)}
+wvSelectSignal -win $_nWave2 {( "G1" 2 )} 
+wvZoom -win $_nWave2 99259405.465356 101889955.080162
+wvZoom -win $_nWave2 99951655.363983 100128141.052426
+wvZoom -win $_nWave2 99998915.557010 100072306.655906
+debExit

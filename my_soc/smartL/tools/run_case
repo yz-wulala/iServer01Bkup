@@ -1,0 +1,577 @@
+#! /usr/bin/perl -w
+# ****************************************************************************
+# *                                                                          *
+# * C-Sky Microsystems Confidential                                          *
+# * -------------------------------                                          *
+# * This file and all its contents are properties of C-Sky Microsystems. The *
+# * information contained herein is confidential and proprietary and is not  *
+# * to be disclosed outside of C-Sky Microsystems except under a             *
+# * Non-Disclosure Agreement (NDA).                                          *
+# *                                                                          *
+# ****************************************************************************
+#// *****************************************************************************
+#// FILE NAME       : run_case
+#// AUTHOR          : Qinglin Tian
+#// ORIGINAL TIME   : 05-16-2013
+#// FUNCTION        : run_case script
+#// RESET           : no
+#// DFT             : no
+#// DFP             :
+#// VERIFICATION    :
+#// RELEASE HISTORY :
+#// $Id: run_case,v 1.34 2018/11/15 02:17:22 wangmz Exp $ 
+#// *****************************************************************************
+
+use Getopt::Long;
+    $Getopt::Long::ignorecase = 0;
+use File::Copy;
+use Cwd;
+use FileHandle;
+use File::Basename;
+use Term::ANSIColor;
+use strict;
+no strict 'refs';
+my $SMART_PATH = `pwd`;
+chomp($SMART_PATH);
+$SMART_PATH =~ s/smartL.*/smartL\//;
+
+my $com_dir = `pwd`;
+chomp($com_dir);
+my $work;
+#=================================================
+# Step1: Remove all things in 'workdir'
+#=================================================
+$work = "$SMART_PATH\/workdir";
+chdir($work);
+my @file2del;
+my $dir = `pwd`;
+if($dir =~ /workdir$/) {
+	@file2del = qx(ls);
+	foreach(@file2del){
+		chomp($_);
+		if("$_" ne "CVS"){
+			!system("rm -rf $_") or die "can't rm";
+		}
+	}
+}
+else {
+	print "Error when change directory to workdir!";
+	exit(1);
+}
+print "\nStep1 (Remove all things in current 'workdir') is finished!\n";
+
+#=================================================
+# Step2: Process the command line arguments
+#=================================================
+my %Opt;
+if(!&GetOptions
+	(\%Opt,
+		'--h',	                #Print help message
+		'--sim_tool:s',         #Specify the simulation tools, support vcs and ncverilog
+		'--nodump',             #Disable the waveform dump function in VCS simulation
+		'--nomnt',              #disable mnt module when running tb
+		'--pg_sim',             #power gating simulation
+		'--coverage'))          #run for coverage analysis
+{
+	&print_usage();
+	exit(1);
+}
+
+# -h option
+if($Opt{'h'}) {
+	&print_usage();
+	exit(1);
+}
+
+# -coverage option
+my $s_cov = 0;
+if($Opt{'coverage'}) {
+	$s_cov = 1;
+}
+
+# -sim_tool option
+my $s_vcs = 0;
+my $s_nc = 0;
+if(!defined($Opt{'sim_tool'}) || ($Opt{'sim_tool'} eq "vcs")){
+	$s_vcs = 1;
+}elsif($Opt{'sim_tool'} eq "nc"){
+	$s_nc = 1;
+}
+if(!$s_vcs && !$s_nc){
+	print "Invalid simulation tool! Support vcs and nc.\n";
+	exit(1);
+}
+
+# -nodump option
+my $dump_sim = "";
+if(defined($Opt{'nodump'})){
+	$dump_sim = "+define+NO_DUMP";
+}
+
+# -nomnt option
+my $s_nomnt = 0;
+if(defined($Opt{'nomnt'})){
+	$s_nomnt = 1;
+}
+my $mnt_sim = "";
+if ($s_nomnt == 1) {
+	$mnt_sim = "+define+NO_MONITOR";
+}
+
+my $pg_sim=0;
+if(defined($Opt{'pg_sim'})){
+	$pg_sim = 1;
+}
+
+#parse environment.h to determine the model of CPU sub-system
+open ENV_FILE, "../cpu/environment.h" or die "cannot open environment.h:$!";
+my $cpu_model = "";
+while (<ENV_FILE>) {
+	if(/^\s*`define\s+CK802\s*$/) {
+		$cpu_model = "ck802";
+	} elsif(/^\s*`define\s+CK803\s*$/) {
+		$cpu_model = "ck803";
+	} elsif(/^\s*`define\s+CK803S\s*$/) {
+		$cpu_model = "ck803s";
+	} elsif(/^\s*`define\s+CK804\s*$/) {
+		$cpu_model = "ck804";
+	}
+	  elsif(/^\s*`define\s+CK801\s*$/) {
+		$cpu_model = "ck801";
+	}
+}
+if($cpu_model eq ""){
+	print "No CPU model/Invalid CPU model defined in environment.h!\n";
+	exit(1);
+}
+close ENV_FILE;
+
+#hgpr
+open CFIG_FILE, "../cpu/cpu_cfig.h" or die "cannot open cpu_cfig.h:$!";
+my $hgpr= "";
+while (<CFIG_FILE>) {
+	if(/^\s*`define\s+HGPR\s*$/) {
+		$hgpr = "hgpr";
+	}
+}
+close CFIG_FILE;
+
+#parse enviroment.h to generate cpu_model for makefile
+my $cpu_model_make;
+my $dahb_lite = 0;
+
+#micro configuration for CK802
+if("$cpu_model" eq "ck802"){
+	open ENV_FILE, "../cpu/environment.h" or die "cannot open environment.h:$!";
+	my $temp_line;
+	my $flag_802 = 0;
+	my $bctm_802 = 0;
+	my $iabh_lite_802 = 0;
+	my $dabh_lite_802 = 0;
+	while (<ENV_FILE>){
+		$temp_line = $_;
+		if(/^\s*`ifdef\s+CK802\s*$/) {
+			$flag_802 = 1;
+		}
+		if(/^\s*`endif\s*$/) {
+			if($flag_802) {
+				$flag_802 = 0;
+			}
+		}
+		if($flag_802){
+			if($temp_line =~ m/^\s*`define\s+BCTM\s*$/) {
+				$bctm_802 = 1;
+			}
+			elsif($temp_line =~ m/^\s*`define\s+IAHB_LITE\s*$/) {
+				$iabh_lite_802 = 1;
+			}
+			elsif($temp_line =~ m/^\s*`define\s+DAHB_LITE\s*$/) {
+				$dabh_lite_802 = 1;
+			}
+		}
+	}
+	close ENV_FILE;
+	if($bctm_802) {
+		$cpu_model_make = "ck802j";
+	} else {
+		$cpu_model_make = "ck802";
+	}
+        #if($iabh_lite_802 && $dabh_lite_802) {
+        if($dabh_lite_802) {
+		$dahb_lite = 1;
+	}
+}
+#micro configuration for CK802
+if("$cpu_model" eq "ck801"){
+	open ENV_FILE, "../cpu/environment.h" or die "cannot open environment.h:$!";
+	my $temp_line;
+	my $flag_801 = 0;
+	my $bctm_801 = 0;
+	my $iabh_lite_801 = 0;
+	my $dabh_lite_801 = 0;
+	while (<ENV_FILE>){
+		$temp_line = $_;
+		if(/^\s*`ifdef\s+CK801\s*$/) {
+			$flag_801 = 1;
+		}
+		if(/^\s*`endif\s*$/) {
+			if($flag_801) {
+				$flag_801 = 0;
+			}
+		}
+		if($flag_801){
+			if($temp_line =~ m/^\s*`define\s+BCTM\s*$/) {
+				$bctm_801 = 1;
+			}
+			elsif($temp_line =~ m/^\s*`define\s+IAHB_LITE\s*$/) {
+				$iabh_lite_801 = 1;
+			}
+			elsif($temp_line =~ m/^\s*`define\s+DAHB_LITE\s*$/) {
+				$dabh_lite_801 = 1;
+			}
+		}
+	}
+	close ENV_FILE;
+	if($bctm_801) {
+		$cpu_model_make = "ck801j";
+	} else {
+		$cpu_model_make = "ck801";
+	}
+        #if($iabh_lite_802 && $dabh_lite_802) {
+        if($dabh_lite_801) {
+		$dahb_lite = 1;
+	}
+}
+
+#micro configuration for CK803
+if("$cpu_model" eq "ck803"){
+	open ENV_FILE, "../cpu/environment.h" or die "cannot open environment.h:$!";
+	my $temp_line;
+	my $flag_803 = 0;
+	my $iabh_lite_803 = 0;
+	my $dabh_lite_803 = 0;
+	my $dsp_media_803 = 0;
+	while (<ENV_FILE>){
+		$temp_line = $_;
+		if(/^\s*`ifdef\s+CK803\s*$/) {
+			$flag_803 = 1;
+		}
+		if(/^\s*`endif\s*$/) {
+			if($flag_803) {
+				$flag_803 = 0;
+			}
+		}
+		if($flag_803){
+			if($temp_line =~ m/^\s*`define\s+DSP_MEDIA\s*$/) {
+				$dsp_media_803 = 1;
+			}
+			elsif($temp_line =~ m/^\s*`define\s+IAHB_LITE\s*$/) {
+				$iabh_lite_803 = 1;
+			}
+			elsif($temp_line =~ m/^\s*`define\s+DAHB_LITE\s*$/) {
+				$dabh_lite_803 = 1;
+			}
+		}
+	}
+	close ENV_FILE;
+	if($dsp_media_803) {
+		$cpu_model_make = "ck803e";
+	} else {
+		$cpu_model_make = "ck803";
+	}
+        #if($iabh_lite_803 && $dabh_lite_803) {
+        if($dabh_lite_803) {
+		$dahb_lite = 1;
+	}
+}
+
+#micro configuration for CK803s
+if("$cpu_model" eq "ck803s"){
+	open ENV_FILE, "../cpu/environment.h" or die "cannot open environment.h:$!";
+	my $temp_line;
+	my $flag_803s = 0;
+	my $iabh_lite_803s = 0;
+	my $dabh_lite_803s = 0;
+	my $dsp_media_803s = 0;
+        my $fpu_803s = 0;
+	while (<ENV_FILE>){
+		$temp_line = $_;
+		if(/^\s*`ifdef\s+CK803S\s*$/) {
+			$flag_803s = 1;
+		}
+		if(/^\s*`endif\s*$/) {
+			if($flag_803s) {
+				$flag_803s = 0;
+			}
+		}
+		if($flag_803s){
+			if($temp_line =~ m/^\s*`define\s+DSP_MEDIA\s*$/) {
+				$dsp_media_803s = 1;
+			}
+			elsif($temp_line =~ m/^\s*`define\s+FPU\s*$/) {
+				$fpu_803s = 1;
+			}
+			elsif($temp_line =~ m/^\s*`define\s+IAHB_LITE\s*$/) {
+				$iabh_lite_803s = 1;
+			}
+			elsif($temp_line =~ m/^\s*`define\s+DAHB_LITE\s*$/) {
+				$dabh_lite_803s = 1;
+			}
+		}
+	}
+	close ENV_FILE;
+	if($dsp_media_803s && $fpu_803s) {
+		$cpu_model_make = "ck803sef";
+	} elsif ($dsp_media_803s && !$fpu_803s) {
+		$cpu_model_make = "ck803se";
+	} elsif (!$dsp_media_803s && $fpu_803s) {
+		$cpu_model_make = "ck803sf";
+	} else {
+		$cpu_model_make = "ck803s";
+	}
+        #if($iabh_lite_803s && $dabh_lite_803s) {
+        if($dabh_lite_803s) {
+		$dahb_lite = 1;
+	}
+}
+
+#micro configuration for CK804
+if("$cpu_model" eq "ck804"){
+	open ENV_FILE, "../cpu/environment.h" or die "cannot open environment.h:$!";
+	my $temp_line;
+	my $flag_804 = 0;
+	my $iabh_lite_804 = 0;
+	my $dabh_lite_804 = 0;
+	my $dsp_media_804 = 0;
+    my $fpu_804 = 0;
+	while (<ENV_FILE>){
+		$temp_line = $_;
+		if(/^\s*`ifdef\s+CK804\s*$/) {
+			$flag_804 = 1;
+		}
+		if(/^\s*`endif\s*$/) {
+			if($flag_804) {
+				$flag_804 = 0;
+			}
+		}
+		if($flag_804){
+			if($temp_line =~ m/^\s*`define\s+DSP\s*$/) {
+				$dsp_media_804 = 1;
+			}
+			elsif($temp_line =~ m/^\s*`define\s+FPU\s*$/) {
+				$fpu_804 = 1;
+			}
+			elsif($temp_line =~ m/^\s*`define\s+IAHB_LITE\s*$/) {
+				$iabh_lite_804 = 1;
+			}
+			elsif($temp_line =~ m/^\s*`define\s+DAHB_LITE\s*$/) {
+				$dabh_lite_804 = 1;
+			}
+		}
+	}
+	close ENV_FILE;
+	if($dsp_media_804 && $fpu_804) {
+		$cpu_model_make = "ck804ef";
+	} elsif ($dsp_media_804 && !$fpu_804) {
+		$cpu_model_make = "ck804e";
+	} elsif (!$dsp_media_804 && $fpu_804) {
+		$cpu_model_make = "ck804f";
+	} else {
+		$cpu_model_make = "ck804";
+	}
+        #if($iabh_lite_803s && $dabh_lite_803s) {
+        if($dabh_lite_804) {
+		$dahb_lite = 1;
+	}
+}
+
+
+# Selecte the specified case
+chdir($com_dir);
+my $path;
+my $case;
+my $case_file;
+my $case_make;
+my $had_v;
+my @file;
+foreach(@ARGV){
+	if(/(.*\/)(.*)/){
+		$case_file = $_;
+		$path = $1;
+		$case = $2;
+	}else{
+		$case_file = $_;
+		$case = $_;
+		chomp($path = `pwd`);
+	}
+
+#for .s case
+	if($case =~ /(.*)\.s/){
+		$case_make = $1;
+		!system("cp $case_file $SMART_PATH/workdir") or die "can't copy $case_file";
+#		if(($case =~ /.*had.*\.s/) or ($case =~ /.*gpio.*\.s/)){
+		if(($case =~ /.*had.*\.s/) or ($case =~ /.*usi.*\.s/) or ($case =~ /.*gpio.*\.s/) or ($case =~ /.*connect.*\.s/) or ($case =~ /.*pulse.*\.s/) or ($case =~ /.*lpmd.*\.s/) or ($case =~ /.*int_ack.*\.s/) or ($case =~ /.*bist.*\.s/)){
+			$case_file =~ s/\.s/\.v/;
+			$had_v = $case;
+			$had_v =~ s/\.s/\.v/;
+			!system("cp $case_file $SMART_PATH/workdir") or die "can't copy $case_file";
+		}
+	}
+
+#for .c case
+	if($case =~ /(.*)\.c/){
+		$case_make = $1;
+		chomp(@file = `ls $path`);
+		foreach(@file){
+			if(/CVS/){
+				undef $_;
+			}else{
+				my $file = "$path"."\/"."$_";
+				print "$file\n";
+				!system("cp $file $SMART_PATH/workdir") or die "can't copy $file";
+		
+			}
+			if(($_=~/int_ack\w+\.v/) or ($_=~/lpmd\w+\.v/) or ($_=~/priority\w+\.v/)){
+			  $had_v=$_;
+                          print "########$had_v#########\n";	
+			}
+		}
+		!system("cp $SMART_PATH/lib/clib/*.h $SMART_PATH/workdir") or die "can't copy clib program";
+		!system("cp $SMART_PATH/lib/clib/*.c $SMART_PATH/workdir") or die "can't copy clib program";
+	}
+}
+print "\nStep2 (Process the command line arguments) is finished!\n";
+
+#generate parameters for coverage analysis
+my $vcs_cov = "";
+if($s_cov){
+#	$vcs_cov = "-lca -cm line -cm_libs yv -cm_dir $SMART_PATH/workdir/$case_make";
+   $vcs_cov = " -lca -cm line+cond+tgl+fsm+path+branch -cm_tgl mda -cm_cond std+allops+event+for -cm_libs yv ";
+}
+
+#=======================================================
+# Step3: Make 
+#========================================================
+chdir($work);
+$_ = $cpu_model;
+
+if(/ck80[1234]/){
+	!system("cp ../lib/Makefile ./Makefile") or die "cant't copy";
+        !system("cp ../lib/crt0.s ./crt0.s") or die "cant't copy";
+	!system("cp ../lib/linker.lcf ./linker.lcf") or die "cant't copy";
+}
+else{
+	print "Invalid CPU model!";
+	exit(1);
+}
+
+my $data_addr = 0;
+
+if($dahb_lite){
+        $data_addr = 20000000;# noted that it is hex format
+}
+else{
+        $data_addr = 20000000;
+}
+!system("sed -i 's/DATA_BADDR/0x$data_addr/g' linker.lcf") or die "cant't replace";
+
+#gen run_case.report 
+!system("touch run_case.report") or die "can't touch";
+`printf "NOT RUN">run_case.report`;
+#gen regress_result and copy result to regress_result
+!system("mkdir ../regress/regress_result");
+!system("cp run_case.report ../regress/regress_result/$case_make\.report") or die "can't copy";
+
+
+!system("make clean; make all CPU=$cpu_model_make ENDIAN_MODE=little-endian FILE=$case_make HGPR=$hgpr") or die "can't make";
+print "make clean; make all CPU=$cpu_model_make ENDIAN_MODE=little-endian FILE=$case_make HGPR=$hgpr\n";
+print "\nStep3 (Make) is finished!\n";
+
+#src_file 
+my $release=1;
+my $g_vlib_path;
+if($s_nc){
+  $g_vlib_path="+libext+.v+.sv+.inc+.h";
+}else{
+  $g_vlib_path="+libext+.v+.sv+.inc+.h -R";
+}
+$g_vlib_path =   $g_vlib_path
+		 ." -y ../cpu/"
+ 		 ." -v ../tb/tb.v"
+		 ." -v ../tb/mnt.v"
+		 ." -y ../tb/"
+                 ." -y ../soc";
+#src_file for release, the path has changed
+if($release){
+  $g_vlib_path =   $g_vlib_path
+  		   ." -y ../soc/ahb/"
+                   ." -y ../soc/apb/"
+                   ." -y ../soc/common"
+                   ." -y ../soc/gpio/"
+                   ." -y ../soc/mem/"
+                   ." -y ../soc/pmu/"
+                   ." -y ../soc/usi/" 
+                   ." -y ../soc/sfr/" 
+                   ." -y ../soc/wdt/" 
+                   ." -y ../soc/DAC_Socket/" 
+    		   ." -y ../soc/wic/";
+  
+}
+my $vcs_incdir = " +incdir+../workdir"
+                        ."+../cpu"
+                        ."+../tb";
+
+
+#=======================================================
+# Step4: Run VCS
+#========================================================
+if($s_vcs) {
+  if($pg_sim){
+	!system("/tools/synopsys/mvtools/mvtools_vG-2012.09/bin/vcsmvsim +v2k  +define+PG_SIM -debug_all -upf ../synthesis/smartl.upf -power_top soc -Mupdate -fsdb -sverilog +define+TSMC_NO_WARNING $vcs_cov   $mnt_sim $dump_sim +nospecify +notimingchecks -timescale=1ns/100ps  ../tb/tb.v  $vcs_incdir $g_vlib_path") or die "can't run vcsmvsim";
+  }
+  else{
+	!system("vcs -full64 -P /root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64/novas.tab /root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64/pli.a +v2k -Mupdate -sverilog +define+TSMC_NO_WARNING $vcs_cov   $mnt_sim $dump_sim +nospecify +notimingchecks -timescale=1ns/100ps  ../tb/tb.v   $SMART_PATH/workdir/$had_v $vcs_incdir $g_vlib_path ") or die "can't run VCS";
+  }
+}
+elsif($s_nc) {
+  	if(defined ($had_v)){
+   		!system("ncverilog  +v2k +sv +define+VMC +define+NC_SIM +access+wrc $mnt_sim $dump_sim +incdir+../cpu/+../tb/ ../tb/tb.v $SMART_PATH/workdir/$had_v -y ../tb/ $vcs_incdir $g_vlib_path")or die "can't run NC verilog";
+	}else{
+		!system("ncverilog  +v2k +sv +define+VMC +define+NC_SIM +access+wrc $mnt_sim $dump_sim +incdir+../cpu/+../tb/ ../tb/tb.v  $vcs_incdir $g_vlib_path")or die "can't run NC verilog";
+	}
+ 
+}
+else{
+  exit(1);
+}
+print "\nStep4 (Run VCS) is finished\n";
+#copy report to regress_result
+!system("cp run_case.report ../regress/regress_result/$case_make\.report") or die "can't copy";
+
+
+if($s_cov){
+	!system("cp -rf $case_make $SMART_PATH/report/coverage") or die "can't copy coverage data";
+}
+
+#=======================================================
+# Print usage
+#========================================================
+sub print_usage {
+	print << "UseOfrun_case";
+Usage: run_case [options] case_name
+	[option] =
+		[-h]: 
+			Print run_case user guider on screen
+	        [-sim_tool vcs|nc]:      
+        		Specify the simulation tools, support vcs and ncverilog, vcs by default
+		[-nodump]:
+			Disable the waveform dump function in VCS simulation. If not specified, dump waveform function is enabled
+		[-nomnt]:
+			Disable the monitor module when running tb, monitor is enabled without this option
+Example:
+	run_case ../case/somke.s -sim_tool vcs -nomnt 
+this command means running the smoke case at ../case dirctory ,the CPU is RTL code, dumpon the wave from the 0 cycle, and monitor is disabled in tb.
+
+UseOfrun_case
+   print "\f";
+}

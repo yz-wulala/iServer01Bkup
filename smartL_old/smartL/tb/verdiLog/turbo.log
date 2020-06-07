@@ -1,0 +1,3 @@
+Command Line: /tools/synopsys/verdi_vI-2014.03/platform/LINUX/bin/Novas -f tb.filelist -sv +v2k
+uname(Linux xiaolehui 2.6.9-89.ELlargesmp #1 SMP Mon Jun 22 12:46:58 EDT 2009 x86_64)
+au time 3475.109677 8.301738 0.875866 delta 45654016 61751296 total 47489540 63586820

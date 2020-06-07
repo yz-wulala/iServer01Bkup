@@ -1,0 +1,52 @@
+@verdi rc file Version 1.0
+[General]
+VerdiVersion = Verdi3_I-2014.03
+[KeyNote]
+Line1 = Automatic Backup 0
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+[hb]
+viewport = 0 382 1910 1053 631 812 49 1908
+activeNode = "tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_core_top.x_nm_core.x_nm_cp0_top.x_nm_cp0_lpmd"
+activeScope = "tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_core_top.x_nm_core.x_nm_cp0_top.x_nm_cp0_lpmd"
+activeFile = "/home/zhaok/release_smart/20190530/smartL//cpu/CK802_20190530.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 6332
+baMode = False
+srcLineNum = True
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_core_top.x_nm_core.x_nm_cp0_top.x_nm_cp0_lpmd"
+Scope2 = "tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_core_top.x_nm_core.x_nm_cp0_top"
+Scope3 = "tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_core_top.x_nm_core"
+Scope4 = "tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_core_top"
+Scope5 = "tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus"
+Scope6 = "tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top"
+Scope7 = "tb"
+Scope8 = "tb.x_soc.x_cpu_sub_system_ahb.x_ck802"
+Scope9 = "tb.x_soc.x_cpu_sub_system_ahb"
+Scope10 = "tb.x_soc"
+multipleSelection = 1 6342 1 0 0
+sdfCheckUndef = FALSE
+[hb.sourceTab.1]
+scope = tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_core_top.x_nm_core.x_nm_cp0_top.x_nm_cp0_lpmd
+File = /home/zhaok/release_smart/20190530/smartL/cpu/CK802_20190530.v
+Line = 6333
+[imp.design1]
+dbEnum =  oh
+invokeDir = /home/zhaok/release_smart/20190530/smartL/tb
+design = DebussyLib
+hostCommand = hostCommand -f tb.filelist -sv +v2k

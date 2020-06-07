@@ -1,0 +1,613 @@
+*design* DebussyLib (btIdent Verdi3_I-2014.03)
+Command arguments:
+    +define+verilog
+    -f tb.filelist
+        /home/zhaok/release_smart/20190530/smartL//cpu/DW02_prod_sum1.v
+        /home/zhaok/release_smart/20190530/smartL//cpu/timer.v
+        /home/zhaok/release_smart/20190530/smartL//cpu/xilinx_fpga_ram.v
+        /home/zhaok/release_smart/20190530/smartL//cpu/soc_gated_clk_cell.v
+        /home/zhaok/release_smart/20190530/smartL//cpu/fpga_ram.v
+        /home/zhaok/release_smart/20190530/smartL//cpu/syncore_fpgaram.v
+        /home/zhaok/release_smart/20190530/smartL//cpu/Syncore_ram.v
+        /home/zhaok/release_smart/20190530/smartL//cpu/DW02_mult.v
+        /home/zhaok/release_smart/20190530/smartL//cpu/DW02_multp.v
+        /home/zhaok/release_smart/20190530/smartL//cpu/CK802_20190530.v
+        /home/zhaok/release_smart/20190530/smartL//tb/mnt.v
+        /home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v
+        /home/zhaok/release_smart/20190530/smartL//tb/tb.v
+        /home/zhaok/release_smart/20190530/smartL//tb/uart_mnt.v
+        /home/zhaok/release_smart/20190530/smartL//soc/common/px_had_sync.v
+        /home/zhaok/release_smart/20190530/smartL//soc/common/fpga_clk_gen.v
+        /home/zhaok/release_smart/20190530/smartL//soc/common/soc.v
+        /home/zhaok/release_smart/20190530/smartL//soc/common/tap2_sm.v
+        /home/zhaok/release_smart/20190530/smartL//soc/common/sync.v
+        /home/zhaok/release_smart/20190530/smartL//soc/common/err_gen.v
+        /home/zhaok/release_smart/20190530/smartL//soc/common/cpu_sub_system_ahb.v
+        /home/zhaok/release_smart/20190530/smartL//soc/apb/apb.v
+        /home/zhaok/release_smart/20190530/smartL//soc/apb/apb_bridge.v
+        /home/zhaok/release_smart/20190530/smartL//soc/mem/iahb_mem_ctrl.v
+        /home/zhaok/release_smart/20190530/smartL//soc/mem/mem_ctrl.v
+        /home/zhaok/release_smart/20190530/smartL//soc/ahb/ahb_fifo_entry.v
+        /home/zhaok/release_smart/20190530/smartL//soc/ahb/ahb_fifo.v
+        /home/zhaok/release_smart/20190530/smartL//soc/ahb/ahb_fifo_counter.v
+        /home/zhaok/release_smart/20190530/smartL//soc/ahb/ahb.v
+        /home/zhaok/release_smart/20190530/smartL//soc/pmu/pmu.v
+        /home/zhaok/release_smart/20190530/smartL//soc/gpio/gpio_ctrl.v
+        /home/zhaok/release_smart/20190530/smartL//soc/gpio/gpio.v
+        /home/zhaok/release_smart/20190530/smartL//soc/gpio/gpio_apbif.v
+        /home/zhaok/release_smart/20190530/smartL//soc/wic/wic.v
+        /home/zhaok/release_smart/20190530/smartL//soc/wic/wic_top.v
+        /home/zhaok/release_smart/20190530/smartL//soc/wic/wic_awake_en_32.v
+        /home/zhaok/release_smart/20190530/smartL//soc/smpu/smpu_top.v
+        /home/zhaok/release_smart/20190530/smartL//soc/smpu/smpu_comp_hit.v
+        /home/zhaok/release_smart/20190530/smartL//soc/uart/uart_receive.v
+        /home/zhaok/release_smart/20190530/smartL//soc/uart/uart_baud_gen.v
+        /home/zhaok/release_smart/20190530/smartL//soc/uart/uart_ctrl.v
+        /home/zhaok/release_smart/20190530/smartL//soc/uart/uart_apb_reg.v
+        /home/zhaok/release_smart/20190530/smartL//soc/uart/uart_trans.v
+        /home/zhaok/release_smart/20190530/smartL//soc/uart/uart.v
+    -sv
+    +v2k
+
+
+*Error* macro `clk not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 72: 
+
+*Error* Syntax error at negedge
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 72: 
+
+*Error* macro `rst_b not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 72: 
+
+*Error* macro `rst_b not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 74: 
+
+*Error* Syntax error at ;
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 75: 
+
+*Error* Syntax error at else
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 76: 
+
+*Error* Syntax error at <=
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 77: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 78: 
+
+*Error* macro `clk not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 80: 
+
+*Error* Syntax error at begin
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 81: 
+
+*Error* Syntax error at [
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 82: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 83: 
+
+*Error* macro `clk not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 86: 
+
+*Error* Syntax error at negedge
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 86: 
+
+*Error* macro `rst_b not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 86: 
+
+*Error* macro `rst_b not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 88: 
+
+*Error* Syntax error at ;
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 89: 
+
+*Error* Syntax error at else
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 90: 
+
+*Error* Syntax error at <=
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 91: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 92: 
+
+*Error* macro `clk not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 94: 
+
+*Error* Syntax error at begin
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 95: 
+
+*Error* Syntax error at [
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 96: 
+
+*Error* Syntax error at [
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 97: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 98: 
+
+*Error* macro `clk not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 122: 
+
+*Error* Syntax error at negedge
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 122: 
+
+*Error* macro `rst_b not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 122: 
+
+*Error* macro `rst_b not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 124: 
+
+*Error* Syntax error at begin
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 125: 
+
+*Error* failed to find symbol 'i'
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 126: 
+
+*Error* Syntax error at [
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 128: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 129: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 130: 
+
+*Error* Syntax error at else
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 131: 
+
+*Error* Syntax error at [
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 133: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 134: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 135: 
+
+*Error* macro `clk not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 159: 
+
+*Error* Syntax error at begin
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 160: 
+
+*Error* Syntax error at $fwrite
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 163: 
+
+*Error* Syntax error at $fwrite
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 164: 
+
+*Error* failed to find symbol 'i'
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 165: 
+
+*Error* Syntax error at $fwrite
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 169: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 170: 
+
+*Error* Syntax error at else
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 171: 
+
+*Error* Syntax error at $fwrite
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 173: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 174: 
+
+*Error* Syntax error at $fwrite
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 177: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 178: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 179: 
+
+*Error* Syntax error at $fwrite
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 180: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 181: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 182: 
+
+*Error* missing event in event statement
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 72: 
+
+*Error* missing event in event statement
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 80: 
+
+*Error* missing event in event statement
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 86: 
+
+*Error* missing event in event statement
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 94: 
+
+*Error* missing event in event statement
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 122: 
+
+*Error* missing event in event statement
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 159: 
+
+*Error* invalid LHS in initial part of for statement
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 126: 
+
+*Error* invalid LHS in initial part of for statement
+"/home/zhaok/release_smart/20190530/smartL//tb/mnt.v", 165: 
+
+*Error* macro `clk not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 101: 
+
+*Error* Syntax error at negedge
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 101: 
+
+*Error* macro `rst_b not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 101: 
+
+*Error* macro `rst_b not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 103: 
+
+*Error* Syntax error at ;
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 104: 
+
+*Error* Syntax error at else
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 105: 
+
+*Error* Syntax error at [
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 106: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 107: 
+
+*Error* macro `clk not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 110: 
+
+*Error* Syntax error at negedge
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 110: 
+
+*Error* macro `rst_b not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 110: 
+
+*Error* macro `rst_b not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 112: 
+
+*Error* Syntax error at ;
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 113: 
+
+*Error* Syntax error at else
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 114: 
+
+*Error* Syntax error at $display
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 117: 
+
+*Error* Syntax error at $display
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 118: 
+
+*Error* Syntax error at $display
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 119: 
+
+*Error* Syntax error at $display
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 120: 
+
+*Error* Syntax error at #
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 121: 
+
+*Error* Syntax error at $finish
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 122: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 123: 
+
+*Error* Syntax error at [
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 124: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 125: 
+
+*Error* Syntax error at else
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 126: 
+
+*Error* Syntax error at [
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 127: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 128: 
+
+*Error* macro `clk not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 136: 
+
+*Error* Syntax error at begin
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 137: 
+
+*Error* Syntax error at [
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 138: 
+
+*Error* Syntax error at [
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 139: 
+
+*Error* Syntax error at <=
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 140: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 141: 
+
+*Error* macro `clk not defined
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 143: 
+
+*Error* Syntax error at begin
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 144: 
+
+*Error* Syntax error at $display
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 150: 
+
+*Error* Syntax error at $display
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 151: 
+
+*Error* Syntax error at $display
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 152: 
+
+*Error* Syntax error at #
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 153: 
+
+*Error* Syntax error at $finish
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 154: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 155: 
+
+*Error* Syntax error at else
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 156: 
+
+*Error* Syntax error at (
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 157: 
+
+*Error* Syntax error at &&
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 158: 
+
+*Error* Syntax error at (
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 159: 
+
+*Error* Syntax error at $display
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 161: 
+
+*Error* Syntax error at $display
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 162: 
+
+*Error* Syntax error at $display
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 163: 
+
+*Error* Syntax error at #
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 164: 
+
+*Error* Syntax error at $finish
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 165: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 166: 
+
+*Error* Syntax error at else
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 167: 
+
+*Error* Syntax error at (
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 168: 
+
+*Error* Syntax error at )
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 169: 
+
+*Error* Syntax error at $write
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 172: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 173: 
+
+*Error* Syntax error at end
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 175: 
+
+*Error* missing event in event statement
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 101: 
+
+*Error* missing event in event statement
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 110: 
+
+*Error* missing event in event statement
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 136: 
+
+*Error* missing event in event statement
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 143: 
+
+*Warning* macro PRODUCT_ID redefined from (28'hBC2CC8) to (28'hABFF3CA)
+"../cpu/cpu_cfig.h", 25: 
+
+*Error* `include file "environment.h" cannot be read
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 44: 
+
+*Warning* macro CPU_TOP redefined from (tb.x_soc.x_cpu_sub_system_ahb.x_ck803s) to (tb.x_soc.x_cpu_sub_system_ahb.x_ck802)
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 387: 
+
+*Warning* macro VIRTUAL_READ redefined from (`CPU_TOP.x_vg_tcip_top.x_nm_tcipif_dbus.dummy_addr_cmplt) to (`CPU_TOP.x_nm_tcipif_top.x_nm_tcipif_dbus.dummy_addr_cmplt)
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 400: 
+
+*Warning* macro VIRTUAL_TIME redefined from (`CPU_TOP.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]) to (`CPU_TOP.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0])
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 407: 
+Highest level modules:
+DW02_prod_sum1
+xilinx_fpga_ram
+soc_gated_clk_cell
+fpga_ram
+DW02_multp
+csky_monitor
+tb
+
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_dahb_mem_ctrl.ram0.U1.mem[i][7:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 68: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_dahb_mem_ctrl.ram1.U1.mem[i][7:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 69: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_dahb_mem_ctrl.ram2.U1.mem[i][7:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 70: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_dahb_mem_ctrl.ram3.U1.mem[i][7:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 71: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_dahb_mem_ctrl.ram0.U1.mem[i][7:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 76: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_dahb_mem_ctrl.ram1.U1.mem[i][7:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 77: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_dahb_mem_ctrl.ram2.U1.mem[i][7:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 78: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_dahb_mem_ctrl.ram3.U1.mem[i][7:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 79: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.biu_pad_hwdata[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 142: 
+
+*Error* failed to find identifier PRINT_ADDR
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 146: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.pll_core_cpuclk
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 182: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.pad_cpu_rst_b
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 182: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.pad_cpu_rst_b
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 184: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.dummy_addr_cmplt
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 195: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 196: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.pll_core_cpuclk
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 197: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 198: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.dummy_addr_cmplt
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 201: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 202: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.pll_core_cpuclk
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 203: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 204: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.dummy_addr_cmplt
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 207: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 208: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.pll_core_cpuclk
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 209: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 210: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.dummy_addr_cmplt
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 213: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 214: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.pll_core_cpuclk
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 215: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 216: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.dummy_addr_cmplt
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 219: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 220: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.pll_core_cpuclk
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 221: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 222: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.dummy_addr_cmplt
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 225: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 226: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.pll_core_cpuclk
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 227: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck803s.x_vg_tcip_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/csky_monitor.v", 228: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.dummy_addr_cmplt
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 428: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 429: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 431: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.dummy_addr_cmplt
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 434: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 435: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 437: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.dummy_addr_cmplt
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 440: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 441: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 443: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.dummy_addr_cmplt
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 446: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 447: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 449: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.dummy_addr_cmplt
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 452: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 453: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 455: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.dummy_addr_cmplt
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 458: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 459: 
+
+*Error* failed to find identifier tb.x_soc.x_cpu_sub_system_ahb.x_ck802.x_nm_tcipif_top.x_nm_tcipif_dbus.tcipif_dbus_rd_data[31:0]
+"/home/zhaok/release_smart/20190530/smartL//tb/tb.v", 461: 
+
+*Warning* port sizes differ (2 vs 3) in port connection (port biu_pad_hburst)
+"/home/zhaok/release_smart/20190530/smartL//soc/common/soc.v", 219: 
+
+*Warning* port sizes differ (2 vs 3) in port connection (port fifo_pad_hburst)
+"/home/zhaok/release_smart/20190530/smartL//soc/common/soc.v", 229: 
+Total	178 error(s),   6 warning(s)

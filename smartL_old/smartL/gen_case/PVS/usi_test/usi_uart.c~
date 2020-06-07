@@ -1,0 +1,22 @@
+// ****************************************************************************
+// AUTHOR     : lin chen
+// CSKYCPU    : 801 802 803 804
+// HWCFIG     : 
+// SMART_R    : yes 
+// FUNCTION   : usi to uart
+// METHOD     : 
+// NOTE       : 
+// *************************************************************
+
+#include "uart.h"
+#include "config.h"
+
+
+#define MODULE_EN  0x00
+#define MODULE_SEL 0x04
+#define CKOCK_DIV  0x10
+#define UART_CTRL  0x18
+#define TX_BUFFER  0x08
+
+
+

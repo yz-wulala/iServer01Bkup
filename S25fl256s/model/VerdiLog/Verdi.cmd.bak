@@ -1,0 +1,46 @@
+verdiWindowResize -win $_Verdi_1 "0" "31" "1920" "971"
+debImport "test.fsdb"
+wvCreateWindow
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 {/home/stu02/project/S25fl256s/model/test.fsdb}
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/test"
+wvGetSignalSetScope -win $_nWave2 "/test/X_0"
+wvGetSignalSetSignalFilter -win $_nWave2 "*Mem*"
+wvGetSignalSetSignalFilter -win $_nWave2 "*Mem"
+wvGetSignalClose -win $_nWave2
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/test"
+wvGetSignalSetScope -win $_nWave2 "/test/X_0"
+wvGetSignalSetScope -win $_nWave2 "/test"
+wvGetSignalSetSignalFilter -win $_nWave2 "*Mem"
+wvGetSignalSetSignalFilter -win $_nWave2 "*"
+wvSetPosition -win $_nWave2 {("G1" 7)}
+wvSetPosition -win $_nWave2 {("G1" 7)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/test/Mem_mnt_0\[7:0\]} \
+{/test/Mem_mnt_1\[7:0\]} \
+{/test/Mem_mnt_2\[7:0\]} \
+{/test/csn} \
+{/test/din} \
+{/test/dout} \
+{/test/sclk} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 6 7 )} 
+wvSetPosition -win $_nWave2 {("G1" 7)}
+wvGetSignalClose -win $_nWave2
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 1053111423.265683 1122950066.568266
+wvSelectGroup -win $_nWave2 {G2}
+wvZoom -win $_nWave2 1102247590.508638 1114574583.514690
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/test"
+wvGetSignalSetScope -win $_nWave2 "/test/X_0"
+wvGetSignalSetScope -win $_nWave2 "/test"
+wvGetSignalSetScope -win $_nWave2 "/test/X_0"
+wvGetSignalSetScope -win $_nWave2 "/test/X_0"
+debExit

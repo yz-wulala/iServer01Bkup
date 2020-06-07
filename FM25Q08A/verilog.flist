@@ -1,0 +1,13 @@
+./code/FM_TOP.v
+./top/Testbench.v
+./top/StimTasks.v
+./top/ClockGenerator.v
+#./stim/read.v
+#./stim/wrsr.v
+#./stim/program_erase.v
+#./stim/statusreg.v
+#./stim/lockmanager.v
+#./stim/powerdown.v
+#./stim/securitysec.v
+#./stim/yizhou.v
+./stim/onebyte.v

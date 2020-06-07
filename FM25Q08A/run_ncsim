@@ -1,0 +1,36 @@
+#!/bin/csh -f
+
+
+set RUNDIR  = ./
+set LIBDIR  = ./include
+set CODEDIR = ./code
+set STIMDIR = ./stim
+set TOPDIR  = ./top
+set SIMDIR  = ./sim
+set HDLPATH = ./hdl.var
+set CDSPATH = ./cds.lib
+
+
+if (-e work) then
+\rm -r work
+endif
+mkdir work
+
+
+ncvlog  -cdslib $CDSPATH -hdlvar $HDLPATH -MESSAGES -NOCOPYRIGHT -LINEDEBUG  -f ./verilog.flist
+
+
+
+cd $SIMDIR
+
+
+# Elaborate
+ncelab -cdslib ../$CDSPATH -hdlvar ../$HDLPATH -mess -NOWARN CUDEFB work.Testbench -access +r
+if ( $status != 0 ) exit 6
+
+
+# Simulate
+ncsim -LOGFILE ../ncsim.log -cdslib ../$CDSPATH -hdlvar ../$HDLPATH work.Testbench  $1 &
+if ( $status != 0 ) exit 7
+
+

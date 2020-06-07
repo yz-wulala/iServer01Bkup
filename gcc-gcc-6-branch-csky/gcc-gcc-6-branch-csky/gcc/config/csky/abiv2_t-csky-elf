@@ -1,0 +1,126 @@
+
+MULTILIB_OPTIONS      = mlittle-endian/mbig-endian
+MULTILIB_DIRNAMES     = little big
+MULTILIB_MATCHES      = mlittle-endian=EL
+MULTILIB_MATCHES      = mbig-endian=EB
+MULTILIB_EXCEPTIONS   =
+
+# For arch
+MULTILIB_OPTIONS     += mcpu=ck802/mcpu=ck801/mcpu=ck803f/mcpu=ck807f/mcpu=ck810f/mcpu=ck860
+MULTILIB_DIRNAMES    += ck802 ck801 ck803 ck807 ck810 ck860
+
+# For arch ck802
+MULTILIB_MATCHES     += mcpu?ck802=march?ck802
+MULTILIB_MATCHES     += mcpu?ck802=mcpu?ck802t
+MULTILIB_MATCHES     += mcpu?ck802=mcpu?ck802j
+
+# For arch ck801
+MULTILIB_MATCHES     += mcpu?ck801=march?ck801
+MULTILIB_MATCHES     += mcpu?ck801=mcpu?ck801t
+
+# For arch ck803
+MULTILIB_MATCHES     += mcpu?ck803f=march?ck803
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803fh
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803h
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803t
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803ht
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803e
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803eh
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803et
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803eht
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803ef
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803efh
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803ft
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803eft
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803efht
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803r1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803r2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803fr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803fr2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803fhr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803fhr2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803hr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803hr2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803tr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803tr2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803htr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803htr2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803er1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803er2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803ehr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803ehr2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803etr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803etr2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803ehtr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803ehtr2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803efr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803efr2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803efhr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803efhr2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803ftr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803ftr2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803eftr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803eftr2
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803efhtr1
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803efhtr2
+
+# For arch ck803s
+MULTILIB_MATCHES     += mcpu?ck803f=march?ck803s
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803s
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803st
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803se
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803sf
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803sef
+MULTILIB_MATCHES     += mcpu?ck803f=mcpu?ck803seft
+
+# For arch ck810
+MULTILIB_MATCHES     += mcpu?ck810f=mcpu?ck810e
+MULTILIB_MATCHES     += mcpu?ck810f=mcpu?ck810et
+MULTILIB_MATCHES     += mcpu?ck810f=mcpu?ck810ef
+MULTILIB_MATCHES     += mcpu?ck810f=mcpu?ck810eft
+MULTILIB_MATCHES     += mcpu?ck810f=march?ck810
+MULTILIB_MATCHES     += mcpu?ck810f=mcpu?ck810
+MULTILIB_MATCHES     += mcpu?ck810f=mcpu?ck810v
+MULTILIB_MATCHES     += mcpu?ck810f=mcpu?ck810t
+MULTILIB_MATCHES     += mcpu?ck810f=mcpu?ck810fv
+MULTILIB_MATCHES     += mcpu?ck810f=mcpu?ck810tv
+MULTILIB_MATCHES     += mcpu?ck810f=mcpu?ck810ft
+MULTILIB_MATCHES     += mcpu?ck810f=mcpu?ck810ftv
+
+# For arch ck807
+MULTILIB_MATCHES     += mcpu?ck807f=march?ck807
+MULTILIB_MATCHES     += mcpu?ck807f=mcpu?ck807e
+MULTILIB_MATCHES     += mcpu?ck807f=mcpu?ck807ef
+MULTILIB_MATCHES     += mcpu?ck807f=mcpu?ck807
+
+# For arch ck860
+MULTILIB_MATCHES     += mcpu?ck860=march?ck860
+
+# For option -mfloat-abi=
+MULTILIB_OPTIONS     += mfloat-abi=soft/mfloat-abi=softfp/mfloat-abi=hard
+MULTILIB_DIRNAMES    += soft soft-fp hard-fp
+
+# For option -mmultiple-stld
+#MULTILIB_OPTIONS     += mno-multiple-stld/mmultiple-stld
+#MULTILIB_DIRNAMES    += no-multiple-stld stm
+#MULTILIB_MATCHES     += mmultiple-stld=mstm
+#MULTILIB_EXCEPTIONS  += *mcpu=ck801/*mstm*
+
+
+### For option -mno-stm (special for delay slot)
+#MULTILIB_OPTIONS     += mno-stm
+#MULTILIB_DIRNAMES    += nostm
+#MULTILIB_EXCEPTIONS  += *mcpu=ck803/*mno-stm*
+#MULTILIB_EXCEPTIONS  += *mcpu=ck810/*mno-stm*
+#MULTILIB_EXCEPTIONS  += *mhard-float/*mno-stm*
+#MULTILIB_EXCEPTIONS  += *mmultiple-stld/*mno-stm*
+
+
+MULTILIB_EXCEPTIONS  += *mcpu=ck801/*mfloat-abi=softfp*
+MULTILIB_EXCEPTIONS  += *mcpu=ck802/*mfloat-abi=softfp*
+MULTILIB_EXCEPTIONS  += *mcpu=ck860/*mfloat-abi=softfp*
+MULTILIB_EXCEPTIONS  += *mcpu=ck801/*mfloat-abi=hard*
+MULTILIB_EXCEPTIONS  += *mcpu=ck802/*mfloat-abi=hard*
+MULTILIB_EXCEPTIONS  += *mcpu=ck860/*mfloat-abi=hard*
+

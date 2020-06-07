@@ -1,0 +1,735 @@
+
+ckcpu_lpmd_wait.elf:     file format elf32-csky-little
+
+
+Disassembly of section .text:
+
+00000000 <vector_table>:
+   0:	c8          	.byte	0xc8
+   1:	00          	.byte	0x00
+   2:	0000      	.short	0x0000
+   4:	000001b4 	.long	0x000001b4
+   8:	000001b4 	.long	0x000001b4
+   c:	000001b4 	.long	0x000001b4
+  10:	000001b4 	.long	0x000001b4
+  14:	000001b4 	.long	0x000001b4
+  18:	000001b4 	.long	0x000001b4
+  1c:	000001b4 	.long	0x000001b4
+  20:	000001b4 	.long	0x000001b4
+  24:	000001b4 	.long	0x000001b4
+  28:	000001b4 	.long	0x000001b4
+  2c:	000001b4 	.long	0x000001b4
+  30:	000001b4 	.long	0x000001b4
+  34:	000001b4 	.long	0x000001b4
+  38:	000001b4 	.long	0x000001b4
+  3c:	000001b4 	.long	0x000001b4
+  40:	000001b4 	.long	0x000001b4
+  44:	000001b4 	.long	0x000001b4
+  48:	000001b4 	.long	0x000001b4
+  4c:	000001b4 	.long	0x000001b4
+  50:	000001b4 	.long	0x000001b4
+  54:	000001b4 	.long	0x000001b4
+  58:	000001b4 	.long	0x000001b4
+  5c:	000001b4 	.long	0x000001b4
+  60:	000001b4 	.long	0x000001b4
+  64:	000001b4 	.long	0x000001b4
+  68:	000001b4 	.long	0x000001b4
+  6c:	000001b4 	.long	0x000001b4
+  70:	000001b4 	.long	0x000001b4
+  74:	000001b4 	.long	0x000001b4
+  78:	000001b4 	.long	0x000001b4
+  7c:	000001b4 	.long	0x000001b4
+  80:	000001b4 	.long	0x000001b4
+  84:	000001b4 	.long	0x000001b4
+  88:	000003dc 	.long	0x000003dc
+  8c:	000001b4 	.long	0x000001b4
+  90:	000001b4 	.long	0x000001b4
+  94:	000001b4 	.long	0x000001b4
+  98:	000001b4 	.long	0x000001b4
+  9c:	000001b4 	.long	0x000001b4
+  a0:	000001b4 	.long	0x000001b4
+  a4:	000001b4 	.long	0x000001b4
+  a8:	000001b4 	.long	0x000001b4
+  ac:	000001b4 	.long	0x000001b4
+  b0:	000001b4 	.long	0x000001b4
+  b4:	000001b4 	.long	0x000001b4
+  b8:	000001b4 	.long	0x000001b4
+  bc:	000001b4 	.long	0x000001b4
+  c0:	000001b4 	.long	0x000001b4
+  c4:	000001b4 	.long	0x000001b4
+
+000000c8 <__start>:
+  c8:	3000      	movi      	r0, 0
+  ca:	3100      	movi      	r1, 0
+  cc:	3200      	movi      	r2, 0
+  ce:	3300      	movi      	r3, 0
+  d0:	3400      	movi      	r4, 0
+  d2:	3500      	movi      	r5, 0
+  d4:	3600      	movi      	r6, 0
+  d6:	3700      	movi      	r7, 0
+  d8:	ea080000 	movi      	r8, 0
+  dc:	ea090000 	movi      	r9, 0
+  e0:	ea0a0000 	movi      	r10, 0
+  e4:	ea0b0000 	movi      	r11, 0
+  e8:	ea0c0000 	movi      	r12, 0
+  ec:	ea0d0000 	movi      	r13, 0
+  f0:	ea0e0000 	movi      	r14, 0
+  f4:	ea0f0000 	movi      	r15, 0
+  f8:	1146      	lrw      	r2, 0x0	// 190 <__dummy+0x4>
+  fa:	c0026421 	mtcr      	r2, cr<1, 0>
+  fe:	c0006022 	mfcr      	r2, cr<0, 0>
+ 102:	3aa6      	bseti      	r2, 6
+ 104:	3aa8      	bseti      	r2, 8
+ 106:	c0026420 	mtcr      	r2, cr<0, 0>
+ 10a:	ea8e0023 	lrw      	r14, 0x6000fff8	// 194 <__dummy+0x8>
+ 10e:	3340      	movi      	r3, 64
+ 110:	c46e0084 	subu      	r4, r14, r3
+ 114:	3500      	movi      	r5, 0
+
+00000116 <INIT_KERLE_STACK>:
+ 116:	2403      	addi      	r4, 4
+ 118:	b4a0      	st.w      	r5, (r4, 0x0)
+ 11a:	6538      	cmphs      	r14, r4
+ 11c:	0bfd      	bt      	0x116	// 116 <INIT_KERLE_STACK>
+ 11e:	103f      	lrw      	r1, 0x640	// 198 <__dummy+0xc>
+ 120:	105f      	lrw      	r2, 0x20000000	// 19c <__dummy+0x10>
+ 122:	1160      	lrw      	r3, 0x2000000c	// 1a0 <__dummy+0x14>
+ 124:	60ca      	subu      	r3, r2
+ 126:	3b40      	cmpnei      	r3, 0
+ 128:	0c08      	bf      	0x138	// 138 <INIT_KERLE_STACK+0x22>
+ 12a:	9100      	ld.w      	r0, (r1, 0x0)
+ 12c:	b200      	st.w      	r0, (r2, 0x0)
+ 12e:	2103      	addi      	r1, 4
+ 130:	2203      	addi      	r2, 4
+ 132:	2b03      	subi      	r3, 4
+ 134:	3b40      	cmpnei      	r3, 0
+ 136:	0bfa      	bt      	0x12a	// 12a <INIT_KERLE_STACK+0x14>
+ 138:	103b      	lrw      	r1, 0x2000000c	// 1a4 <__dummy+0x18>
+ 13a:	105c      	lrw      	r2, 0x20001010	// 1a8 <__dummy+0x1c>
+ 13c:	3000      	movi      	r0, 0
+ 13e:	6086      	subu      	r2, r1
+ 140:	3a40      	cmpnei      	r2, 0
+ 142:	0c06      	bf      	0x14e	// 14e <INIT_KERLE_STACK+0x38>
+ 144:	b100      	st.w      	r0, (r1, 0x0)
+ 146:	2103      	addi      	r1, 4
+ 148:	2a03      	subi      	r2, 4
+ 14a:	3a40      	cmpnei      	r2, 0
+ 14c:	0bfc      	bt      	0x144	// 144 <INIT_KERLE_STACK+0x2e>
+ 14e:	3000      	movi      	r0, 0
+ 150:	3100      	movi      	r1, 0
+ 152:	3200      	movi      	r2, 0
+ 154:	3300      	movi      	r3, 0
+
+00000156 <__to_main>:
+ 156:	ea8f0016 	lrw      	r15, 0x168	// 1ac <__dummy+0x20>
+ 15a:	1016      	lrw      	r0, 0x408	// 1b0 <__dummy+0x24>
+ 15c:	7800      	jmp      	r0
+ 15e:	6c03      	mov      	r0, r0
+ 160:	6c03      	mov      	r0, r0
+ 162:	6c03      	mov      	r0, r0
+ 164:	6c03      	mov      	r0, r0
+ 166:	6c03      	mov      	r0, r0
+
+00000168 <__exit>:
+ 168:	c0006021 	mfcr      	r1, cr<0, 0>
+ 16c:	ea21ffff 	movih      	r1, 65535
+ 170:	c001642b 	mtcr      	r1, cr<11, 0>
+ 174:	ea010fff 	movi      	r1, 4095
+ 178:	1007      	lrw      	r0, 0x6000fff8	// 194 <__dummy+0x8>
+ 17a:	b020      	st.w      	r1, (r0, 0x0)
+
+0000017c <__fail>:
+ 17c:	ea21eeee 	movih      	r1, 61166
+ 180:	c001642b 	mtcr      	r1, cr<11, 0>
+ 184:	ea010eee 	movi      	r1, 3822
+ 188:	1003      	lrw      	r0, 0x6000fff8	// 194 <__dummy+0x8>
+ 18a:	b020      	st.w      	r1, (r0, 0x0)
+
+0000018c <__dummy>:
+ 18c:	07f8      	br      	0x17c	// 17c <__fail>
+ 18e:	0000      	.short	0x0000
+ 190:	00000000 	.long	0x00000000
+ 194:	6000fff8 	.long	0x6000fff8
+ 198:	00000640 	.long	0x00000640
+ 19c:	20000000 	.long	0x20000000
+ 1a0:	2000000c 	.long	0x2000000c
+ 1a4:	2000000c 	.long	0x2000000c
+ 1a8:	20001010 	.long	0x20001010
+ 1ac:	00000168 	.long	0x00000168
+ 1b0:	00000408 	.long	0x00000408
+
+000001b4 <fputc>:
+ 1b4:	ea8d0003 	lrw      	r13, 0x6000fff8	// 1c0 <fputc+0xc>
+ 1b8:	dc0d2000 	st.w      	r0, (r13, 0x0)
+ 1bc:	783c      	jmp      	r15
+ 1be:	0000      	.short	0x0000
+ 1c0:	6000fff8 	.long	0x6000fff8
+
+000001c4 <wll_dacsocket_open>:
+ 1c4:	3940      	cmpnei      	r1, 0
+ 1c6:	0807      	bt      	0x1d4	// 1d4 <wll_dacsocket_open+0x10>
+ 1c8:	3300      	movi      	r3, 0
+ 1ca:	b060      	st.w      	r3, (r0, 0x0)
+ 1cc:	1063      	lrw      	r3, 0x4001c000	// 1d8 <wll_dacsocket_open+0x14>
+ 1ce:	b061      	st.w      	r3, (r0, 0x4)
+ 1d0:	3000      	movi      	r0, 0
+ 1d2:	783c      	jmp      	r15
+ 1d4:	3001      	movi      	r0, 1
+ 1d6:	783c      	jmp      	r15
+ 1d8:	4001c000 	.long	0x4001c000
+
+000001dc <wll_dacsocket_close>:
+ 1dc:	ea03ffff 	movi      	r3, 65535
+ 1e0:	b060      	st.w      	r3, (r0, 0x0)
+ 1e2:	3000      	movi      	r0, 0
+ 1e4:	783c      	jmp      	r15
+	...
+
+000001e8 <wll_dacsocket_write>:
+ 1e8:	9060      	ld.w      	r3, (r0, 0x0)
+ 1ea:	eb43ffff 	cmpnei      	r3, 65535
+ 1ee:	0c05      	bf      	0x1f8	// 1f8 <wll_dacsocket_write+0x10>
+ 1f0:	9061      	ld.w      	r3, (r0, 0x4)
+ 1f2:	3000      	movi      	r0, 0
+ 1f4:	b320      	st.w      	r1, (r3, 0x0)
+ 1f6:	783c      	jmp      	r15
+ 1f8:	3001      	movi      	r0, 1
+ 1fa:	783c      	jmp      	r15
+
+000001fc <ck_uart_set_baudrate>:
+ 1fc:	14d3      	push      	r4-r6, r15
+ 1fe:	6d43      	mov      	r5, r0
+ 200:	9081      	ld.w      	r4, (r0, 0x4)
+ 202:	6d87      	mov      	r6, r1
+ 204:	100a      	lrw      	r0, 0x5f5e100	// 22c <ck_uart_set_baudrate+0x30>
+ 206:	e00001f7 	bsr      	0x5f4	// 5f4 <__udiv32>
+ 20a:	b5c2      	st.w      	r6, (r5, 0x8)
+ 20c:	846c      	ld.b      	r3, (r4, 0xc)
+ 20e:	ec630080 	ori      	r3, r3, 128
+ 212:	a46c      	st.b      	r3, (r4, 0xc)
+ 214:	4864      	lsri      	r3, r0, 4
+ 216:	480c      	lsri      	r0, r0, 12
+ 218:	74cc      	zextb      	r3, r3
+ 21a:	7400      	zextb      	r0, r0
+ 21c:	a460      	st.b      	r3, (r4, 0x0)
+ 21e:	a404      	st.b      	r0, (r4, 0x4)
+ 220:	846c      	ld.b      	r3, (r4, 0xc)
+ 222:	e463207f 	andi      	r3, r3, 127
+ 226:	a46c      	st.b      	r3, (r4, 0xc)
+ 228:	1493      	pop      	r4-r6, r15
+ 22a:	0000      	bkpt
+ 22c:	05f5e100 	.long	0x05f5e100
+
+00000230 <ck_uart_set_parity>:
+ 230:	3941      	cmpnei      	r1, 1
+ 232:	b023      	st.w      	r1, (r0, 0xc)
+ 234:	0c18      	bf      	0x264	// 264 <ck_uart_set_parity+0x34>
+ 236:	3940      	cmpnei      	r1, 0
+ 238:	0c0e      	bf      	0x254	// 254 <ck_uart_set_parity+0x24>
+ 23a:	3942      	cmpnei      	r1, 2
+ 23c:	080b      	bt      	0x252	// 252 <ck_uart_set_parity+0x22>
+ 23e:	9041      	ld.w      	r2, (r0, 0x4)
+ 240:	826c      	ld.b      	r3, (r2, 0xc)
+ 242:	ec630008 	ori      	r3, r3, 8
+ 246:	a26c      	st.b      	r3, (r2, 0xc)
+ 248:	9041      	ld.w      	r2, (r0, 0x4)
+ 24a:	826c      	ld.b      	r3, (r2, 0xc)
+ 24c:	ec630010 	ori      	r3, r3, 16
+ 250:	a26c      	st.b      	r3, (r2, 0xc)
+ 252:	783c      	jmp      	r15
+ 254:	9041      	ld.w      	r2, (r0, 0x4)
+ 256:	826c      	ld.b      	r3, (r2, 0xc)
+ 258:	74cc      	zextb      	r3, r3
+ 25a:	e4633008 	andni      	r3, r3, 8
+ 25e:	74cc      	zextb      	r3, r3
+ 260:	a26c      	st.b      	r3, (r2, 0xc)
+ 262:	783c      	jmp      	r15
+ 264:	9041      	ld.w      	r2, (r0, 0x4)
+ 266:	826c      	ld.b      	r3, (r2, 0xc)
+ 268:	ec630008 	ori      	r3, r3, 8
+ 26c:	a26c      	st.b      	r3, (r2, 0xc)
+ 26e:	9041      	ld.w      	r2, (r0, 0x4)
+ 270:	826c      	ld.b      	r3, (r2, 0xc)
+ 272:	74cc      	zextb      	r3, r3
+ 274:	e4633010 	andni      	r3, r3, 16
+ 278:	74cc      	zextb      	r3, r3
+ 27a:	a26c      	st.b      	r3, (r2, 0xc)
+ 27c:	783c      	jmp      	r15
+	...
+
+00000280 <ck_uart_set_wordsize>:
+ 280:	3941      	cmpnei      	r1, 1
+ 282:	b025      	st.w      	r1, (r0, 0x14)
+ 284:	0c22      	bf      	0x2c8	// 2c8 <ck_uart_set_wordsize+0x48>
+ 286:	3940      	cmpnei      	r1, 0
+ 288:	0c18      	bf      	0x2b8	// 2b8 <ck_uart_set_wordsize+0x38>
+ 28a:	3942      	cmpnei      	r1, 2
+ 28c:	0c09      	bf      	0x29e	// 29e <ck_uart_set_wordsize+0x1e>
+ 28e:	3943      	cmpnei      	r1, 3
+ 290:	0806      	bt      	0x29c	// 29c <ck_uart_set_wordsize+0x1c>
+ 292:	9041      	ld.w      	r2, (r0, 0x4)
+ 294:	826c      	ld.b      	r3, (r2, 0xc)
+ 296:	ec630003 	ori      	r3, r3, 3
+ 29a:	a26c      	st.b      	r3, (r2, 0xc)
+ 29c:	783c      	jmp      	r15
+ 29e:	9041      	ld.w      	r2, (r0, 0x4)
+ 2a0:	826c      	ld.b      	r3, (r2, 0xc)
+ 2a2:	74cc      	zextb      	r3, r3
+ 2a4:	e4633001 	andni      	r3, r3, 1
+ 2a8:	74cc      	zextb      	r3, r3
+ 2aa:	a26c      	st.b      	r3, (r2, 0xc)
+ 2ac:	9041      	ld.w      	r2, (r0, 0x4)
+ 2ae:	826c      	ld.b      	r3, (r2, 0xc)
+ 2b0:	ec630002 	ori      	r3, r3, 2
+ 2b4:	a26c      	st.b      	r3, (r2, 0xc)
+ 2b6:	783c      	jmp      	r15
+ 2b8:	9041      	ld.w      	r2, (r0, 0x4)
+ 2ba:	826c      	ld.b      	r3, (r2, 0xc)
+ 2bc:	74cc      	zextb      	r3, r3
+ 2be:	e4633003 	andni      	r3, r3, 3
+ 2c2:	74cc      	zextb      	r3, r3
+ 2c4:	a26c      	st.b      	r3, (r2, 0xc)
+ 2c6:	783c      	jmp      	r15
+ 2c8:	9041      	ld.w      	r2, (r0, 0x4)
+ 2ca:	826c      	ld.b      	r3, (r2, 0xc)
+ 2cc:	74cc      	zextb      	r3, r3
+ 2ce:	e4633002 	andni      	r3, r3, 2
+ 2d2:	74cc      	zextb      	r3, r3
+ 2d4:	a26c      	st.b      	r3, (r2, 0xc)
+ 2d6:	9041      	ld.w      	r2, (r0, 0x4)
+ 2d8:	826c      	ld.b      	r3, (r2, 0xc)
+ 2da:	ec630001 	ori      	r3, r3, 1
+ 2de:	a26c      	st.b      	r3, (r2, 0xc)
+ 2e0:	783c      	jmp      	r15
+	...
+
+000002e4 <ck_uart_set_stopbit>:
+ 2e4:	3940      	cmpnei      	r1, 0
+ 2e6:	b024      	st.w      	r1, (r0, 0x10)
+ 2e8:	0c09      	bf      	0x2fa	// 2fa <ck_uart_set_stopbit+0x16>
+ 2ea:	3941      	cmpnei      	r1, 1
+ 2ec:	0806      	bt      	0x2f8	// 2f8 <ck_uart_set_stopbit+0x14>
+ 2ee:	9041      	ld.w      	r2, (r0, 0x4)
+ 2f0:	826c      	ld.b      	r3, (r2, 0xc)
+ 2f2:	ec630004 	ori      	r3, r3, 4
+ 2f6:	a26c      	st.b      	r3, (r2, 0xc)
+ 2f8:	783c      	jmp      	r15
+ 2fa:	9041      	ld.w      	r2, (r0, 0x4)
+ 2fc:	826c      	ld.b      	r3, (r2, 0xc)
+ 2fe:	74cc      	zextb      	r3, r3
+ 300:	e4633004 	andni      	r3, r3, 4
+ 304:	74cc      	zextb      	r3, r3
+ 306:	a26c      	st.b      	r3, (r2, 0xc)
+ 308:	783c      	jmp      	r15
+	...
+
+0000030c <ck_uart_set_rxmode>:
+ 30c:	b026      	st.w      	r1, (r0, 0x18)
+ 30e:	783c      	jmp      	r15
+
+00000310 <ck_uart_set_txmode>:
+ 310:	b027      	st.w      	r1, (r0, 0x1c)
+ 312:	783c      	jmp      	r15
+
+00000314 <ck_uart_open>:
+ 314:	3940      	cmpnei      	r1, 0
+ 316:	0807      	bt      	0x324	// 324 <ck_uart_open+0x10>
+ 318:	3300      	movi      	r3, 0
+ 31a:	b060      	st.w      	r3, (r0, 0x0)
+ 31c:	116a      	lrw      	r3, 0x40015000	// 3c4 <ck_uart_status+0x10>
+ 31e:	b061      	st.w      	r3, (r0, 0x4)
+ 320:	3000      	movi      	r0, 0
+ 322:	783c      	jmp      	r15
+ 324:	3001      	movi      	r0, 1
+ 326:	783c      	jmp      	r15
+
+00000328 <ck_uart_init>:
+ 328:	14d4      	push      	r4-r7, r15
+ 32a:	6d03      	mov      	r4, r0
+ 32c:	9060      	ld.w      	r3, (r0, 0x0)
+ 32e:	6d47      	mov      	r5, r1
+ 330:	eb43ffff 	cmpnei      	r3, 65535
+ 334:	0c28      	bf      	0x384	// 384 <ck_uart_init+0x5c>
+ 336:	91e0      	ld.w      	r7, (r1, 0x0)
+ 338:	90c1      	ld.w      	r6, (r0, 0x4)
+ 33a:	6c5f      	mov      	r1, r7
+ 33c:	1103      	lrw      	r0, 0x5f5e100	// 3c8 <ck_uart_status+0x14>
+ 33e:	e000015b 	bsr      	0x5f4	// 5f4 <__udiv32>
+ 342:	b4e2      	st.w      	r7, (r4, 0x8)
+ 344:	866c      	ld.b      	r3, (r6, 0xc)
+ 346:	ec630080 	ori      	r3, r3, 128
+ 34a:	a66c      	st.b      	r3, (r6, 0xc)
+ 34c:	4864      	lsri      	r3, r0, 4
+ 34e:	480c      	lsri      	r0, r0, 12
+ 350:	74cc      	zextb      	r3, r3
+ 352:	7400      	zextb      	r0, r0
+ 354:	a660      	st.b      	r3, (r6, 0x0)
+ 356:	a604      	st.b      	r0, (r6, 0x4)
+ 358:	6c13      	mov      	r0, r4
+ 35a:	866c      	ld.b      	r3, (r6, 0xc)
+ 35c:	e463207f 	andi      	r3, r3, 127
+ 360:	a66c      	st.b      	r3, (r6, 0xc)
+ 362:	9522      	ld.w      	r1, (r5, 0x8)
+ 364:	e3ffff66 	bsr      	0x230	// 230 <ck_uart_set_parity>
+ 368:	9523      	ld.w      	r1, (r5, 0xc)
+ 36a:	6c13      	mov      	r0, r4
+ 36c:	e3ffff8a 	bsr      	0x280	// 280 <ck_uart_set_wordsize>
+ 370:	6c13      	mov      	r0, r4
+ 372:	9521      	ld.w      	r1, (r5, 0x4)
+ 374:	e3ffffb8 	bsr      	0x2e4	// 2e4 <ck_uart_set_stopbit>
+ 378:	9564      	ld.w      	r3, (r5, 0x10)
+ 37a:	3000      	movi      	r0, 0
+ 37c:	b466      	st.w      	r3, (r4, 0x18)
+ 37e:	9565      	ld.w      	r3, (r5, 0x14)
+ 380:	b467      	st.w      	r3, (r4, 0x1c)
+ 382:	1494      	pop      	r4-r7, r15
+ 384:	3001      	movi      	r0, 1
+ 386:	1494      	pop      	r4-r7, r15
+
+00000388 <ck_uart_close>:
+ 388:	3300      	movi      	r3, 0
+ 38a:	b066      	st.w      	r3, (r0, 0x18)
+ 38c:	b067      	st.w      	r3, (r0, 0x1c)
+ 38e:	ea03ffff 	movi      	r3, 65535
+ 392:	b060      	st.w      	r3, (r0, 0x0)
+ 394:	3000      	movi      	r0, 0
+ 396:	783c      	jmp      	r15
+
+00000398 <ck_uart_putc>:
+ 398:	9067      	ld.w      	r3, (r0, 0x1c)
+ 39a:	3b40      	cmpnei      	r3, 0
+ 39c:	0c0a      	bf      	0x3b0	// 3b0 <ck_uart_putc+0x18>
+ 39e:	9041      	ld.w      	r2, (r0, 0x4)
+ 3a0:	3020      	movi      	r0, 32
+ 3a2:	8274      	ld.b      	r3, (r2, 0x14)
+ 3a4:	68c0      	and      	r3, r0
+ 3a6:	3b40      	cmpnei      	r3, 0
+ 3a8:	0ffd      	bf      	0x3a2	// 3a2 <ck_uart_putc+0xa>
+ 3aa:	3000      	movi      	r0, 0
+ 3ac:	a220      	st.b      	r1, (r2, 0x0)
+ 3ae:	783c      	jmp      	r15
+ 3b0:	3001      	movi      	r0, 1
+ 3b2:	783c      	jmp      	r15
+
+000003b4 <ck_uart_status>:
+ 3b4:	9061      	ld.w      	r3, (r0, 0x4)
+ 3b6:	8314      	ld.b      	r0, (r3, 0x14)
+ 3b8:	4806      	lsri      	r0, r0, 6
+ 3ba:	e4004001 	xori      	r0, r0, 1
+ 3be:	e4002001 	andi      	r0, r0, 1
+ 3c2:	783c      	jmp      	r15
+ 3c4:	40015000 	.long	0x40015000
+ 3c8:	05f5e100 	.long	0x05f5e100
+
+000003cc <ck_intc_init>:
+ 3cc:	1063      	lrw      	r3, 0xe000e000	// 3d8 <ck_intc_init+0xc>
+ 3ce:	3200      	movi      	r2, 0
+ 3d0:	dc032040 	st.w      	r0, (r3, 0x100)
+ 3d4:	b340      	st.w      	r2, (r3, 0x0)
+ 3d6:	783c      	jmp      	r15
+ 3d8:	e000e000 	.long	0xe000e000
+
+000003dc <GPIO0_IRQHandler>:
+ 3dc:	1460      	nie
+ 3de:	1462      	ipush
+ 3e0:	14d0      	push      	r15
+ 3e2:	1048      	lrw      	r2, 0x2000100c	// 400 <GPIO0_IRQHandler+0x24>
+ 3e4:	3101      	movi      	r1, 1
+ 3e6:	1008      	lrw      	r0, 0x20000004	// 404 <GPIO0_IRQHandler+0x28>
+ 3e8:	8260      	ld.b      	r3, (r2, 0x0)
+ 3ea:	2300      	addi      	r3, 1
+ 3ec:	74cc      	zextb      	r3, r3
+ 3ee:	a260      	st.b      	r3, (r2, 0x0)
+ 3f0:	e00000da 	bsr      	0x5a4	// 5a4 <wll_gpio_intr_clr>
+ 3f4:	d9ee2000 	ld.w      	r15, (r14, 0x0)
+ 3f8:	1401      	addi      	r14, r14, 4
+ 3fa:	1463      	ipop
+ 3fc:	1461      	nir
+ 3fe:	0000      	bkpt
+ 400:	2000100c 	.long	0x2000100c
+ 404:	20000004 	.long	0x20000004
+
+00000408 <main>:
+ 408:	14d0      	push      	r15
+ 40a:	1426      	subi      	r14, r14, 24
+ 40c:	3301      	movi      	r3, 1
+ 40e:	3100      	movi      	r1, 0
+ 410:	b860      	st.w      	r3, (r14, 0x0)
+ 412:	b861      	st.w      	r3, (r14, 0x4)
+ 414:	3300      	movi      	r3, 0
+ 416:	1015      	lrw      	r0, 0x20000004	// 468 <main+0x60>
+ 418:	b862      	st.w      	r3, (r14, 0x8)
+ 41a:	3301      	movi      	r3, 1
+ 41c:	b863      	st.w      	r3, (r14, 0xc)
+ 41e:	33ff      	movi      	r3, 255
+ 420:	b864      	st.w      	r3, (r14, 0x10)
+ 422:	b865      	st.w      	r3, (r14, 0x14)
+ 424:	e0000028 	bsr      	0x474	// 474 <wll_gpio_open>
+ 428:	6c7b      	mov      	r1, r14
+ 42a:	1010      	lrw      	r0, 0x20000004	// 468 <main+0x60>
+ 42c:	e0000030 	bsr      	0x48c	// 48c <wll_gpio_init>
+ 430:	100e      	lrw      	r0, 0x20000004	// 468 <main+0x60>
+ 432:	1903      	addi      	r1, r14, 12
+ 434:	e000005c 	bsr      	0x4ec	// 4ec <wll_gpio_intr_init>
+ 438:	300c      	movi      	r0, 12
+ 43a:	e3ffffc9 	bsr      	0x3cc	// 3cc <ck_intc_init>
+ 43e:	106c      	lrw      	r3, 0xe000e100	// 46c <main+0x64>
+ 440:	3204      	movi      	r2, 4
+ 442:	3001      	movi      	r0, 1
+ 444:	b350      	st.w      	r2, (r3, 0x40)
+ 446:	e00000b9 	bsr      	0x5b8	// 5b8 <wll_pmu_set_config>
+ 44a:	104a      	lrw      	r2, 0x2000100c	// 470 <main+0x68>
+ 44c:	8260      	ld.b      	r3, (r2, 0x0)
+ 44e:	74cc      	zextb      	r3, r3
+ 450:	3b04      	cmphsi      	r3, 5
+ 452:	0807      	bt      	0x460	// 460 <main+0x58>
+ 454:	c0004c20 	wait
+ 458:	8260      	ld.b      	r3, (r2, 0x0)
+ 45a:	74cc      	zextb      	r3, r3
+ 45c:	3b04      	cmphsi      	r3, 5
+ 45e:	0ffb      	bf      	0x454	// 454 <main+0x4c>
+ 460:	3000      	movi      	r0, 0
+ 462:	1406      	addi      	r14, r14, 24
+ 464:	1490      	pop      	r15
+ 466:	0000      	bkpt
+ 468:	20000004 	.long	0x20000004
+ 46c:	e000e100 	.long	0xe000e100
+ 470:	2000100c 	.long	0x2000100c
+
+00000474 <wll_gpio_open>:
+ 474:	3940      	cmpnei      	r1, 0
+ 476:	0807      	bt      	0x484	// 484 <wll_gpio_open+0x10>
+ 478:	3300      	movi      	r3, 0
+ 47a:	b060      	st.w      	r3, (r0, 0x0)
+ 47c:	1063      	lrw      	r3, 0x40019000	// 488 <wll_gpio_open+0x14>
+ 47e:	b061      	st.w      	r3, (r0, 0x4)
+ 480:	3000      	movi      	r0, 0
+ 482:	783c      	jmp      	r15
+ 484:	3001      	movi      	r0, 1
+ 486:	783c      	jmp      	r15
+ 488:	40019000 	.long	0x40019000
+
+0000048c <wll_gpio_init>:
+ 48c:	14c1      	push      	r4
+ 48e:	9060      	ld.w      	r3, (r0, 0x0)
+ 490:	eb43ffff 	cmpnei      	r3, 65535
+ 494:	0c1a      	bf      	0x4c8	// 4c8 <wll_gpio_init+0x3c>
+ 496:	9061      	ld.w      	r3, (r0, 0x4)
+ 498:	9140      	ld.w      	r2, (r1, 0x0)
+ 49a:	9300      	ld.w      	r0, (r3, 0x0)
+ 49c:	6c8a      	nor      	r2, r2
+ 49e:	6880      	and      	r2, r0
+ 4a0:	b340      	st.w      	r2, (r3, 0x0)
+ 4a2:	9140      	ld.w      	r2, (r1, 0x0)
+ 4a4:	9181      	ld.w      	r4, (r1, 0x4)
+ 4a6:	9300      	ld.w      	r0, (r3, 0x0)
+ 4a8:	6890      	and      	r2, r4
+ 4aa:	6c80      	or      	r2, r0
+ 4ac:	b340      	st.w      	r2, (r3, 0x0)
+ 4ae:	9140      	ld.w      	r2, (r1, 0x0)
+ 4b0:	9301      	ld.w      	r0, (r3, 0x4)
+ 4b2:	6c8a      	nor      	r2, r2
+ 4b4:	6880      	and      	r2, r0
+ 4b6:	b341      	st.w      	r2, (r3, 0x4)
+ 4b8:	9140      	ld.w      	r2, (r1, 0x0)
+ 4ba:	9122      	ld.w      	r1, (r1, 0x8)
+ 4bc:	9301      	ld.w      	r0, (r3, 0x4)
+ 4be:	6884      	and      	r2, r1
+ 4c0:	6c80      	or      	r2, r0
+ 4c2:	3000      	movi      	r0, 0
+ 4c4:	b341      	st.w      	r2, (r3, 0x4)
+ 4c6:	1481      	pop      	r4
+ 4c8:	3001      	movi      	r0, 1
+ 4ca:	1481      	pop      	r4
+
+000004cc <wll_gpio_deinit>:
+ 4cc:	9060      	ld.w      	r3, (r0, 0x0)
+ 4ce:	eb43ffff 	cmpnei      	r3, 65535
+ 4d2:	0c0b      	bf      	0x4e8	// 4e8 <wll_gpio_deinit+0x1c>
+ 4d4:	9061      	ld.w      	r3, (r0, 0x4)
+ 4d6:	6c46      	nor      	r1, r1
+ 4d8:	9340      	ld.w      	r2, (r3, 0x0)
+ 4da:	6884      	and      	r2, r1
+ 4dc:	b340      	st.w      	r2, (r3, 0x0)
+ 4de:	3000      	movi      	r0, 0
+ 4e0:	9341      	ld.w      	r2, (r3, 0x4)
+ 4e2:	6848      	and      	r1, r2
+ 4e4:	b321      	st.w      	r1, (r3, 0x4)
+ 4e6:	783c      	jmp      	r15
+ 4e8:	3001      	movi      	r0, 1
+ 4ea:	783c      	jmp      	r15
+
+000004ec <wll_gpio_intr_init>:
+ 4ec:	14c1      	push      	r4
+ 4ee:	9060      	ld.w      	r3, (r0, 0x0)
+ 4f0:	eb43ffff 	cmpnei      	r3, 65535
+ 4f4:	0c23      	bf      	0x53a	// 53a <wll_gpio_intr_init+0x4e>
+ 4f6:	9061      	ld.w      	r3, (r0, 0x4)
+ 4f8:	9140      	ld.w      	r2, (r1, 0x0)
+ 4fa:	930e      	ld.w      	r0, (r3, 0x38)
+ 4fc:	6c8a      	nor      	r2, r2
+ 4fe:	6880      	and      	r2, r0
+ 500:	b34e      	st.w      	r2, (r3, 0x38)
+ 502:	9181      	ld.w      	r4, (r1, 0x4)
+ 504:	9140      	ld.w      	r2, (r1, 0x0)
+ 506:	930e      	ld.w      	r0, (r3, 0x38)
+ 508:	6890      	and      	r2, r4
+ 50a:	6c80      	or      	r2, r0
+ 50c:	b34e      	st.w      	r2, (r3, 0x38)
+ 50e:	9140      	ld.w      	r2, (r1, 0x0)
+ 510:	930f      	ld.w      	r0, (r3, 0x3c)
+ 512:	6c8a      	nor      	r2, r2
+ 514:	6880      	and      	r2, r0
+ 516:	b34f      	st.w      	r2, (r3, 0x3c)
+ 518:	9140      	ld.w      	r2, (r1, 0x0)
+ 51a:	9182      	ld.w      	r4, (r1, 0x8)
+ 51c:	930f      	ld.w      	r0, (r3, 0x3c)
+ 51e:	6890      	and      	r2, r4
+ 520:	6c80      	or      	r2, r0
+ 522:	b34f      	st.w      	r2, (r3, 0x3c)
+ 524:	9140      	ld.w      	r2, (r1, 0x0)
+ 526:	930c      	ld.w      	r0, (r3, 0x30)
+ 528:	6c8a      	nor      	r2, r2
+ 52a:	6880      	and      	r2, r0
+ 52c:	b34c      	st.w      	r2, (r3, 0x30)
+ 52e:	3000      	movi      	r0, 0
+ 530:	934c      	ld.w      	r2, (r3, 0x30)
+ 532:	9120      	ld.w      	r1, (r1, 0x0)
+ 534:	6c84      	or      	r2, r1
+ 536:	b34c      	st.w      	r2, (r3, 0x30)
+ 538:	1481      	pop      	r4
+ 53a:	3001      	movi      	r0, 1
+ 53c:	1481      	pop      	r4
+	...
+
+00000540 <wll_gpio_intr_deinit>:
+ 540:	9060      	ld.w      	r3, (r0, 0x0)
+ 542:	eb43ffff 	cmpnei      	r3, 65535
+ 546:	0c0e      	bf      	0x562	// 562 <wll_gpio_intr_deinit+0x22>
+ 548:	9061      	ld.w      	r3, (r0, 0x4)
+ 54a:	6c46      	nor      	r1, r1
+ 54c:	934c      	ld.w      	r2, (r3, 0x30)
+ 54e:	6884      	and      	r2, r1
+ 550:	b34c      	st.w      	r2, (r3, 0x30)
+ 552:	3000      	movi      	r0, 0
+ 554:	934e      	ld.w      	r2, (r3, 0x38)
+ 556:	6884      	and      	r2, r1
+ 558:	b34e      	st.w      	r2, (r3, 0x38)
+ 55a:	934f      	ld.w      	r2, (r3, 0x3c)
+ 55c:	6848      	and      	r1, r2
+ 55e:	b32f      	st.w      	r1, (r3, 0x3c)
+ 560:	783c      	jmp      	r15
+ 562:	3001      	movi      	r0, 1
+ 564:	783c      	jmp      	r15
+	...
+
+00000568 <wll_gpio_close>:
+ 568:	ea03ffff 	movi      	r3, 65535
+ 56c:	b060      	st.w      	r3, (r0, 0x0)
+ 56e:	3000      	movi      	r0, 0
+ 570:	783c      	jmp      	r15
+	...
+
+00000574 <wll_gpio_write>:
+ 574:	14c1      	push      	r4
+ 576:	9060      	ld.w      	r3, (r0, 0x0)
+ 578:	eb43ffff 	cmpnei      	r3, 65535
+ 57c:	0c0d      	bf      	0x596	// 596 <wll_gpio_write+0x22>
+ 57e:	9061      	ld.w      	r3, (r0, 0x4)
+ 580:	c4212480 	nor      	r0, r1, r1
+ 584:	9380      	ld.w      	r4, (r3, 0x0)
+ 586:	6810      	and      	r0, r4
+ 588:	b300      	st.w      	r0, (r3, 0x0)
+ 58a:	6848      	and      	r1, r2
+ 58c:	9300      	ld.w      	r0, (r3, 0x0)
+ 58e:	6c40      	or      	r1, r0
+ 590:	3000      	movi      	r0, 0
+ 592:	b320      	st.w      	r1, (r3, 0x0)
+ 594:	1481      	pop      	r4
+ 596:	3001      	movi      	r0, 1
+ 598:	1481      	pop      	r4
+	...
+
+0000059c <wll_gpio_read>:
+ 59c:	9061      	ld.w      	r3, (r0, 0x4)
+ 59e:	9314      	ld.w      	r0, (r3, 0x50)
+ 5a0:	7400      	zextb      	r0, r0
+ 5a2:	783c      	jmp      	r15
+
+000005a4 <wll_gpio_intr_clr>:
+ 5a4:	9060      	ld.w      	r3, (r0, 0x0)
+ 5a6:	eb43ffff 	cmpnei      	r3, 65535
+ 5aa:	0c05      	bf      	0x5b4	// 5b4 <wll_gpio_intr_clr+0x10>
+ 5ac:	9061      	ld.w      	r3, (r0, 0x4)
+ 5ae:	3000      	movi      	r0, 0
+ 5b0:	b333      	st.w      	r1, (r3, 0x4c)
+ 5b2:	783c      	jmp      	r15
+ 5b4:	3001      	movi      	r0, 1
+ 5b6:	783c      	jmp      	r15
+
+000005b8 <wll_pmu_set_config>:
+ 5b8:	1062      	lrw      	r3, 0x40016000	// 5c0 <wll_pmu_set_config+0x8>
+ 5ba:	b300      	st.w      	r0, (r3, 0x0)
+ 5bc:	3000      	movi      	r0, 0
+ 5be:	783c      	jmp      	r15
+ 5c0:	40016000 	.long	0x40016000
+
+000005c4 <wll_pmu_set_counter>:
+ 5c4:	14c2      	push      	r4-r5
+ 5c6:	31ff      	movi      	r1, 255
+ 5c8:	104a      	lrw      	r2, 0x40016000	// 5f0 <wll_pmu_set_counter+0x2c>
+ 5ca:	c4202024 	and      	r4, r0, r1
+ 5ce:	82a1      	ld.b      	r5, (r2, 0x1)
+ 5d0:	5a62      	addi      	r3, r2, 1
+ 5d2:	a281      	st.b      	r4, (r2, 0x1)
+ 5d4:	4848      	lsri      	r2, r0, 8
+ 5d6:	6884      	and      	r2, r1
+ 5d8:	8381      	ld.b      	r4, (r3, 0x1)
+ 5da:	a341      	st.b      	r2, (r3, 0x1)
+ 5dc:	4850      	lsri      	r2, r0, 16
+ 5de:	6884      	and      	r2, r1
+ 5e0:	8322      	ld.b      	r1, (r3, 0x2)
+ 5e2:	a342      	st.b      	r2, (r3, 0x2)
+ 5e4:	4818      	lsri      	r0, r0, 24
+ 5e6:	8343      	ld.b      	r2, (r3, 0x3)
+ 5e8:	a303      	st.b      	r0, (r3, 0x3)
+ 5ea:	3000      	movi      	r0, 0
+ 5ec:	1482      	pop      	r4-r5
+ 5ee:	0000      	bkpt
+ 5f0:	40016000 	.long	0x40016000
+
+000005f4 <__udiv32>:
+ 5f4:	3940      	cmpnei      	r1, 0
+ 5f6:	0803      	bt      	0x5fc	// 5fc <__udiv32+0x8>
+ 5f8:	c0002c20 	trap      	3
+ 5fc:	3840      	cmpnei      	r0, 0
+ 5fe:	0802      	bt      	0x602	// 602 <__udiv32+0xe>
+ 600:	783c      	jmp      	r15
+ 602:	14c1      	push      	r4
+ 604:	3201      	movi      	r2, 1
+ 606:	6cc3      	mov      	r3, r0
+ 608:	c4037c44 	ff1      	r4, r3
+ 60c:	7090      	lsl      	r2, r4
+ 60e:	7010      	lsl      	r0, r4
+ 610:	6cc7      	mov      	r3, r1
+ 612:	c4037c44 	ff1      	r4, r3
+ 616:	2400      	addi      	r4, 1
+ 618:	6cc3      	mov      	r3, r0
+ 61a:	70d1      	lsr      	r3, r4
+ 61c:	6d12      	nor      	r4, r4
+ 61e:	2420      	addi      	r4, 33
+ 620:	7090      	lsl      	r2, r4
+ 622:	7010      	lsl      	r0, r4
+ 624:	3a40      	cmpnei      	r2, 0
+ 626:	0c09      	bf      	0x638	// 638 <__udiv32+0x44>
+ 628:	c4004c20 	lslc      	r0, r0, 1
+ 62c:	60cd      	addc      	r3, r3
+ 62e:	644c      	cmphs      	r3, r1
+ 630:	0c02      	bf      	0x634	// 634 <__udiv32+0x40>
+ 632:	60c6      	subu      	r3, r1
+ 634:	6089      	addc      	r2, r2
+ 636:	0ff9      	bf      	0x628	// 628 <__udiv32+0x34>
+ 638:	6c0b      	mov      	r0, r2
+ 63a:	6c4f      	mov      	r1, r3
+ 63c:	1481      	pop      	r4
+	...

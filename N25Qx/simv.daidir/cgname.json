@@ -1,0 +1,146 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "Memory": [
+        "Memory",
+        "f0K8C",
+        "module",
+        5
+    ],
+    "NonVolatileConfigurationRegister": [
+        "NonVolatileConfigurationRegister",
+        "jJhtT",
+        "module",
+        11
+    ],
+    "paramConfig": [
+        "paramConfig",
+        "tW6GT",
+        "module",
+        2
+    ],
+    "OTP_memory": [
+        "OTP_memory",
+        "wtFGP",
+        "module",
+        18
+    ],
+    "VolatileConfigurationRegister": [
+        "VolatileConfigurationRegister",
+        "CJs6b",
+        "module",
+        12
+    ],
+    "Program": [
+        "Program",
+        "DbPB7",
+        "module",
+        7
+    ],
+    "N25Qxxx": [
+        "N25Qxxx",
+        "E6kFe",
+        "module",
+        3
+    ],
+    "PLRSpart2Detect": [
+        "PLRSpart2Detect",
+        "vAFMw",
+        "module",
+        21
+    ],
+    "PLRSpart1Detect": [
+        "PLRSpart1Detect",
+        "S2Q1F",
+        "module",
+        20
+    ],
+    "CUIdecoder": [
+        "CUIdecoder",
+        "rfDph",
+        "module",
+        4
+    ],
+    "UtilFunctions": [
+        "UtilFunctions",
+        "FfcvD",
+        "module",
+        6
+    ],
+    "StatusRegister": [
+        "StatusRegister",
+        "cebzP",
+        "module",
+        8
+    ],
+    "FlagStatusRegister": [
+        "FlagStatusRegister",
+        "Ng4Qf",
+        "module",
+        9
+    ],
+    "ProtectionManagementRegister": [
+        "ProtectionManagementRegister",
+        "ZNcgq",
+        "module",
+        10
+    ],
+    "VolatileEnhancedConfigurationRegister": [
+        "VolatileEnhancedConfigurationRegister",
+        "h49xc",
+        "module",
+        13
+    ],
+    "LockManager": [
+        "LockManager",
+        "y4gzn",
+        "module",
+        16
+    ],
+    "Read": [
+        "Read",
+        "ZwmA6",
+        "module",
+        14
+    ],
+    "FlashDiscoveryParameter": [
+        "FlashDiscoveryParameter",
+        "gp9Va",
+        "module",
+        15
+    ],
+    "DualQuadOps": [
+        "DualQuadOps",
+        "F6uVY",
+        "module",
+        17
+    ],
+    "TimingCheck": [
+        "TimingCheck",
+        "gS5z5",
+        "module",
+        19
+    ],
+    "test": [
+        "test",
+        "x9Hvb",
+        "module",
+        23
+    ],
+    "DebugModule": [
+        "DebugModule",
+        "K4GyS",
+        "module",
+        22
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        24
+    ]
+}

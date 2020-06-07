@@ -1,0 +1,9 @@
+../../../src_rtl/CK804EF_181029.v
+../../../src_rtl/DW02_mult.v
+../../../src_rtl/DW02_multp.v
+../../../src_rtl/DW02_prod_sum1.v
+./ck804_mem_test_tb.v
+
+
+
+

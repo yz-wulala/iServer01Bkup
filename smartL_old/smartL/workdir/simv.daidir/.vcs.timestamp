@@ -1,0 +1,190 @@
+3        
+0 environment.h
+0 /root/synopsys/vcs-mx/N-2017.12-SP2/etc/systemverilog/environment.h
+0 ../workdir/environment.h
+71
++define+NO_MONITOR
++define+TSMC_NO_WARNING
++incdir+../workdir+../cpu+../tb
++libext+.v+.sv+.inc+.h
++nospecify
++notimingchecks
++v2k
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/root/synopsys/vcs-mx/N-2017.12-SP2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/libvirsim.so /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/liberrorinf.so /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/libsnpsmalloc.so /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/libvfs.so /root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64/pli.a
+-Mout=simv
+-Msaverestoreobj=/root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mupdate
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/root/synopsys/vcs-mx/N-2017.12-SP2/include
+-P
+-Xvcs_run_simv=1
+-full64
+-gen_obj
+-picarchive
+-sverilog
+-timescale=1ns/100ps
+-v
+-v
+-v
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+../cpu/
+../soc
+../soc/ahb/
+../soc/apb/
+../soc/common
+../soc/gpio/
+../soc/mem/
+../soc/pmu/
+../soc/smpu/
+../soc/spi_master/
+../soc/spi_slave/
+../soc/uart/
+../soc/usi/
+../soc/wic/
+../tb/
+../tb/mnt.v
+../tb/tb.v
+../tb/tb.v
+../tb/uart_mnt.v
+/home/stu03/project/smartL//workdir/
+/root/synopsys/vcs-mx/N-2017.12-SP2/linux64/bin/vcs1
+/root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64/novas.tab
+49
+sysc_uni_pwd=/home/stu03/project/smartL/workdir
+fsdb_vcs_tab=/root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64/pli.a
+fsdb_vcs_a=/root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64/novas.tab
+XDG_SESSION_ID=194
+XDG_RUNTIME_DIR=/run/user/1003
+XDG_MENU_PREFIX=xfce-
+XDG_DATA_DIRS=/home/stu03/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/usr/share
+XDG_CURRENT_DESKTOP=XFCE
+XDG_CONFIG_DIRS=/etc/xdg
+VTE_VERSION=5202
+VNCDESKTOP=iServer01:3 (stu03)
+VMR_MODE_FLAG=64
+VERDI_LIB=/root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64
+VERDI_HOME=/root/synopsys/verdi/Verdi_N-2017.12-SP2
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/root/synopsys/vcs-mx/N-2017.12-SP2
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_PATH=/home/stu03/project/csky
+TOOL_HOME=/root/synopsys/vcs-mx/N-2017.12-SP2/linux64
+SYNOPSYS=/home/EDA/Synopsys/syn/L-2016.03-SP1
+SSH_TTY=/dev/pts/4
+SSH_CONNECTION=14.46.187.124 6791 172.16.252.44 22
+SSH_CLIENT=14.46.187.124 6791 22
+SSH_AUTH_SOCK=/tmp/ssh-mbEiFG1ln7uc/agent.16401
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=16402
+SNPS_VCS_CLANG_PATH=/fs/src/interfaces/LLVM_Project/QSCM/opt/llvm-3.9.1/linux64
+SMART_PATH=/home/stu03/project/smartL/
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/16391,unix/unix:/tmp/.ICE-unix/16391
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+OVA_UUM=0
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_HOME=/home/EDA/Synopsys/lc/M-2016.12
+LC_ALL=C
+HISTCONTROL=ignoredups
+GPG_AGENT_INFO=/home/stu03/.gnupg/S.gpg-agent:16404:1
+GLADE_PIXMAP_PATH=:
+GLADE_MODULE_PATH=:
+GLADE_CATALOG_PATH=:
+DVE_HOME=/root/synopsys/vcs-mx/N-2017.12-SP2/gui/dve
+DESKTOP_SESSION=xfce
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-UYLEaL9e4K,guid=c51720123a4e294648012dd35e3fca64
+COLORTERM=truecolor
+0
+54
+1584108390 ../soc/wic/wic.v
+1584108390 ../tb/tb.v
+1584108390 ../soc/wic/wic_awake_en_32.v
+1584108390 ../soc/spi_master/spi_master_ctrl.v
+1584108390 ../soc/spi_master/spi_master_clkgen.v
+1584108390 ../soc/spi_master/spi_master_apb_reg.v
+1584108390 ../soc/spi_slave/spi_slave_ctrl.v
+1584108390 ../soc/spi_slave/spi_slave_apb_reg.v
+1584108390 ../soc/uart/uart_trans.v
+1584108390 ../soc/uart/uart_receive.v
+1584108390 ../soc/uart/uart_ctrl.v
+1584108390 ../soc/uart/uart_baud_gen.v
+1584108390 ../soc/uart/uart_apb_reg.v
+1584108390 ../soc/smpu/smpu_comp_hit.v
+1584108390 ../soc/gpio/gpio_ctrl.v
+1584108390 ../soc/gpio/gpio_apbif.v
+1584108390 ../soc/common/tap2_sm.v
+1584108390 ../soc/common/sync.v
+1584108390 ../soc/common/px_had_sync.v
+1584108391 ../cpu/Syncore_ram.v
+1584108391 ../cpu/DW02_mult.v
+1584126633 ../soc/wic/wic_top.v
+1584108390 ../soc/usi/usi_wll.v
+1584108390 ../soc/spi_master/spi_master.v
+1584108390 ../soc/spi_slave/spi_slave.v
+1584108390 ../soc/uart/uart.v
+1584108390 ../soc/smpu/smpu_top.v
+1584108390 ../soc/pmu/pmu.v
+1584108390 ../soc/mem/iahb_mem_ctrl.v
+1584108390 ../soc/gpio/gpio.v
+1584108390 ../soc/common/fpga_clk_gen.v
+1584108390 ../soc/apb/apb_bridge.v
+1584108390 ../soc/ahb/ahb_fifo_entry.v
+1584108390 ../soc/ahb/ahb_fifo_counter.v
+1584108391 ../cpu/timer.v
+1584108391 ../cpu/syncore_fpgaram.v
+1584108391 ../cpu/CK802_20190530.v
+1584108390 ../soc/mem/mem_ctrl.v
+1584108390 ../soc/common/err_gen.v
+1584108390 ../soc/common/cpu_sub_system_ahb.v
+1584108390 ../soc/apb/apb.v
+1584108390 ../soc/ahb/ahb_fifo.v
+1584108390 ../soc/ahb/ahb.v
+1584108390 ../tb/tb.v
+1584108390 ../soc/common/soc.v
+1584108390 ../tb/tb.v
+1584108391 ../cpu/environment.h
+1584108390 ../cpu/cpu_cfig.h
+1584108390 ../tb/uart_mnt.v
+1584108390 ../tb/mnt.v
+1584108390 ../tb/tb.v
+1584213778 /home/stu03/project/smartL//workdir/
+1584108390 ../tb/tb.v
+1527421818 /root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64/novas.tab
+6
+0 
+1528256279 /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/libvirsim.so
+1528255334 /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/liberrorinf.so
+1528255311 /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/libsnpsmalloc.so
+1528255971 /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/libvfs.so
+1527420335 /root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64/pli.a
+1584213783 simv.daidir

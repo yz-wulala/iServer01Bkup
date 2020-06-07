@@ -1,0 +1,2456 @@
+{
+    "CompUnits": {
+        "qK8b3_d": {
+            "bytes": 67054,
+            "out": "qK8b3_d.o",
+            "mod": "nm_bmu_top",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "bvImI_d": {
+            "bytes": 79140,
+            "out": "bvImI_d.o",
+            "mod": "uart",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "amcQw_d": {
+            "bytes": 7676,
+            "out": "objs/amcQw_d.o",
+            "mod": "...MASTER...",
+            "mode": 4,
+            "checksum": 0
+        },
+        "wcZ1j_d": {
+            "bytes": 11114,
+            "out": "wcZ1j_d.o",
+            "mod": "nm_clkrst_top",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "SMQh5_d": {
+            "bytes": 94408,
+            "out": "SMQh5_d.o",
+            "mod": "nm_mpu_top",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "reYIK_d": {
+            "bytes": 33726,
+            "out": "reYIK_d.o",
+            "mod": "std",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "g7hgQ_d": {
+            "bytes": 295702,
+            "out": "g7hgQ_d.o",
+            "mod": "tb",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "b87F4_d": {
+            "bytes": 23048,
+            "out": "b87F4_d.o",
+            "mod": "nm_had_bkpt",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "NHiNR_d": {
+            "bytes": 25310,
+            "out": "NHiNR_d.o",
+            "mod": "ahb",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "S23ui_d": {
+            "bytes": 35730,
+            "out": "S23ui_d.o",
+            "mod": "spi_master",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "kME0d_d": {
+            "bytes": 115530,
+            "out": "kME0d_d.o",
+            "mod": "nm_cp0_top",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "kqNWU_d": {
+            "bytes": 128230,
+            "out": "kqNWU_d.o",
+            "mod": "nm_tcipif_top",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "wAtNN_d": {
+            "bytes": 190412,
+            "out": "wAtNN_d.o",
+            "mod": "nm_iu_top",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "dB9jV_d": {
+            "bytes": 30162,
+            "out": "dB9jV_d.o",
+            "mod": "ahb_fifo",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "pP3pe_d": {
+            "bytes": 16504,
+            "out": "pP3pe_d.o",
+            "mod": "nm_ahbl_if",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "f6b33_d": {
+            "bytes": 8554,
+            "out": "f6b33_d.o",
+            "mod": "err_gen",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "hdq0P_d": {
+            "bytes": 10558,
+            "out": "hdq0P_d.o",
+            "mod": "nm_iahbl_top",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "hZDQz_d": {
+            "bytes": 279000,
+            "out": "hZDQz_d.o",
+            "mod": "cpu_sub_system_ahb",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "eAsJz_d": {
+            "bytes": 63370,
+            "out": "eAsJz_d.o",
+            "mod": "spi_slave",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "DJDDw_d": {
+            "bytes": 32522,
+            "out": "DJDDw_d.o",
+            "mod": "mem_ctrl",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "Z1wTi_d": {
+            "bytes": 11310,
+            "out": "Z1wTi_d.o",
+            "mod": "nm_tcipif_dummy_bus",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "vMBTV_d": {
+            "bytes": 23258,
+            "out": "vMBTV_d.o",
+            "mod": "nm_iu_ctrl",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "bk3LC_d": {
+            "bytes": 104930,
+            "out": "bk3LC_d.o",
+            "mod": "nm_had_top",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "r4jnu_d": {
+            "bytes": 22756,
+            "out": "r4jnu_d.o",
+            "mod": "nm_had_bkpt_lite",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "nLsdg_d": {
+            "bytes": 10240,
+            "out": "nLsdg_d.o",
+            "mod": "nm_had_sync",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "HuNY4_d": {
+            "bytes": 12960,
+            "out": "HuNY4_d.o",
+            "mod": "syncore_fpgaram",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "TfWji_d": {
+            "bytes": 8852,
+            "out": "TfWji_d.o",
+            "mod": "gated_clk_cell",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "WnLhh_d": {
+            "bytes": 10300,
+            "out": "WnLhh_d.o",
+            "mod": "nm_had_trace",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "Y2Mdy_d": {
+            "bytes": 27430,
+            "out": "Y2Mdy_d.o",
+            "mod": "nm_coretim_top",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "xuvpe_d": {
+            "bytes": 25634,
+            "out": "xuvpe_d.o",
+            "mod": "nm_had_jtag2",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "Zd5t8_d": {
+            "bytes": 6246,
+            "out": "Zd5t8_d.o",
+            "mod": "nm_pwrm_top_dummy",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "ksGtI_d": {
+            "bytes": 10672,
+            "out": "ksGtI_d.o",
+            "mod": "nm_sahbl_top",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "Hr3un_d": {
+            "bytes": 13848,
+            "out": "Hr3un_d.o",
+            "mod": "nm_iu_special",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "SgkU3_d": {
+            "bytes": 14686,
+            "out": "SgkU3_d.o",
+            "mod": "nm_sys_io",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "ffwdF_d": {
+            "bytes": 23596,
+            "out": "ffwdF_d.o",
+            "mod": "nm_ifu_ifctrl",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "kWkfn_d": {
+            "bytes": 24676,
+            "out": "kWkfn_d.o",
+            "mod": "nm_ahbl_req_arb",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "s8EMV_d": {
+            "bytes": 17030,
+            "out": "s8EMV_d.o",
+            "mod": "nm_iu_vector",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "t5sdY_d": {
+            "bytes": 29530,
+            "out": "t5sdY_d.o",
+            "mod": "timer",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "TGzkN_d": {
+            "bytes": 25322,
+            "out": "TGzkN_d.o",
+            "mod": "nm_intc_kid",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "ebkYL_d": {
+            "bytes": 11462,
+            "out": "ebkYL_d.o",
+            "mod": "smpu_comp_hit",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "Apyj9_d": {
+            "bytes": 7886,
+            "out": "Apyj9_d.o",
+            "mod": "nm_intc_primsk_encode",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "Vz8j5_d": {
+            "bytes": 58184,
+            "out": "Vz8j5_d.o",
+            "mod": "nm_iu_wb",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "rKvAH_d": {
+            "bytes": 203062,
+            "out": "rKvAH_d.o",
+            "mod": "nm_lsu_top",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "MQn6b_d": {
+            "bytes": 11362,
+            "out": "MQn6b_d.o",
+            "mod": "counter",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "juHBW_d": {
+            "bytes": 14752,
+            "out": "juHBW_d.o",
+            "mod": "nm_ifu_ibuf_entry",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "EUF5b_d": {
+            "bytes": 10490,
+            "out": "EUF5b_d.o",
+            "mod": "nm_iu_gated_clk_reg_timing",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "G4KjJ_d": {
+            "bytes": 107022,
+            "out": "G4KjJ_d.o",
+            "mod": "nm_ifu_ifdp",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "Zfgw0_d": {
+            "bytes": 22286,
+            "out": "Zfgw0_d.o",
+            "mod": "sync_fifo_16x16",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "yrU1t_d": {
+            "bytes": 6776,
+            "out": "yrU1t_d.o",
+            "mod": "nm_ifu_randclk",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "kKbfM_d": {
+            "bytes": 17728,
+            "out": "kKbfM_d.o",
+            "mod": "nm_iu_branch",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "fW2jr_d": {
+            "bytes": 13902,
+            "out": "fW2jr_d.o",
+            "mod": "nm_iu_mad",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "FY7b6_d": {
+            "bytes": 64044,
+            "out": "FY7b6_d.o",
+            "mod": "nm_iu_retire",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "IqYEE_d": {
+            "bytes": 25826,
+            "out": "IqYEE_d.o",
+            "mod": "iahb_mem_ctrl",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "MFRLs_d": {
+            "bytes": 45356,
+            "out": "MFRLs_d.o",
+            "mod": "nm_iu_pcgen",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "CxTiV_d": {
+            "bytes": 6784,
+            "out": "CxTiV_d.o",
+            "mod": "nm_iu_randclk",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "ZLsZY_d": {
+            "bytes": 30366,
+            "out": "ZLsZY_d.o",
+            "mod": "nm_iu_rbus",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "JMpzJ_d": {
+            "bytes": 28364,
+            "out": "JMpzJ_d.o",
+            "mod": "apb_bridge",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "MIWiH_d": {
+            "bytes": 9926,
+            "out": "MIWiH_d.o",
+            "mod": "fpga_clk_gen",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "LLnRt_d": {
+            "bytes": 43688,
+            "out": "LLnRt_d.o",
+            "mod": "pmu",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "ccNGj_d": {
+            "bytes": 13960,
+            "out": "ccNGj_d.o",
+            "mod": "smpu_top",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "d9vZk_d": {
+            "bytes": 45528,
+            "out": "d9vZk_d.o",
+            "mod": "apb_if",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "IaDzp_d": {
+            "bytes": 21426,
+            "out": "IaDzp_d.o",
+            "mod": "sdata_if",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "jdG3K_d": {
+            "bytes": 54686,
+            "out": "jdG3K_d.o",
+            "mod": "spi",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "U5eur_d": {
+            "bytes": 39372,
+            "out": "U5eur_d.o",
+            "mod": "uart_usi",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        },
+        "Hai6u_d": {
+            "bytes": 11530,
+            "out": "Hai6u_d.o",
+            "mod": "wic",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_31738_archive_1.a"
+        }
+    },
+    "Modules": {
+        "...MASTER...": {
+            "end_perf": [
+                1.8248300552368164,
+                1.603952,
+                0.074857000000000007,
+                259168,
+                259620,
+                10216479096943862
+            ],
+            "start_perf": [
+                1.8221280574798584,
+                1.6022799999999999,
+                0.073828000000000005,
+                258184,
+                259620,
+                1584213780.911061,
+                10216479088545532
+            ],
+            "nQuads": 0,
+            "child_modules": {
+                "std": 1,
+                "tb": 1
+            },
+            "nMops": 0
+        },
+        "nm_ifu_randclk": {
+            "end_perf": [
+                2.805427074432373,
+                2.5613390000000003,
+                0.097860000000000003,
+                260160,
+                260184,
+                10216482136692262
+            ],
+            "start_perf": [
+                2.8040640354156494,
+                2.5599959999999999,
+                0.097846000000000002,
+                260160,
+                260184,
+                1584213781.892997,
+                10216482132433790
+            ],
+            "nQuads": 7,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 38
+        },
+        "cpu_sub_system_ahb": {
+            "end_perf": [
+                2.1478209495544434,
+                1.9179110000000001,
+                0.083863999999999994,
+                260160,
+                260184,
+                10216480098237588
+            ],
+            "start_perf": [
+                1.9929039478302002,
+                1.7660010000000002,
+                0.080862000000000003,
+                260160,
+                260184,
+                1584213781.0818369,
+                10216479617994072
+            ],
+            "nQuads": 9641,
+            "child_modules": {
+                "nm_ifu_ibuf_entry": 4,
+                "nm_cp0_top": 1,
+                "nm_clkrst_top": 1,
+                "nm_bmu_top": 1,
+                "nm_had_top": 1,
+                "nm_lsu_top": 1,
+                "nm_sahbl_top": 1,
+                "nm_ifu_randclk": 1,
+                "iahb_mem_ctrl": 1,
+                "nm_mpu_top": 1,
+                "nm_tcipif_top": 1,
+                "nm_ifu_ifctrl": 1,
+                "nm_sys_io": 1,
+                "nm_iu_top": 1,
+                "nm_ifu_ifdp": 1,
+                "gated_clk_cell": 2,
+                "nm_iahbl_top": 1
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 27771
+        },
+        "std": {
+            "end_perf": [
+                1.8312599658966064,
+                1.6094010000000001,
+                0.075829999999999995,
+                260156,
+                260160,
+                10216479116883222
+            ],
+            "start_perf": [
+                1.8249819278717041,
+                1.604104,
+                0.074857000000000007,
+                259168,
+                259620,
+                1584213780.9139149,
+                10216479097393856
+            ],
+            "nQuads": 218,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 472
+        },
+        "fpga_clk_gen": {
+            "end_perf": [
+                2.9380590915679932,
+                2.6868940000000001,
+                0.10487100000000001,
+                260160,
+                260184,
+                10216482547851094
+            ],
+            "start_perf": [
+                2.9352879524230957,
+                2.6841239999999997,
+                0.10487100000000001,
+                260160,
+                260184,
+                1584213782.0242209,
+                10216482539212480
+            ],
+            "nQuads": 113,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 231
+        },
+        "nm_had_bkpt_lite": {
+            "end_perf": [
+                2.3046250343322754,
+                2.0696690000000002,
+                0.088867000000000002,
+                260160,
+                260184,
+                10216480584262572
+            ],
+            "start_perf": [
+                2.2951829433441162,
+                2.0602299999999998,
+                0.088867000000000002,
+                260160,
+                260184,
+                1584213781.3841159,
+                10216480554958292
+            ],
+            "nQuads": 658,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 1505
+        },
+        "nm_ahbl_if": {
+            "end_perf": [
+                2.385685920715332,
+                2.1486909999999999,
+                0.090865000000000001,
+                260160,
+                260184,
+                10216480835538870
+            ],
+            "start_perf": [
+                2.3792290687561035,
+                2.1422349999999999,
+                0.090865000000000001,
+                260160,
+                260184,
+                1584213781.4681621,
+                10216480815490940
+            ],
+            "nQuads": 398,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 1155
+        },
+        "syncore_fpgaram": {
+            "end_perf": [
+                2.9088609218597412,
+                2.6607150000000002,
+                0.10187400000000001,
+                260160,
+                260184,
+                10216482457335322
+            ],
+            "start_perf": [
+                2.9045960903167725,
+                2.6564649999999999,
+                0.101864,
+                260160,
+                260184,
+                1584213781.9935291,
+                10216482444069388
+            ],
+            "nQuads": 145,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 531
+        },
+        "nm_bmu_top": {
+            "end_perf": [
+                2.4280869960784912,
+                2.1910799999999999,
+                0.090865000000000001,
+                260160,
+                260184,
+                10216480967017434
+            ],
+            "start_perf": [
+                2.3966619968414307,
+                2.1596630000000001,
+                0.090865000000000001,
+                260160,
+                260184,
+                1584213781.485595,
+                10216480869530818
+            ],
+            "nQuads": 2080,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 6395
+        },
+        "nm_had_top": {
+            "end_perf": [
+                2.215770959854126,
+                1.9848440000000001,
+                0.084864999999999996,
+                260160,
+                260184,
+                10216480308867286
+            ],
+            "start_perf": [
+                2.1660110950469971,
+                1.936088,
+                0.083866999999999997,
+                260160,
+                260184,
+                1584213781.2549441,
+                10216480154538826
+            ],
+            "nQuads": 3910,
+            "child_modules": {
+                "nm_had_jtag2": 1,
+                "nm_had_bkpt": 2,
+                "nm_had_bkpt_lite": 7,
+                "nm_had_trace": 1
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 10826
+        },
+        "nm_lsu_top": {
+            "end_perf": [
+                2.7365009784698486,
+                2.494443,
+                0.095863000000000004,
+                260160,
+                260184,
+                10216481923087126
+            ],
+            "start_perf": [
+                2.6379830837249756,
+                2.3988350000000001,
+                0.092953999999999995,
+                260160,
+                260184,
+                1584213781.7269161,
+                10216481617625364
+            ],
+            "nQuads": 7151,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 26003
+        },
+        "tb": {
+            "end_perf": [
+                1.9654788970947266,
+                1.740604,
+                0.078845999999999999,
+                260156,
+                260180,
+                10216479533008512
+            ],
+            "start_perf": [
+                1.8313009738922119,
+                1.6094409999999999,
+                0.075831999999999997,
+                260156,
+                260160,
+                1584213780.920234,
+                10216479116976880
+            ],
+            "nQuads": 9909,
+            "child_modules": {
+                "smpu_top": 1,
+                "ahb_fifo": 1,
+                "uart": 1,
+                "spi_master": 1,
+                "apb_if": 1,
+                "cpu_sub_system_ahb": 1,
+                "uart_usi": 1,
+                "apb_bridge": 1,
+                "spi": 1,
+                "fpga_clk_gen": 1,
+                "sync_fifo_16x16": 2,
+                "mem_ctrl": 2,
+                "wic": 32,
+                "sdata_if": 1,
+                "ahb": 1,
+                "err_gen": 1,
+                "pmu": 1,
+                "spi_slave": 1,
+                "timer": 2
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 28135
+        },
+        "nm_cp0_top": {
+            "end_perf": [
+                2.4874300956726074,
+                2.250407,
+                0.090865000000000001,
+                260160,
+                260184,
+                10216481150988542
+            ],
+            "start_perf": [
+                2.4281420707702637,
+                2.1911350000000001,
+                0.090865000000000001,
+                260160,
+                260184,
+                1584213781.5170751,
+                10216480967128762
+            ],
+            "nQuads": 4117,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 11113
+        },
+        "nm_clkrst_top": {
+            "end_perf": [
+                2.272939920425415,
+                2.0379939999999999,
+                0.088867000000000002,
+                260160,
+                260184,
+                10216480486035874
+            ],
+            "start_perf": [
+                2.2700340747833252,
+                2.0350899999999998,
+                0.088867000000000002,
+                260160,
+                260184,
+                1584213781.3589671,
+                10216480476998414
+            ],
+            "nQuads": 137,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 211
+        },
+        "ahb": {
+            "end_perf": [
+                1.9774649143218994,
+                1.7515849999999999,
+                0.079843999999999998,
+                260160,
+                260184,
+                10216479570159252
+            ],
+            "start_perf": [
+                1.9655449390411377,
+                1.740667,
+                0.078849000000000002,
+                260156,
+                260180,
+                1584213781.0544779,
+                10216479533123416
+            ],
+            "nQuads": 680,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 2304
+        },
+        "nm_had_trace": {
+            "end_perf": [
+                2.2193429470062256,
+                1.98743,
+                0.085845000000000005,
+                260160,
+                260184,
+                10216480319913266
+            ],
+            "start_perf": [
+                2.215831995010376,
+                1.9849030000000001,
+                0.084866999999999998,
+                260160,
+                260184,
+                1584213781.304765,
+                10216480308990824
+            ],
+            "nQuads": 164,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 356
+        },
+        "err_gen": {
+            "end_perf": [
+                2.1505351066589355,
+                1.920617,
+                0.083866999999999997,
+                260160,
+                260184,
+                10216480106623860
+            ],
+            "start_perf": [
+                2.1478879451751709,
+                1.9179759999999999,
+                0.083866999999999997,
+                260160,
+                260184,
+                1584213781.2368209,
+                10216480098371466
+            ],
+            "nQuads": 64,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 156
+        },
+        "nm_iu_mad": {
+            "end_perf": [
+                2.828557014465332,
+                2.584441,
+                0.097873000000000002,
+                260160,
+                260184,
+                10216482208393608
+            ],
+            "start_perf": [
+                2.8237700462341309,
+                2.5796589999999999,
+                0.097873000000000002,
+                260160,
+                260184,
+                1584213781.912703,
+                10216482193520892
+            ],
+            "nQuads": 279,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 836
+        },
+        "nm_iu_top": {
+            "end_perf": [
+                2.5995469093322754,
+                2.36151,
+                0.091864000000000001,
+                260160,
+                260184,
+                10216481498541242
+            ],
+            "start_perf": [
+                2.5003619194030762,
+                2.262337,
+                0.091856999999999994,
+                260160,
+                260184,
+                1584213781.5892949,
+                10216481190991674
+            ],
+            "nQuads": 7237,
+            "child_modules": {
+                "nm_iu_retire": 1,
+                "nm_iu_wb": 1,
+                "nm_iu_mad": 1,
+                "nm_iu_randclk": 1,
+                "nm_iu_rbus": 1,
+                "nm_iu_vector": 1,
+                "nm_iu_pcgen": 1,
+                "nm_iu_branch": 1,
+                "nm_iu_special": 1,
+                "nm_iu_gated_clk_reg_timing": 17,
+                "nm_iu_ctrl": 1
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 25988
+        },
+        "smpu_top": {
+            "end_perf": [
+                2.9774529933929443,
+                2.7262719999999998,
+                0.10487100000000001,
+                260160,
+                260184,
+                10216482669995406
+            ],
+            "start_perf": [
+                2.972412109375,
+                2.7212369999999999,
+                0.10487100000000001,
+                260160,
+                260184,
+                1584213782.0613451,
+                10216482654291778
+            ],
+            "nQuads": 274,
+            "child_modules": {
+                "smpu_comp_hit": 3
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 557
+        },
+        "nm_iu_retire": {
+            "end_perf": [
+                2.8963038921356201,
+                2.6501770000000002,
+                0.099863999999999994,
+                260160,
+                260184,
+                10216482418409796
+            ],
+            "start_perf": [
+                2.8655779361724854,
+                2.6194579999999998,
+                0.099863999999999994,
+                260160,
+                260184,
+                1584213781.9545109,
+                10216482323120288
+            ],
+            "nQuads": 2409,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 5435
+        },
+        "smpu_comp_hit": {
+            "end_perf": [
+                3.1665899753570557,
+                2.9103690000000002,
+                0.10986799999999999,
+                260160,
+                260184,
+                10216483256275450
+            ],
+            "start_perf": [
+                3.1622240543365479,
+                2.9060100000000002,
+                0.10986799999999999,
+                260160,
+                260184,
+                1584213782.251157,
+                10216483242688052
+            ],
+            "nQuads": 173,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 478
+        },
+        "ahb_fifo": {
+            "end_perf": [
+                1.9928529262542725,
+                1.765952,
+                0.080860000000000001,
+                260160,
+                260184,
+                10216479617826714
+            ],
+            "start_perf": [
+                1.9775280952453613,
+                1.751646,
+                0.079847000000000001,
+                260160,
+                260184,
+                1584213781.0664611,
+                10216479570275684
+            ],
+            "nQuads": 854,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 2578
+        },
+        "wic": {
+            "end_perf": [
+                3.1706159114837646,
+                2.91439,
+                0.10986799999999999,
+                260160,
+                260184,
+                10216483268738176
+            ],
+            "start_perf": [
+                3.1666378974914551,
+                2.9104179999999999,
+                0.10986799999999999,
+                260160,
+                260184,
+                1584213782.2555709,
+                10216483256385458
+            ],
+            "nQuads": 225,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 442
+        },
+        "nm_intc_primsk_encode": {
+            "end_perf": [
+                2.5003209114074707,
+                2.2622960000000001,
+                0.091856999999999994,
+                260160,
+                260184,
+                10216481190897428
+            ],
+            "start_perf": [
+                2.4985198974609375,
+                2.2605,
+                0.091856999999999994,
+                260160,
+                260184,
+                1584213781.5874529,
+                10216481185285846
+            ],
+            "nQuads": 76,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 136
+        },
+        "mem_ctrl": {
+            "end_perf": [
+                2.1659641265869141,
+                1.93604,
+                0.083866999999999997,
+                260160,
+                260184,
+                10216480154445536
+            ],
+            "start_perf": [
+                2.1505839824676514,
+                1.9206669999999999,
+                0.083866999999999997,
+                260160,
+                260184,
+                1584213781.239517,
+                10216480106731294
+            ],
+            "nQuads": 991,
+            "child_modules": {
+                "syncore_fpgaram": 4
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 2910
+        },
+        "nm_had_jtag2": {
+            "end_perf": [
+                2.3155829906463623,
+                2.0806209999999998,
+                0.088867000000000002,
+                260160,
+                260184,
+                10216480618231892
+            ],
+            "start_perf": [
+                2.3046679496765137,
+                2.069712,
+                0.088867000000000002,
+                260160,
+                260184,
+                1584213781.3936009,
+                10216480584361450
+            ],
+            "nQuads": 738,
+            "child_modules": {
+                "nm_had_sync": 3
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 2120
+        },
+        "nm_iu_special": {
+            "end_perf": [
+                2.9019160270690918,
+                2.6557710000000001,
+                0.099877999999999995,
+                260160,
+                260184,
+                10216482435850718
+            ],
+            "start_perf": [
+                2.8963489532470703,
+                2.650223,
+                0.099863999999999994,
+                260160,
+                260184,
+                1584213781.9852819,
+                10216482418503702
+            ],
+            "nQuads": 277,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 758
+        },
+        "nm_had_bkpt": {
+            "end_perf": [
+                2.2951409816741943,
+                2.060187,
+                0.088867000000000002,
+                260160,
+                260184,
+                10216480554864822
+            ],
+            "start_perf": [
+                2.2848379611968994,
+                2.0498880000000002,
+                0.088867000000000002,
+                260160,
+                260184,
+                1584213781.373771,
+                10216480522891598
+            ],
+            "nQuads": 663,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 1651
+        },
+        "nm_tcipif_top": {
+            "end_perf": [
+                2.2678380012512207,
+                2.0329000000000002,
+                0.088863999999999999,
+                260160,
+                260184,
+                10216480470253382
+            ],
+            "start_perf": [
+                2.2193899154663086,
+                1.987476,
+                0.085847000000000007,
+                260160,
+                260184,
+                1584213781.3083229,
+                10216480320023586
+            ],
+            "nQuads": 4008,
+            "child_modules": {
+                "nm_coretim_top": 1,
+                "nm_intc_kid": 32,
+                "nm_tcipif_dummy_bus": 1,
+                "nm_pwrm_top_dummy": 1,
+                "nm_intc_primsk_encode": 32
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 12614
+        },
+        "nm_ahbl_req_arb": {
+            "end_perf": [
+                2.3966200351715088,
+                2.1596199999999999,
+                0.090865000000000001,
+                260160,
+                260184,
+                10216480869436458
+            ],
+            "start_perf": [
+                2.3857269287109375,
+                2.1487319999999999,
+                0.090865000000000001,
+                260160,
+                260184,
+                1584213781.4746599,
+                10216480835632898
+            ],
+            "nQuads": 669,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 2153
+        },
+        "gated_clk_cell": {
+            "end_perf": [
+                2.2699909210205078,
+                2.0350459999999999,
+                0.088867000000000002,
+                260160,
+                260184,
+                10216480476904762
+            ],
+            "start_perf": [
+                2.2678959369659424,
+                2.0329570000000001,
+                0.088867000000000002,
+                260160,
+                260184,
+                1584213781.3568289,
+                10216480470428102
+            ],
+            "nQuads": 102,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 67
+        },
+        "nm_iu_rbus": {
+            "end_perf": [
+                2.8655359745025635,
+                2.6194160000000002,
+                0.099862999999999993,
+                260160,
+                260184,
+                10216482323029620
+            ],
+            "start_perf": [
+                2.8511679172515869,
+                2.605782,
+                0.099135000000000001,
+                260160,
+                260184,
+                1584213781.9401009,
+                10216482278449826
+            ],
+            "nQuads": 926,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 2554
+        },
+        "sync_fifo_16x16": {
+            "end_perf": [
+                3.1407101154327393,
+                2.8845000000000001,
+                0.10986600000000001,
+                260160,
+                260184,
+                10216483176060746
+            ],
+            "start_perf": [
+                3.12990403175354,
+                2.874692,
+                0.108874,
+                260160,
+                260184,
+                1584213782.218837,
+                10216483142563402
+            ],
+            "nQuads": 695,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 1582
+        },
+        "nm_coretim_top": {
+            "end_perf": [
+                2.2847950458526611,
+                2.0498449999999999,
+                0.088867000000000002,
+                260160,
+                260184,
+                10216480522794310
+            ],
+            "start_perf": [
+                2.2729799747467041,
+                2.0380349999999998,
+                0.088867000000000002,
+                260160,
+                260184,
+                1584213781.361913,
+                10216480486129418
+            ],
+            "nQuads": 826,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 1761
+        },
+        "nm_had_sync": {
+            "end_perf": [
+                2.3184890747070312,
+                2.0835270000000001,
+                0.088867000000000002,
+                260160,
+                260184,
+                10216480627263416
+            ],
+            "start_perf": [
+                2.3156280517578125,
+                2.0806659999999999,
+                0.088867000000000002,
+                260160,
+                260184,
+                1584213781.404561,
+                10216480618334270
+            ],
+            "nQuads": 143,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 258
+        },
+        "spi_slave": {
+            "end_perf": [
+                3.0507950782775879,
+                2.7986040000000001,
+                0.10587100000000001,
+                260160,
+                260184,
+                10216482897330618
+            ],
+            "start_perf": [
+                3.022407054901123,
+                2.7702360000000001,
+                0.10585600000000001,
+                260160,
+                260184,
+                1584213782.11134,
+                10216482809272290
+            ],
+            "nQuads": 2281,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 7410
+        },
+        "nm_iahbl_top": {
+            "end_perf": [
+                2.3214740753173828,
+                2.0865070000000001,
+                0.088867000000000002,
+                260160,
+                260184,
+                10216480636513842
+            ],
+            "start_perf": [
+                2.3185369968414307,
+                2.0835750000000002,
+                0.088867000000000002,
+                260160,
+                260184,
+                1584213781.40747,
+                10216480627351462
+            ],
+            "nQuads": 147,
+            "child_modules": {
+                "nm_ahbl_if": 1,
+                "nm_ahbl_req_arb": 1
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 289
+        },
+        "nm_mpu_top": {
+            "end_perf": [
+                2.366347074508667,
+                2.1313740000000001,
+                0.088867000000000002,
+                260160,
+                260184,
+                10216480775664894
+            ],
+            "start_perf": [
+                2.3215219974517822,
+                2.0865559999999999,
+                0.088867000000000002,
+                260160,
+                260184,
+                1584213781.410455,
+                10216480636607688
+            ],
+            "nQuads": 3283,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 10889
+        },
+        "nm_pwrm_top_dummy": {
+            "end_perf": [
+                2.3675360679626465,
+                2.1315680000000001,
+                0.089855000000000004,
+                260160,
+                260184,
+                10216480779281176
+            ],
+            "start_perf": [
+                2.3664159774780273,
+                2.1314440000000001,
+                0.088867000000000002,
+                260160,
+                260184,
+                1584213781.455349,
+                10216480775785426
+            ],
+            "nQuads": 0,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 0
+        },
+        "nm_sahbl_top": {
+            "end_perf": [
+                2.3707311153411865,
+                2.1347559999999999,
+                0.089862999999999998,
+                260160,
+                260184,
+                10216480789203270
+            ],
+            "start_perf": [
+                2.3675761222839355,
+                2.1316079999999999,
+                0.089857000000000006,
+                260160,
+                260184,
+                1584213781.4565091,
+                10216480779367392
+            ],
+            "nQuads": 146,
+            "child_modules": {
+                "nm_ahbl_if": 1,
+                "nm_ahbl_req_arb": 1
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 237
+        },
+        "sdata_if": {
+            "end_perf": [
+                3.1002581119537354,
+                2.8460719999999999,
+                0.107851,
+                260160,
+                260184,
+                10216483050662886
+            ],
+            "start_perf": [
+                3.0888500213623047,
+                2.8356469999999998,
+                0.106873,
+                260160,
+                260184,
+                1584213782.177783,
+                10216483015249334
+            ],
+            "nQuads": 644,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 1984
+        },
+        "nm_sys_io": {
+            "end_perf": [
+                2.375777006149292,
+                2.1387960000000001,
+                0.090862999999999999,
+                260160,
+                260184,
+                10216480804827046
+            ],
+            "start_perf": [
+                2.370776891708374,
+                2.1348009999999999,
+                0.089865,
+                260160,
+                260184,
+                1584213781.4597099,
+                10216480789304082
+            ],
+            "nQuads": 313,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 481
+        },
+        "nm_tcipif_dummy_bus": {
+            "end_perf": [
+                2.3791890144348145,
+                2.1421939999999999,
+                0.090865000000000001,
+                260160,
+                260184,
+                10216480815404540
+            ],
+            "start_perf": [
+                2.3758189678192139,
+                2.138836,
+                0.090865000000000001,
+                260160,
+                260184,
+                1584213781.464752,
+                10216480804920304
+            ],
+            "nQuads": 161,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 248
+        },
+        "nm_intc_kid": {
+            "end_perf": [
+                2.4984650611877441,
+                2.260446,
+                0.091855000000000006,
+                260160,
+                260184,
+                10216481185175710
+            ],
+            "start_perf": [
+                2.4874908924102783,
+                2.2504689999999998,
+                0.090865000000000001,
+                260160,
+                260184,
+                1584213781.5764239,
+                10216481151123548
+            ],
+            "nQuads": 751,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 1722
+        },
+        "counter": {
+            "end_perf": [
+                2.9238789081573486,
+                2.67272,
+                0.10487100000000001,
+                260160,
+                260184,
+                10216482503882338
+            ],
+            "start_perf": [
+                2.9199330806732178,
+                2.669762,
+                0.10387399999999999,
+                260160,
+                260184,
+                1584213782.0088661,
+                10216482491619002
+            ],
+            "nQuads": 173,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 423
+        },
+        "nm_iu_randclk": {
+            "end_perf": [
+                2.8511300086975098,
+                2.605782,
+                0.099096000000000004,
+                260160,
+                260184,
+                10216482278360568
+            ],
+            "start_perf": [
+                2.8499729633331299,
+                2.605782,
+                0.097939999999999999,
+                260160,
+                260184,
+                1584213781.938906,
+                10216482274748592
+            ],
+            "nQuads": 7,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 38
+        },
+        "nm_iu_vector": {
+            "end_perf": [
+                2.6070101261138916,
+                2.3689650000000002,
+                0.091866000000000003,
+                260160,
+                260184,
+                10216481521649284
+            ],
+            "start_perf": [
+                2.5996100902557373,
+                2.3615719999999998,
+                0.091866000000000003,
+                260160,
+                260184,
+                1584213781.6885431,
+                10216481498662148
+            ],
+            "nQuads": 452,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 1166
+        },
+        "timer": {
+            "end_perf": [
+                2.9198780059814453,
+                2.6697220000000002,
+                0.10387200000000001,
+                260160,
+                260184,
+                10216482491474798
+            ],
+            "start_perf": [
+                2.9089040756225586,
+                2.6607560000000001,
+                0.10187499999999999,
+                260160,
+                260184,
+                1584213781.9978371,
+                10216482457460202
+            ],
+            "nQuads": 916,
+            "child_modules": {
+                "counter": 4
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 2490
+        },
+        "nm_iu_wb": {
+            "end_perf": [
+                2.6378970146179199,
+                2.3988350000000001,
+                0.092877000000000001,
+                260160,
+                260184,
+                10216481617482830
+            ],
+            "start_perf": [
+                2.607064962387085,
+                2.3690199999999999,
+                0.091866000000000003,
+                260160,
+                260184,
+                1584213781.695998,
+                10216481521768904
+            ],
+            "nQuads": 1976,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 5376
+        },
+        "nm_ifu_ibuf_entry": {
+            "end_perf": [
+                2.7423460483551025,
+                2.4992890000000001,
+                0.096855999999999998,
+                260160,
+                260184,
+                10216481941174786
+            ],
+            "start_perf": [
+                2.736565113067627,
+                2.4945059999999999,
+                0.095865000000000006,
+                260160,
+                260184,
+                1584213781.8254981,
+                10216481923206920
+            ],
+            "nQuads": 346,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 612
+        },
+        "nm_ifu_ifctrl": {
+            "end_perf": [
+                2.753209114074707,
+                2.5101450000000001,
+                0.096858,
+                260160,
+                260184,
+                10216481974824232
+            ],
+            "start_perf": [
+                2.7423961162567139,
+                2.4993379999999998,
+                0.096858,
+                260160,
+                260184,
+                1584213781.8313291,
+                10216481941279900
+            ],
+            "nQuads": 683,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 1596
+        },
+        "nm_ifu_ifdp": {
+            "end_perf": [
+                2.8040099143981934,
+                2.5599430000000001,
+                0.097844,
+                260160,
+                260184,
+                10216482132331384
+            ],
+            "start_perf": [
+                2.7532520294189453,
+                2.510189,
+                0.096858,
+                260160,
+                260184,
+                1584213781.842185,
+                10216481974919098
+            ],
+            "nQuads": 4029,
+            "child_modules": {
+                "gated_clk_cell": 7
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 12639
+        },
+        "uart": {
+            "end_perf": [
+                3.0223550796508789,
+                2.7701859999999998,
+                0.105854,
+                260160,
+                260184,
+                10216482809170136
+            ],
+            "start_perf": [
+                2.9775099754333496,
+                2.7263289999999998,
+                0.10487100000000001,
+                260160,
+                260184,
+                1584213782.066443,
+                10216482670108972
+            ],
+            "nQuads": 2945,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 8665
+        },
+        "nm_iu_branch": {
+            "end_perf": [
+                2.8134341239929199,
+                2.5693380000000001,
+                0.097861000000000004,
+                260160,
+                260184,
+                10216482161519440
+            ],
+            "start_perf": [
+                2.805466890335083,
+                2.5613779999999999,
+                0.097861000000000004,
+                260160,
+                260184,
+                1584213781.8943999,
+                10216482136782332
+            ],
+            "nQuads": 431,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 1339
+        },
+        "nm_iu_pcgen": {
+            "end_perf": [
+                2.8499090671539307,
+                2.605782,
+                0.097878999999999994,
+                260160,
+                260184,
+                10216482274647738
+            ],
+            "start_perf": [
+                2.8285989761352539,
+                2.5844830000000001,
+                0.097873000000000002,
+                260160,
+                260184,
+                1584213781.917532,
+                10216482208486996
+            ],
+            "nQuads": 1392,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 3898
+        },
+        "nm_iu_ctrl": {
+            "end_perf": [
+                2.823728084564209,
+                2.579618,
+                0.097871,
+                260160,
+                260184,
+                10216482193429702
+            ],
+            "start_perf": [
+                2.8134760856628418,
+                2.5693809999999999,
+                0.097862000000000005,
+                260160,
+                260184,
+                1584213781.9024091,
+                10216482161638658
+            ],
+            "nQuads": 708,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 2038
+        },
+        "nm_iu_gated_clk_reg_timing": {
+            "end_perf": [
+                2.904555082321167,
+                2.656425,
+                0.10186199999999999,
+                260160,
+                260184,
+                10216482443981100
+            ],
+            "start_perf": [
+                2.9019730091094971,
+                2.6557710000000001,
+                0.099935999999999997,
+                260160,
+                260184,
+                1584213781.990906,
+                10216482435941066
+            ],
+            "nQuads": 122,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 137
+        },
+        "apb_bridge": {
+            "end_perf": [
+                2.9352459907531738,
+                2.6840809999999999,
+                0.10487100000000001,
+                260160,
+                260184,
+                10216482539122324
+            ],
+            "start_perf": [
+                2.9239320755004883,
+                2.672774,
+                0.10487100000000001,
+                260160,
+                260184,
+                1584213782.0128651,
+                10216482504027060
+            ],
+            "nQuads": 864,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 2630
+        },
+        "iahb_mem_ctrl": {
+            "end_perf": [
+                2.9514470100402832,
+                2.7002760000000001,
+                0.10487100000000001,
+                260160,
+                260184,
+                10216482589362496
+            ],
+            "start_perf": [
+                2.9381039142608643,
+                2.6869399999999999,
+                0.10487100000000001,
+                260160,
+                260184,
+                1584213782.0270369,
+                10216482547954332
+            ],
+            "nQuads": 674,
+            "child_modules": {
+                "syncore_fpgaram": 4
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 2230
+        },
+        "spi": {
+            "end_perf": [
+                3.1298449039459229,
+                2.8746350000000001,
+                0.108872,
+                260160,
+                260184,
+                10216483142389802
+            ],
+            "start_perf": [
+                3.1003100872039795,
+                2.8461220000000003,
+                0.107853,
+                260160,
+                260184,
+                1584213782.1892431,
+                10216483050773332
+            ],
+            "nQuads": 2038,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 5563
+        },
+        "pmu": {
+            "end_perf": [
+                2.9723649024963379,
+                2.72119,
+                0.10487100000000001,
+                260160,
+                260184,
+                10216482654196972
+            ],
+            "start_perf": [
+                2.9515049457550049,
+                2.7003349999999999,
+                0.10487100000000001,
+                260160,
+                260184,
+                1584213782.0404379,
+                10216482589496914
+            ],
+            "nQuads": 1462,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 3964
+        },
+        "spi_master": {
+            "end_perf": [
+                3.0670380592346191,
+                2.8148390000000001,
+                0.10587299999999999,
+                260160,
+                260184,
+                10216482947680864
+            ],
+            "start_perf": [
+                3.0508449077606201,
+                2.7986529999999998,
+                0.10587299999999999,
+                260160,
+                260184,
+                1584213782.1397779,
+                10216482897428204
+            ],
+            "nQuads": 1131,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 2917
+        },
+        "apb_if": {
+            "end_perf": [
+                3.0887949466705322,
+                2.8355930000000003,
+                0.10687099999999999,
+                260160,
+                260184,
+                10216483015132136
+            ],
+            "start_perf": [
+                3.067086935043335,
+                2.8148900000000001,
+                0.10587299999999999,
+                260160,
+                260184,
+                1584213782.1560199,
+                10216482947776600
+            ],
+            "nQuads": 1822,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 5859
+        },
+        "uart_usi": {
+            "end_perf": [
+                3.1621739864349365,
+                2.9059590000000002,
+                0.10986799999999999,
+                260160,
+                260184,
+                10216483242591978
+            ],
+            "start_perf": [
+                3.1407639980316162,
+                2.8845529999999999,
+                0.10986799999999999,
+                260160,
+                260184,
+                1584213782.229697,
+                10216483176175882
+            ],
+            "nQuads": 1282,
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nMops": 4313
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "size": 3008988,
+            "archive": "archive.0/_31738_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    33726
+                ],
+                [
+                    "g7hgQ_d.o",
+                    295702
+                ],
+                [
+                    "NHiNR_d.o",
+                    25310
+                ],
+                [
+                    "dB9jV_d.o",
+                    30162
+                ],
+                [
+                    "hZDQz_d.o",
+                    279000
+                ],
+                [
+                    "f6b33_d.o",
+                    8554
+                ],
+                [
+                    "DJDDw_d.o",
+                    32522
+                ],
+                [
+                    "bk3LC_d.o",
+                    104930
+                ],
+                [
+                    "WnLhh_d.o",
+                    10300
+                ],
+                [
+                    "kqNWU_d.o",
+                    128230
+                ],
+                [
+                    "TfWji_d.o",
+                    8852
+                ],
+                [
+                    "wcZ1j_d.o",
+                    11114
+                ],
+                [
+                    "Y2Mdy_d.o",
+                    27430
+                ],
+                [
+                    "b87F4_d.o",
+                    23048
+                ],
+                [
+                    "r4jnu_d.o",
+                    22756
+                ],
+                [
+                    "xuvpe_d.o",
+                    25634
+                ],
+                [
+                    "nLsdg_d.o",
+                    10240
+                ],
+                [
+                    "hdq0P_d.o",
+                    10558
+                ],
+                [
+                    "SMQh5_d.o",
+                    94408
+                ],
+                [
+                    "Zd5t8_d.o",
+                    6246
+                ],
+                [
+                    "ksGtI_d.o",
+                    10672
+                ],
+                [
+                    "SgkU3_d.o",
+                    14686
+                ],
+                [
+                    "Z1wTi_d.o",
+                    11310
+                ],
+                [
+                    "pP3pe_d.o",
+                    16504
+                ],
+                [
+                    "kWkfn_d.o",
+                    24676
+                ],
+                [
+                    "qK8b3_d.o",
+                    67054
+                ],
+                [
+                    "kME0d_d.o",
+                    115530
+                ],
+                [
+                    "TGzkN_d.o",
+                    25322
+                ],
+                [
+                    "Apyj9_d.o",
+                    7886
+                ],
+                [
+                    "wAtNN_d.o",
+                    190412
+                ],
+                [
+                    "s8EMV_d.o",
+                    17030
+                ],
+                [
+                    "Vz8j5_d.o",
+                    58184
+                ],
+                [
+                    "rKvAH_d.o",
+                    203062
+                ],
+                [
+                    "juHBW_d.o",
+                    14752
+                ],
+                [
+                    "ffwdF_d.o",
+                    23596
+                ],
+                [
+                    "G4KjJ_d.o",
+                    107022
+                ],
+                [
+                    "yrU1t_d.o",
+                    6776
+                ],
+                [
+                    "kKbfM_d.o",
+                    17728
+                ],
+                [
+                    "vMBTV_d.o",
+                    23258
+                ],
+                [
+                    "fW2jr_d.o",
+                    13902
+                ],
+                [
+                    "MFRLs_d.o",
+                    45356
+                ],
+                [
+                    "CxTiV_d.o",
+                    6784
+                ],
+                [
+                    "ZLsZY_d.o",
+                    30366
+                ],
+                [
+                    "FY7b6_d.o",
+                    64044
+                ],
+                [
+                    "Hr3un_d.o",
+                    13848
+                ],
+                [
+                    "EUF5b_d.o",
+                    10490
+                ],
+                [
+                    "HuNY4_d.o",
+                    12960
+                ],
+                [
+                    "t5sdY_d.o",
+                    29530
+                ],
+                [
+                    "MQn6b_d.o",
+                    11362
+                ],
+                [
+                    "JMpzJ_d.o",
+                    28364
+                ],
+                [
+                    "MIWiH_d.o",
+                    9926
+                ],
+                [
+                    "IqYEE_d.o",
+                    25826
+                ],
+                [
+                    "LLnRt_d.o",
+                    43688
+                ],
+                [
+                    "ccNGj_d.o",
+                    13960
+                ],
+                [
+                    "bvImI_d.o",
+                    79140
+                ],
+                [
+                    "eAsJz_d.o",
+                    63370
+                ],
+                [
+                    "S23ui_d.o",
+                    35730
+                ],
+                [
+                    "d9vZk_d.o",
+                    45528
+                ],
+                [
+                    "IaDzp_d.o",
+                    21426
+                ],
+                [
+                    "jdG3K_d.o",
+                    54686
+                ],
+                [
+                    "Zfgw0_d.o",
+                    22286
+                ],
+                [
+                    "U5eur_d.o",
+                    39372
+                ],
+                [
+                    "ebkYL_d.o",
+                    11462
+                ],
+                [
+                    "Hai6u_d.o",
+                    11530
+                ],
+                [
+                    "amcQwB.o",
+                    119870
+                ]
+            ]
+        }
+    ],
+    "stat": {
+        "ru_self_end": {
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.11085399999999999,
+            "ru_utime_sec": 2.918164,
+            "ru_maxrss_kb": 104360,
+            "ru_minflt": 42031,
+            "ru_nvcsw": 34,
+            "ru_nivcsw": 85
+        },
+        "ru_childs_end": {
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.023938999999999998,
+            "ru_utime_sec": 0.016777,
+            "ru_maxrss_kb": 43880,
+            "ru_minflt": 11048,
+            "ru_nvcsw": 27,
+            "ru_nivcsw": 24
+        },
+        "cpu_cycles_end": 10216483283408966,
+        "peak_mem_kb": 260184
+    }
+}

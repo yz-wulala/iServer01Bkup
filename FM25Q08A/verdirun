@@ -1,0 +1,6 @@
+#!/bin/bash -f
+
+set flist = "./verilog.flist"
+
+verdi +v2k +incdir+./top+./stim+./code FM25Q08A_debug.fsdb
+

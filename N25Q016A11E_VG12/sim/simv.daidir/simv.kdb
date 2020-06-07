@@ -1,0 +1,16 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/stu02/project/N25Q016A11E_VG12
+SystemC=FALSE
+UUM=FALSE
+KDB=FALSE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+TOP=paramConfig PLRSpart1Detect PLRSpart2Detect SetConfig StimTasksConfig Testbench 
+OPTION=-ssz -ssz -ssv -ssy 
+ELAB_OPTION=-ssz -ssz -ssv -ssy 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

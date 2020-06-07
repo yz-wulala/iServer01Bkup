@@ -1,0 +1,404 @@
+{
+    "apb": [
+        "apb",
+        "jsCLA",
+        "module",
+        5
+    ],
+    "nm_had_jtag2": [
+        "nm_had_jtag2",
+        "xuvpe",
+        "module",
+        16
+    ],
+    "nm_intc_kid": [
+        "nm_intc_kid",
+        "TGzkN",
+        "module",
+        28
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "fpga_clk_gen": [
+        "fpga_clk_gen",
+        "MIWiH",
+        "module",
+        52
+    ],
+    "ahb": [
+        "ahb",
+        "NHiNR",
+        "module",
+        3
+    ],
+    "nm_core_top": [
+        "nm_core_top",
+        "Mc1zR",
+        "module",
+        12
+    ],
+    "tb": [
+        "tb",
+        "g7hgQ",
+        "module",
+        2
+    ],
+    "ahb_fifo": [
+        "ahb_fifo",
+        "dB9jV",
+        "module",
+        4
+    ],
+    "nm_iu_special": [
+        "nm_iu_special",
+        "Hr3un",
+        "module",
+        46
+    ],
+    "err_gen": [
+        "err_gen",
+        "f6b33",
+        "module",
+        6
+    ],
+    "iahb_mem_ctrl": [
+        "iahb_mem_ctrl",
+        "IqYEE",
+        "module",
+        53
+    ],
+    "gated_clk_cell": [
+        "gated_clk_cell",
+        "TfWji",
+        "module",
+        10
+    ],
+    "nm_bmu_top": [
+        "nm_bmu_top",
+        "qK8b3",
+        "module",
+        26
+    ],
+    "nm_had_top": [
+        "nm_had_top",
+        "bk3LC",
+        "module",
+        8
+    ],
+    "nm_ifu_ifdp": [
+        "nm_ifu_ifdp",
+        "G4KjJ",
+        "module",
+        37
+    ],
+    "syncore_fpgaram": [
+        "syncore_fpgaram",
+        "HuNY4",
+        "module",
+        48
+    ],
+    "apb_if": [
+        "apb_if",
+        "d9vZk",
+        "module",
+        57
+    ],
+    "mem_ctrl": [
+        "mem_ctrl",
+        "DJDDw",
+        "module",
+        7
+    ],
+    "nm_had_trace": [
+        "nm_had_trace",
+        "WnLhh",
+        "module",
+        9
+    ],
+    "nm_intc_primsk_encode": [
+        "nm_intc_primsk_encode",
+        "Apyj9",
+        "module",
+        29
+    ],
+    "nm_ahbl_req_arb": [
+        "nm_ahbl_req_arb",
+        "kWkfn",
+        "module",
+        25
+    ],
+    "nm_clkrst_top": [
+        "nm_clkrst_top",
+        "wcZ1j",
+        "module",
+        11
+    ],
+    "nm_coretim_top": [
+        "nm_coretim_top",
+        "Y2Mdy",
+        "module",
+        13
+    ],
+    "nm_had_bkpt": [
+        "nm_had_bkpt",
+        "b87F4",
+        "module",
+        14
+    ],
+    "nm_iu_randclk": [
+        "nm_iu_randclk",
+        "CxTiV",
+        "module",
+        43
+    ],
+    "nm_iu_wb": [
+        "nm_iu_wb",
+        "Vz8j5",
+        "module",
+        32
+    ],
+    "nm_cp0_top": [
+        "nm_cp0_top",
+        "kME0d",
+        "module",
+        27
+    ],
+    "nm_had_bkpt_lite": [
+        "nm_had_bkpt_lite",
+        "r4jnu",
+        "module",
+        15
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        67
+    ],
+    "nm_iahbl_top": [
+        "nm_iahbl_top",
+        "hdq0P",
+        "module",
+        17
+    ],
+    "nm_mpu_top": [
+        "nm_mpu_top",
+        "SMQh5",
+        "module",
+        18
+    ],
+    "nm_pwrm_top_dummy": [
+        "nm_pwrm_top_dummy",
+        "Zd5t8",
+        "module",
+        19
+    ],
+    "nm_sahbl_top": [
+        "nm_sahbl_top",
+        "ksGtI",
+        "module",
+        20
+    ],
+    "nm_iu_gated_clk_reg_timing": [
+        "nm_iu_gated_clk_reg_timing",
+        "EUF5b",
+        "module",
+        47
+    ],
+    "nm_iu_vector": [
+        "nm_iu_vector",
+        "s8EMV",
+        "module",
+        31
+    ],
+    "nm_sys_io": [
+        "nm_sys_io",
+        "SgkU3",
+        "module",
+        21
+    ],
+    "nm_tcipif_dummy_bus": [
+        "nm_tcipif_dummy_bus",
+        "Z1wTi",
+        "module",
+        23
+    ],
+    "nm_lsu_top": [
+        "nm_lsu_top",
+        "rKvAH",
+        "module",
+        33
+    ],
+    "nm_tcipif_behavior_bus": [
+        "nm_tcipif_behavior_bus",
+        "BFcTc",
+        "module",
+        22
+    ],
+    "nm_iu_branch": [
+        "nm_iu_branch",
+        "kKbfM",
+        "module",
+        39
+    ],
+    "pmu": [
+        "pmu",
+        "LLnRt",
+        "module",
+        54
+    ],
+    "nm_ahbl_if": [
+        "nm_ahbl_if",
+        "pP3pe",
+        "module",
+        24
+    ],
+    "apb_bridge": [
+        "apb_bridge",
+        "JMpzJ",
+        "module",
+        51
+    ],
+    "nm_iu_pcgen": [
+        "nm_iu_pcgen",
+        "MFRLs",
+        "module",
+        42
+    ],
+    "nm_iu_top": [
+        "nm_iu_top",
+        "wAtNN",
+        "module",
+        30
+    ],
+    "sdata_if": [
+        "sdata_if",
+        "IaDzp",
+        "module",
+        58
+    ],
+    "nm_cp0_randclk": [
+        "nm_cp0_randclk",
+        "aDYbH",
+        "module",
+        34
+    ],
+    "nm_ifu_ibuf_entry": [
+        "nm_ifu_ibuf_entry",
+        "juHBW",
+        "module",
+        35
+    ],
+    "nm_ifu_ifctrl": [
+        "nm_ifu_ifctrl",
+        "ffwdF",
+        "module",
+        36
+    ],
+    "px_had_sync": [
+        "px_had_sync",
+        "ZdDhj",
+        "module",
+        64
+    ],
+    "nm_iu_retire": [
+        "nm_iu_retire",
+        "FY7b6",
+        "module",
+        45
+    ],
+    "nm_ifu_randclk": [
+        "nm_ifu_randclk",
+        "yrU1t",
+        "module",
+        38
+    ],
+    "spi_slave": [
+        "spi_slave",
+        "eAsJz",
+        "module",
+        62
+    ],
+    "nm_iu_ctrl": [
+        "nm_iu_ctrl",
+        "vMBTV",
+        "module",
+        40
+    ],
+    "nm_iu_mad": [
+        "nm_iu_mad",
+        "fW2jr",
+        "module",
+        41
+    ],
+    "nm_iu_rbus": [
+        "nm_iu_rbus",
+        "ZLsZY",
+        "module",
+        44
+    ],
+    "timer": [
+        "timer",
+        "t5sdY",
+        "module",
+        49
+    ],
+    "counter": [
+        "counter",
+        "MQn6b",
+        "module",
+        50
+    ],
+    "smpu_top": [
+        "smpu_top",
+        "ccNGj",
+        "module",
+        55
+    ],
+    "uart": [
+        "uart",
+        "bvImI",
+        "module",
+        56
+    ],
+    "spi": [
+        "spi",
+        "jdG3K",
+        "module",
+        59
+    ],
+    "sync_fifo_16x16": [
+        "sync_fifo_16x16",
+        "Zfgw0",
+        "module",
+        60
+    ],
+    "uart_usi": [
+        "uart_usi",
+        "U5eur",
+        "module",
+        61
+    ],
+    "spi_master": [
+        "spi_master",
+        "S23ui",
+        "module",
+        63
+    ],
+    "smpu_comp_hit": [
+        "smpu_comp_hit",
+        "ebkYL",
+        "module",
+        65
+    ],
+    "wic": [
+        "wic",
+        "Hai6u",
+        "module",
+        66
+    ]
+}

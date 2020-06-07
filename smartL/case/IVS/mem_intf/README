@@ -1,0 +1,9 @@
+step1: modify filelist 
+    803::   modify filelist_803
+    802::   modify filelist_802
+    modify  cpu_top
+    added: of meory lib and other lib may neeed to filelist
+step2: run test
+    803::   source run_803_mem_test
+    802::   source run_802_mem_test
+

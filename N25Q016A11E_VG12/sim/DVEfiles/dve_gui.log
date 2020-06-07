@@ -1,0 +1,88 @@
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-SP2_Full64; Runtime version N-2017.12-SP2_Full64;  Apr 26 03:19 2020
+VCD+ Writer N-2017.12-SP2_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+The file '/home/stu02/project/N25Q016A11E_VG12/sim/inter.vpd' was opened successfully.
+Error: [DVAP037] 
+Errors while sourcing the file '/home/stu02/project/N25Q016A11E_VG12/sim/session.inter.vpd.tcl':
+
+ Line 40: [DVSG007] 
+Signal ' "Sim:Testbench.DUT.any_die_busy" "Sim:Testbench.DUT.current_die_active" "Sim:Testbench.DUT.current_die_busy"' cannot be found.
+ Line 46: [DVSG007] 
+Signal ' "Sim:Testbench.DUT.N25Q_die0.dataOut" "Sim:Testbench.DUT.N25Q_die0.C" "Sim:Testbench.DUT.N25Q_die0.DQ0" "Sim:Testbench.DUT.N25Q_die0.DQ1" "Sim:Testbench.DUT.N25Q_die0.HOLD_DQ3" "Sim:Testbench.DUT.N25Q_die0.S" "Sim:Testbench.DUT.N25Q_die0.Vcc" "Sim:Testbench.DUT.N25Q_die0.Vpp_W_DQ2" "Sim:Testbench.DUT.N25Q_die0.die_active"' cannot be found.
+ Line 52: [DVSG007] 
+Signal ' "Sim:Testbench.DUT.N25Q_die1.dataOut" "Sim:Testbench.DUT.N25Q_die1.C" "Sim:Testbench.DUT.N25Q_die1.DQ0" "Sim:Testbench.DUT.N25Q_die1.DQ1" "Sim:Testbench.DUT.N25Q_die1.HOLD_DQ3" "Sim:Testbench.DUT.N25Q_die1.S" "Sim:Testbench.DUT.N25Q_die1.Vcc" "Sim:Testbench.DUT.N25Q_die1.Vpp_W_DQ2" "Sim:Testbench.DUT.N25Q_die1.die_active"' cannot be found.
+ Line 81: gui_list_select: List item(s) given by "Testbench.DUT.N25Q_die1.dataOut"  were not found.
+ Line 95: gui_list_set_insertion_bar: Cannot set the insertion bar, "Testbench.DUT.N25Q_die1.dataOut[7:0]" was not found..
+==============================================
+===INFO=== Model Configuration Info
+===INFO=== Device Name:  N25Q016A11E
+===INFO=== DQ3 = HOLD pin
+===INFO=== XIP type = Numonyx
+===INFO=== VCC 1.8V
+==============================================
+[0 ns] ==INFO== Hold condition disabled: communication with the device has been activated.
+[0 ns] ==INFO== Protocol selected is extended
+[0 ns] ==INFO== 2. Load memory content from file: "mem_Q016.vmf".
+[0 ns] ==INFO== Power up: polling allowed.
+[0 ns] ==INFO== VCC has been driven below threshold : internal logic will be reset.
+[0 ns] ==INFO== Protocol selected is extended
+[0 ps] ==INFO== Single Transfer Rate selected
+[1000 ns] ==INFO== 1. Load memory content from file: "mem_Q016.vmf".
+[1000 ns] ==INFO== Load flash discovery paramater table content from file: "sfdp.vmf".
+[150000 ns] ==INFO== Power up: device fully accessible.
+[150000 ns] ==INFO== Protocol selected is extended
+[150000 ps] ==INFO== Single Transfer Rate selected
+
+ --- Write lock register (unlock)
+[570000 ns] COMMAND DECODED: Write Enable , withAddr=00000000, with2Addr=00000000, with4Addr=00000000, cmdcode=06 
+[570000 ns] COMMAND RECOGNIZED: Write Enable.
+  [580000 ns] Command execution completed: WEL bit set.
+[1140000 ns] COMMAND DECODED: Write Lock Reg , withAddr=00000001, with2Addr=00000000, with4Addr=00000000, cmdcode=e5 
+[1140000 ns] 1.COMMAND RECOGNIZED: Write Lock Reg. Address expected ...
+  [2100000 ns] Address latched: 0c0000 (byte 0 of page 3072, sector 24)
+  [2310000 ns]- Command execution: lock register of sector 24 set to (x,x)
+
+ --- Page program ok
+[2870000 ns] COMMAND DECODED: Write Enable , withAddr=00000000, with2Addr=00000000, with4Addr=00000000, cmdcode=06 
+[2870000 ns] COMMAND RECOGNIZED: Write Enable.
+  [2880000 ns] Command execution completed: WEL bit set.
+[3440000 ns] COMMAND DECODED: Page Program , withAddr=00000001, with2Addr=00000000, with4Addr=00000000, cmdcode=02 
+[3440000 ns] 1.COMMAND RECOGNIZED: Page Program. Address expected ...
+  [4400000 ns] Address latched: 0c0000 (byte 0 of page 3072, sector 24)
+  [4720000 ns] Data latched: 08
+  [5040000 ns] Data latched: 10
+  [5360000 ns] Data latched: 18
+  [5680000 ns] Data latched: 20
+  [6000000 ns] Data latched: 28
+  [6320000 ns] Data latched: 30
+  [6640000 ns] Data latched: 38
+  [6850000 ns] Command execution begins: Page Program.
+  [6850000 ns] **WARNING** Number of clock pulse isn't multiple of eight: operation aborted!
+  [6850000 ns] isProtected_by_lockReg: x sectAddr: 18
+  [6850000 ns] isProtected_by_lockReg: x sectAddr: 18
+  [6850000 ns] **WARNING** Sector locked by Lock Register: operation aborted.
+  [6850000 ns] isProtected_by_lockReg: x sectAddr: 18
+
+ --- Read
+[1007410000 ns] COMMAND DECODED: Read , withAddr=00000001, with2Addr=00000000, with4Addr=00000000, cmdcode=03 
+[1007410000 ns] 1.COMMAND RECOGNIZED: Read. Address expected ...
+  [1008370000 ns] Address latched: 0c0000 (byte 0 of page 3072, sector 24)
+  [1008392000 ns] Data are going to be output: ff. [Read Memory. Address 0c0000 (byte 0 of page 3072, subsector 192 of sector 24)] 0 0
+  [1008712000 ns] Data are going to be output: ff. [Read Memory. Address 0c0001 (byte 1 of page 3072, subsector 192 of sector 24)] 0 0
+  [1009032000 ns] Data are going to be output: ff. [Read Memory. Address 0c0002 (byte 2 of page 3072, subsector 192 of sector 24)] 0 0
+  [1009352000 ns] Data are going to be output: ff. [Read Memory. Address 0c0003 (byte 3 of page 3072, subsector 192 of sector 24)] 0 0
+  [1009672000 ns] Data are going to be output: ff. [Read Memory. Address 0c0004 (byte 4 of page 3072, subsector 192 of sector 24)] 0 0
+[1010320000 ns] COMMAND DECODED: Read , withAddr=00000001, with2Addr=00000000, with4Addr=00000000, cmdcode=03 
+[1010320000 ns] 1.COMMAND RECOGNIZED: Read. Address expected ...
+  [1011280000 ns] Address latched: 0ff800 (byte 0 of page 4088, sector 31)
+  [1011302000 ns] Data are going to be output: ff. [Read Memory. Address 0ff800 (byte 0 of page 4088, subsector 255 of sector 31)] 0 0
+  [1011622000 ns] Data are going to be output: ff. [Read Memory. Address 0ff801 (byte 1 of page 4088, subsector 255 of sector 31)] 0 0
+  [1011942000 ns] Data are going to be output: ff. [Read Memory. Address 0ff802 (byte 2 of page 4088, subsector 255 of sector 31)] 0 0
+  [1012262000 ns] Data are going to be output: ff. [Read Memory. Address 0ff803 (byte 3 of page 4088, subsector 255 of sector 31)] 0 0
+  [1012582000 ns] Data are going to be output: ff. [Read Memory. Address 0ff804 (byte 4 of page 4088, subsector 255 of sector 31)] 0 0
+Simulation complete, time is 1012910000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1012910000 ps
+CPU Time:      0.220 seconds;       Data structure size:  16.5Mb
+Sun Apr 26 03:35:02 2020

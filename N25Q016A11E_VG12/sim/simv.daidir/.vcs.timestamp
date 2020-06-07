@@ -1,0 +1,105 @@
+0 
+35
++itf+/root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/vcsdp.tab
++memcbk
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/root/synopsys/vcs-mx/N-2017.12-SP2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/libvirsim.so /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/liberrorinf.so /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/libsnpsmalloc.so /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/libvfs.so
+-Mout=./sim/simv
+-Msaverestoreobj=/root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/root/synopsys/vcs-mx/N-2017.12-SP2/include
+-Xpiyushb1=0x80
+-debug_access+all+bc
+-debug_region+cell
+-full64
+-gen_obj
+-o ./sim/simv
+-picarchive
+-sverilog
+-timescale=1ns/100fs
+/root/synopsys/vcs-mx/N-2017.12-SP2/linux64/bin/vcs1
+code/N25Qxxx.v
+stim/program.v
+top/ClockGenerator.v
+top/StimTasks.v
+top/Testbench.v
+46
+sysc_uni_pwd=/home/stu02/project/N25Q016A11E_VG12
+fsdb_vcs_tab=/root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64/verdi.tab
+fsdb_vcs_a=/root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64/pli.a
+XDG_SESSION_ID=5111
+XDG_RUNTIME_DIR=/run/user/1002
+XDG_MENU_PREFIX=xfce-
+XDG_DATA_DIRS=/home/stu02/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/usr/share
+XDG_CURRENT_DESKTOP=XFCE
+XDG_CONFIG_DIRS=/etc/xdg
+VTE_VERSION=5202
+VNCDESKTOP=iServer01:2 (stu02)
+VMR_MODE_FLAG=64
+VERDI_LIB=/root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64
+VERDI_HOME=/root/synopsys/verdi/Verdi_N-2017.12-SP2
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/root/synopsys/vcs-mx/N-2017.12-SP2
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/root/synopsys/vcs-mx/N-2017.12-SP2/linux64
+SYNOPSYS=/home/EDA/Synopsys/syn/L-2016.03-SP1
+SSH_TTY=/dev/pts/16
+SSH_CONNECTION=183.193.44.6 32129 172.16.252.44 22
+SSH_CLIENT=183.193.44.6 32129 22
+SSH_AUTH_SOCK=/tmp/ssh-PiftH1gWqBus/agent.29369
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=29370
+SNPS_VCS_CLANG_PATH=/fs/src/interfaces/LLVM_Project/QSCM/opt/llvm-3.9.1/linux64
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/29359,unix/unix:/tmp/.ICE-unix/29359
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+OVA_UUM=0
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_HOME=/home/EDA/Synopsys/lc/M-2016.12
+LC_ALL=C
+HISTCONTROL=ignoredups
+GLADE_PIXMAP_PATH=:
+GLADE_MODULE_PATH=:
+GLADE_CATALOG_PATH=:
+DVE_HOME=/root/synopsys/vcs-mx/N-2017.12-SP2/gui/dve
+DESKTOP_SESSION=xfce
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-CiktPleQ5G,guid=2edfc01d134a0d01dead331b5e649866
+COLORTERM=truecolor
+0
+12
+1387414401 top/StimGen_interface.h
+1387414400 include/PLRSDetectors.h
+1387414400 include/Decoders.h
+1387414400 include/TimingData.h
+1387414400 include/DevParam.h
+1387414400 include/UserData.h
+1387414401 top/Testbench.v
+1387414401 top/StimTasks.v
+1387414401 top/ClockGenerator.v
+1587468051 stim/program.v
+1387414400 code/N25Qxxx.v
+1528255107 /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/vcsdp.tab
+5
+0 
+1528256279 /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/libvirsim.so
+1528255334 /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/liberrorinf.so
+1528255311 /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/libsnpsmalloc.so
+1528255971 /root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/libvfs.so
+1587842388 ./sim/simv.daidir

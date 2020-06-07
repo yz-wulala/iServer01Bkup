@@ -1,0 +1,6 @@
+(1)set tool chain path in smartL/tools/setup.csh
+(2)source setup.csh
+(3)cd smartL/workdir
+(4)../tools/run_case ../case/PVS/dhry/dhry_1_main.c
+
+Note: For C-SKY programmers, they may need to source setup.csh and execute 'ma' in src_rtl.

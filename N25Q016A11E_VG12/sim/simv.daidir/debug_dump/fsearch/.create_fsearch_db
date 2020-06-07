@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/root/synopsys/vcs-mx/N-2017.12-SP2/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib:/root/synopsys/vcs-mx/N-2017.12-SP2/linux64/lib/pylib27
+export LD_LIBRARY_PATH
+/root/synopsys/vcs-mx/N-2017.12-SP2/linux64/bin/vcsfind_create_index.exe  -z  "/home/stu02/project/N25Q016A11E_VG12/./sim/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" "/home/stu02/project/N25Q016A11E_VG12/./sim/simv.daidir/debug_dump/fsearch/./idents_PY5pgS.xml.gz" -o "/home/stu02/project/N25Q016A11E_VG12/./sim/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/home/stu02/project/N25Q016A11E_VG12/./sim/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/stu02/project/N25Q016A11E_VG12/./sim/simv.daidir/debug_dump/fsearch/fsearch.db"

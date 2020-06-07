@@ -1,0 +1,34 @@
+MEMORY
+{
+MEM1(RWX)  : ORIGIN = 0x00000000,  LENGTH = 0x20000
+MEM2(RWX)  : ORIGIN = DATA_BADDR,  LENGTH = 0x10000
+RAND(RW)  : ORIGIN = 0x1eff0,  LENGTH = 0x1000
+}
+__kernel_stack = 0x6000fff8 ;
+__user_stack = 0x6000fcf8 ;
+__tkernel_stack = 0x6000f8f8 ;
+__tuser_stack = 0x6000f4f8 ;
+
+ENTRY(__start)
+
+SECTIONS {
+    .rodata :  {   *( .rodata* ) } >MEM2
+    .text :
+    {
+        crt0.o (.text)
+        *(.text*)
+        *(.rodata*)
+    } >MEM1 =0x036c036c
+    .data :
+    {
+        *(.data*)
+    } >MEM2
+    .bss :
+    {
+        *(.bss) *.(COMMON)
+    } >MEM2
+    .rand :
+    {
+        *(.rand*)
+    } >RAND
+}
