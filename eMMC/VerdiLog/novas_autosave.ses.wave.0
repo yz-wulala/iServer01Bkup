@@ -1,0 +1,91 @@
+Magic 271485
+Revision Verdi_N-2017.12-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 28 1920 867 198 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/stu02/project/eMMC/eMMC_Socket_tb.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 352.811799 1777.091382
+cursor 35.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 23
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/stu02/project/eMMC/eMMC_Socket_tb.fsdb"
+addSignal -h 15 -UNSIGNED -HEX /eMMC_Socket_tb/X0/cmd[47:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope cmd_argument[31:0]
+addSignal -h 15 -holdScope cmd_i
+addSignal -h 15 -UNSIGNED -HEX -holdScope cmd_index[5:0]
+addSignal -h 15 -holdScope cmd_o
+addSignal -h 15 -holdScope cmd_oe
+addSignal -h 15 -UNSIGNED -HEX -holdScope cmd_reg[39:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope crc7[6:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope cur_state[3:0]
+addSignal -h 15 -holdScope data_crc
+addSignal -h 15 -holdScope io_cmd
+addSignal -h 15 -holdScope long_resp
+addSignal -h 15 -holdScope mclk
+addSignal -h 15 -UNSIGNED -HEX -holdScope next_state[3:0]
+addSignal -h 15 -holdScope o_clk
+addSignal -h 15 -UNSIGNED -HEX -holdScope recv_cnt[7:0]
+addSignal -h 15 -holdScope recv_end
+addSignal -h 15 -holdScope resp_start
+addSignal -h 15 -holdScope rstn
+addSignal -h 15 -holdScope rstn_crc
+addSignal -h 15 -holdScope send_cmd
+addSignal -h 15 -UNSIGNED -UDEC -holdScope send_cnt[5:0]
+addSignal -h 15 -holdScope send_end
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/stu02/project/eMMC/eMMC_Socket_tb.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/eMMC_Socket_tb"
+
+SCOPE_LIST_BEGIN
+"/eMMC_Socket_tb"
+"/eMMC_Socket_tb/X0"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
