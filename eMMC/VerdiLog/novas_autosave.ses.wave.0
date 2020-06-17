@@ -16,8 +16,8 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 352.811799 1777.091382
-cursor 35.000000
+zoom 0.000000 10100.000000
+cursor 0.000000
 marker 0.000000
 
 ; user define markers
@@ -25,7 +25,7 @@ marker 0.000000
 ; visible top row signal index
 top 0
 ; marker line index
-markerPos 23
+markerPos 28
 
 ; event list
 ; addEvent event_name event_expression
@@ -57,18 +57,23 @@ addSignal -h 15 -UNSIGNED -HEX -holdScope cmd_reg[39:0]
 addSignal -h 15 -UNSIGNED -HEX -holdScope crc7[6:0]
 addSignal -h 15 -UNSIGNED -HEX -holdScope cur_state[3:0]
 addSignal -h 15 -holdScope data_crc
+addSignal -h 15 -holdScope en_crc
 addSignal -h 15 -holdScope io_cmd
 addSignal -h 15 -holdScope long_resp
 addSignal -h 15 -holdScope mclk
 addSignal -h 15 -UNSIGNED -HEX -holdScope next_state[3:0]
+addSignal -h 15 -holdScope no_resp
 addSignal -h 15 -holdScope o_clk
 addSignal -h 15 -UNSIGNED -HEX -holdScope recv_cnt[7:0]
 addSignal -h 15 -holdScope recv_end
+addSignal -h 15 -holdScope recv_end_delay
+addSignal -h 15 -UNSIGNED -HEX -holdScope resp_reg[135:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope resp_reg_out[135:0]
 addSignal -h 15 -holdScope resp_start
 addSignal -h 15 -holdScope rstn
 addSignal -h 15 -holdScope rstn_crc
 addSignal -h 15 -holdScope send_cmd
-addSignal -h 15 -UNSIGNED -UDEC -holdScope send_cnt[5:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope send_cnt[5:0]
 addSignal -h 15 -holdScope send_end
 addGroup "G2"
 

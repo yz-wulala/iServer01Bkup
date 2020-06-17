@@ -354,8 +354,8 @@ saveFsdbStat = TRUE
 savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
-QwUserAskDlg = 912,894,324,134
 qWaveSignalDialog = 563,306,800,479
+QwUserAskDlg = 978,894,324,134
 [Relationship]
 hideRecursiceNode = FALSE
 [Session Cache]

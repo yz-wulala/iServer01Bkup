@@ -18,8 +18,8 @@ AnnotationShow = 0
 powerDumped = 0
 [hb]
 postSimFile = /home/stu02/project/eMMC/eMMC_Socket_tb.fsdb
-syncTime = 35
-viewport = 0 31 1920 971 0 0 388 1918
+syncTime = 0
+viewport = 0 31 1920 971 0 0 58 1918
 interactiveMode = False
 viewType = Source
 simulatorMode = False

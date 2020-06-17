@@ -59,7 +59,7 @@ module eMMC_Socket_tb();
         #500
         @(negedge mclk_tb)begin
             send_cmd_tb = 1;
-            cmd_index_tb = 6'b000000;
+            cmd_index_tb = 6'd2;
             cmd_argument_tb = 32'hF0F0F0F0;
         end
         #(`cyc)
@@ -69,6 +69,14 @@ module eMMC_Socket_tb();
             cmd_oe_tb = 1;
             cmd_o_tb = 0;
         end
+        #(`cyc)
+        cmd_o_tb = 0;
+        #(`cyc)
+        cmd_o_tb = 1;
+        #(`cyc)
+        cmd_o_tb = 1;
+        #(`cyc)
+        cmd_o_tb = 0;
         #(`cyc)
         cmd_oe_tb = 0;
     end
