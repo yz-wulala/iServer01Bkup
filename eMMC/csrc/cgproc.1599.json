@@ -1,0 +1,105 @@
+{
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "CompUnits": {
+        "Trif0_d": {
+            "checksum": 0,
+            "mod": "eMMC_Socket_tb",
+            "mode": 4,
+            "bytes": 29304,
+            "out": "Trif0_d.o",
+            "archive": "archive.43/_1599_archive_1.a"
+        }
+    },
+    "Modules": {
+        "...MASTER...": {
+            "start_perf": [
+                0.18980503082275391,
+                0.048300000000000003,
+                0.032199999999999999,
+                228248,
+                241968,
+                1592473178.416188,
+                35819682559398214
+            ],
+            "child_modules": {
+                "eMMC_Socket_tb": 1
+            },
+            "end_perf": [
+                0.19433808326721191,
+                0.048451000000000001,
+                0.034319000000000002,
+                229732,
+                241968,
+                35819682573469436
+            ],
+            "nQuads": 0,
+            "nMops": 0
+        },
+        "eMMC_Socket_tb": {
+            "start_perf": [
+                0.19440507888793945,
+                0.048489999999999998,
+                0.034347000000000003,
+                229732,
+                241968,
+                1592473178.420788,
+                35819682573652346
+            ],
+            "Compiled": "Yes",
+            "child_modules": {},
+            "Compiled Times": 31,
+            "end_perf": [
+                0.20991992950439453,
+                0.060207999999999998,
+                0.038131999999999999,
+                234392,
+                241968,
+                35819682621806792
+            ],
+            "nQuads": 1306,
+            "nMops": 4137
+        }
+    },
+    "ObjArchives": [
+        {
+            "size": 132018,
+            "archive": "archive.43/_1599_archive_1.a",
+            "objects": [
+                [
+                    "Trif0_d.o",
+                    29304
+                ],
+                [
+                    "amcQwB.o",
+                    102714
+                ]
+            ]
+        }
+    ],
+    "stat": {
+        "ru_self_end": {
+            "ru_nivcsw": 9,
+            "ru_maxrss_kb": 76756,
+            "ru_utime_sec": 0.063085000000000002,
+            "ru_stime_sec": 0.039052000000000003,
+            "ru_minflt": 26045,
+            "ru_majflt": 0,
+            "ru_nvcsw": 31
+        },
+        "ru_childs_end": {
+            "ru_nivcsw": 24,
+            "ru_maxrss_kb": 23164,
+            "ru_utime_sec": 0.016604000000000001,
+            "ru_stime_sec": 0.025687000000000001,
+            "ru_minflt": 11088,
+            "ru_majflt": 0,
+            "ru_nvcsw": 27
+        },
+        "cpu_cycles_end": 35819682633468420,
+        "peak_mem_kb": 241968
+    }
+}
