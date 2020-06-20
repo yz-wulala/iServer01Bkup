@@ -1,0 +1,105 @@
+{
+    "ObjArchives": [
+        {
+            "objects": [
+                [
+                    "Trif0_d.o",
+                    29304
+                ],
+                [
+                    "amcQwB.o",
+                    102714
+                ]
+            ],
+            "archive": "archive.45/_5299_archive_1.a",
+            "size": 132018
+        }
+    ],
+    "Modules": {
+        "...MASTER...": {
+            "nQuads": 0,
+            "start_perf": [
+                0.19829177856445312,
+                0.057106999999999998,
+                0.027569,
+                228248,
+                241968,
+                1592673440.1651969,
+                36440471182239856
+            ],
+            "child_modules": {
+                "eMMC_Socket_tb": 1
+            },
+            "end_perf": [
+                0.20275092124938965,
+                0.057278999999999997,
+                0.029627000000000001,
+                229732,
+                241968,
+                36440471196086056
+            ],
+            "nMops": 0
+        },
+        "eMMC_Socket_tb": {
+            "nQuads": 1264,
+            "start_perf": [
+                0.20281577110290527,
+                0.057321999999999998,
+                0.029648999999999998,
+                229732,
+                241968,
+                1592673440.1697209,
+                36440471196264632
+            ],
+            "Compiled": "Yes",
+            "child_modules": {},
+            "Compiled Times": 33,
+            "end_perf": [
+                0.21794581413269043,
+                0.068394999999999997,
+                0.033701000000000002,
+                234392,
+                241968,
+                36440471243249810
+            ],
+            "nMops": 4056
+        }
+    },
+    "CompUnits": {
+        "Trif0_d": {
+            "mod": "eMMC_Socket_tb",
+            "out": "Trif0_d.o",
+            "bytes": 29304,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.45/_5299_archive_1.a"
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "stat": {
+        "ru_childs_end": {
+            "ru_stime_sec": 0.018089000000000001,
+            "ru_utime_sec": 0.022627000000000001,
+            "ru_maxrss_kb": 23164,
+            "ru_minflt": 11088,
+            "ru_majflt": 0,
+            "ru_nvcsw": 26,
+            "ru_nivcsw": 24
+        },
+        "ru_self_end": {
+            "ru_stime_sec": 0.034608,
+            "ru_utime_sec": 0.071194999999999994,
+            "ru_maxrss_kb": 76760,
+            "ru_minflt": 25978,
+            "ru_majflt": 0,
+            "ru_nvcsw": 31,
+            "ru_nivcsw": 9
+        },
+        "peak_mem_kb": 241968,
+        "cpu_cycles_end": 36440471254620394
+    }
+}

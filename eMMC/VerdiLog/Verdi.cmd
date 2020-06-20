@@ -3,7 +3,6 @@ debImport "eMMC_Socket_tb.fsdb"
 wvCreateWindow
 wvSetPosition -win $_nWave2 {("G1" 0)}
 wvOpenFile -win $_nWave2 {/home/stu02/project/eMMC/eMMC_Socket_tb.fsdb}
-verdiDockWidgetMaximize -dock windowDock_nWave_2
 wvGetSignalOpen -win $_nWave2
 wvGetSignalSetScope -win $_nWave2 "/eMMC_Socket_tb"
 wvGetSignalSetScope -win $_nWave2 "/eMMC_Socket_tb/X0"
@@ -46,18 +45,7 @@ wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
            18 19 20 21 22 23 24 25 26 27 28 )} 
 wvSetPosition -win $_nWave2 {("G1" 28)}
 wvGetSignalClose -win $_nWave2
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+wvSelectGroup -win $_nWave2 {G2}
 wvZoomOut -win $_nWave2
 wvZoomOut -win $_nWave2
-wvSetCursor -win $_nWave2 1501.066830 -snap {("G2" 0)}
-wvSetCursor -win $_nWave2 1518.405886 -snap {("G2" 0)}
-wvSelectGroup -win $_nWave2 {G2}
-wvZoom -win $_nWave2 1709.135500 2707.369712
-wvSelectSignal -win $_nWave2 {( "G1" 18 )} 
-wvSelectSignal -win $_nWave2 {( "G1" 18 )} 
-wvSetRadix -win $_nWave2 -format UDec
-wvSelectGroup -win $_nWave2 {G2}
-wvSetCursor -win $_nWave2 1748.917979 -snap {("G1" 18)}
-wvSetCursor -win $_nWave2 1731.168873 -snap {("G1" 18)}
-wvSetCursor -win $_nWave2 1731.168873 -snap {("G1" 14)}
-wvSetCursor -win $_nWave2 1750.142055 -snap {("G1" 14)}
-wvSetCursor -win $_nWave2 1731.780911 -snap {("G1" 14)}

@@ -184,7 +184,7 @@ LM_LICENSE_FILE=/root/synopsys/scl/license/synopsys.lic
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 HISTCONTROL=ignoredups
 VCS_ARG_ADDED_FOR_TMP=1
-SNPS_VCS_TMPDIR=/tmp/vcs_20200618093937_1348
+SNPS_VCS_TMPDIR=/tmp/vcs_20200620171719_5048
 HOME=/home/stu02
 SHLVL=8
 VERDI_LIB=/root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64
@@ -212,9 +212,9 @@ SPECMAN_OUTPUT_TO_TTY=1
 Runtime command line arguments:
 argv[0]=simv
 213 profile - 100
-          CPU/Mem usage: 0.040 sys,  0.210 user,  211.38M sys,  0.00M vm
+          CPU/Mem usage: 0.020 sys,  0.210 user,  211.38M sys,  0.00M vm
 214 VC callback profile - scalar:0 vector:0
-215 Thu Jun 18 17:39:39 2020
+215 Sun Jun 21 01:17:21 2020
 216 pliAppInit
 217 Enable VD Dumper
 218 FSDB_GATE is set.
@@ -236,7 +236,7 @@ argv[0]=simv
 234 *Verdi* : Enable +all dumping.
 235 *Verdi* : End of traversing.
 236 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.220 user,  308.37M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.220 user,  308.37M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  7.36M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  7.36M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  7.36M sys,  0.00M vm
@@ -246,9 +246,9 @@ argv[0]=simv
                  accu: 47 var,  29 idcode,  17 callback
             accu incr: 47 var,  29 idcode,  17 callback
 237 VC callback profile - scalar:0 vector:0
-238 Thu Jun 18 17:39:39 2020
+238 Sun Jun 21 01:17:21 2020
 239 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.220 user,  309.42M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.220 user,  309.42M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  8.42M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
@@ -258,16 +258,16 @@ argv[0]=simv
                  accu: 47 var,  29 idcode,  17 callback
             accu incr: 0 var,  0 idcode,  0 callback
 240 VC callback profile - scalar:4 vector:3
-241 Thu Jun 18 17:39:39 2020
+241 Sun Jun 21 01:17:21 2020
 242 End of simulation at 10000
 243 VC callback profile - scalar:4 vector:3
-244 Thu Jun 18 17:39:39 2020
+244 Sun Jun 21 01:17:21 2020
 245 Begin FSDB profile info:
-246 FSDB Writer : bc1(1038) bcn(208) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.003956) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+246 FSDB Writer : bc1(1034) bcn(110) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.002991) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 247 End FSDB profile info
 248 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:0
-249                        ProduceTime:0.287225125 ConsumerTime:0.000000000 Buffer:64MB
+249                        ProduceTime:0.271082504 ConsumerTime:0.000000000 Buffer:64MB
 250 SimExit
 251 Sim process exit
