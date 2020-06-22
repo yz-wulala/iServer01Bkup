@@ -7,4 +7,4 @@ vcs -R -full64 \
     
 
 #Verdi eMMC_Socket_tb.fsdb
-Verdi eMMC_Socket_tb.fsdb
+Verdi -f crc7.v eMMC_Socket.v eMMC_Socket_tb.v -ssf eMMC_Socket_tb.fsdb -top eMMC_Socket_tb

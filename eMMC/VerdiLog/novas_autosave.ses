@@ -18,12 +18,15 @@ AnnotationShow = 0
 powerDumped = 0
 [hb]
 postSimFile = /home/stu02/project/eMMC/eMMC_Socket_tb.fsdb
-syncTime = 0
-viewport = 0 31 1920 971 0 0 58 1918
+syncTime = 1130
+viewport = 0 31 1920 971 0 0 447 1918
+activeNode = "eMMC_Socket_tb.X0"
+activeScope = "eMMC_Socket_tb.X0"
+activeFile = "eMMC_Socket.v"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
-sourceBeginLine = 0
+sourceBeginLine = 45
 baMode = False
 srcLineNum = True
 AutoWrap = True
@@ -40,14 +43,25 @@ DnDtraceCrossHierOnly = True
 traceIncTopPort = False
 leadingZero = False
 signalPane = False
+Scope1 = "eMMC_Socket_tb.X0"
+Scope2 = "eMMC_Socket_tb.TRI"
+Scope3 = "eMMC_Socket_tb"
+multipleSelection = 1 54 3 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
+[hb.design]
+importCmd = "-f" "crc7.v" "eMMC_Socket.v" "eMMC_Socket_tb.v" "-top" "eMMC_Socket_tb" 
+invokeDir = /home/stu02/project/eMMC
+[hb.sourceTab.1]
+scope = eMMC_Socket_tb.X0
+File = /home/stu02/project/eMMC/eMMC_Socket.v
+Line = 46
 [nMemoryManager]
 FsdbFile = /home/stu02/project/eMMC/eMMC_Socket_tb.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 28 1920 867 198 65
+viewPort = 0 28 1920 475 198 65
 primaryWindow = TRUE
 SessionFile = /home/stu02/project/eMMC/VerdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE

@@ -1,8 +1,260 @@
 *design* DebussyLib (btIdent Verdi_N-2017.12-SP2)
 Command arguments:
     +define+verilog
-    eMMC_Socket_tb.fsdb
+    -f crc7.v
+        module
+        crc7(
+        clk,
+        rstn,
+        enable,
+        data_in,
+        crc7);
+        input
+        clk;
+        input
+        rstn;
+        input
+        enable;
+        input
+        data_in;
+        output
+        [6:0]crc7;
+        reg
+        [6:0]crc7;
+        always@(posedge
+        clk)begin
+        if(~rstn)begin
+        crc7
+        <=
+        0;
+        end
+        else
+        begin
+        if(enable)
+        begin
+        crc7[6]
+        <=
+        crc7[5];
+        crc7[5]
+        <=
+        crc7[4];
+        crc7[4]
+        <=
+        crc7[3];
+        crc7[3]
+        <=
+        data_in
+        ^
+        crc7[2]
+        ^
+        crc7[6];
+        crc7[2]
+        <=
+        crc7[1];
+        crc7[1]
+        <=
+        crc7[0];
+        crc7[0]
+        <=
+        data_in
+        ^
+        crc7[6];
+        end
+        end
+        end
+        endmodule
+    eMMC_Socket.v
+    eMMC_Socket_tb.v
+    -top
+    eMMC_Socket_tb
 
-*Error* no source file
 
-Total	1 error(s),   0 warning(s)
+*Error* failed to open source file "module" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7(" with read access: No such file or directory
+
+
+*Error* failed to open source file "clk," with read access: No such file or directory
+
+
+*Error* failed to open source file "rstn," with read access: No such file or directory
+
+
+*Error* failed to open source file "enable," with read access: No such file or directory
+
+
+*Error* failed to open source file "data_in," with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7);" with read access: No such file or directory
+
+
+*Error* failed to open source file "input" with read access: No such file or directory
+
+
+*Error* failed to open source file "clk;" with read access: No such file or directory
+
+
+*Error* failed to open source file "input" with read access: No such file or directory
+
+
+*Error* failed to open source file "rstn;" with read access: No such file or directory
+
+
+*Error* failed to open source file "input" with read access: No such file or directory
+
+
+*Error* failed to open source file "enable;" with read access: No such file or directory
+
+
+*Error* failed to open source file "input" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_in;" with read access: No such file or directory
+
+
+*Error* failed to open source file "output" with read access: No such file or directory
+
+
+*Error* failed to open source file "[6:0]crc7;" with read access: No such file or directory
+
+
+*Error* failed to open source file "reg" with read access: No such file or directory
+
+
+*Error* failed to open source file "[6:0]crc7;" with read access: No such file or directory
+
+
+*Error* failed to open source file "always@(posedge" with read access: No such file or directory
+
+
+*Error* failed to open source file "clk)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(~rstn)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "0;" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "else" with read access: No such file or directory
+
+
+*Error* failed to open source file "begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(enable)" with read access: No such file or directory
+
+
+*Error* failed to open source file "begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[6]" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[5];" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[5]" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[4];" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[4]" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[3];" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[3]" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_in" with read access: No such file or directory
+
+
+*Error* failed to open source file "^" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[2]" with read access: No such file or directory
+
+
+*Error* failed to open source file "^" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[6];" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[2]" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[1];" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[1]" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[0];" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[0]" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_in" with read access: No such file or directory
+
+
+*Error* failed to open source file "^" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc7[6];" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "endmodule" with read access: No such file or directory
+
+Highest level modules:
+eMMC_Socket_tb
+
+
+*Error* view crc7 is not defined for instance X_TX_CRC
+"eMMC_Socket.v", 114: 
+Total	62 error(s),   0 warning(s)
