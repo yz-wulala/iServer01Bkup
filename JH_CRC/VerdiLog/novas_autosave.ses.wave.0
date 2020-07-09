@@ -1,0 +1,115 @@
+Magic 271485
+Revision Verdi_N-2017.12-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 28 1920 867 182 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/stu02/project/JH_CRC/crc4_tb.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 5050.000000
+cursor 0.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 10
+; marker line index
+markerPos 47
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/stu02/project/JH_CRC/crc4_tb.fsdb"
+addSignal -h 15 /crc4_tb/clk_tb
+addSignal -h 15 -UNSIGNED -HEX -holdScope data_reg[25:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope i[7:0]
+addSignal -h 15 -holdScope rstn_tb
+addSignal -h 15 -holdScope start_tb
+addSignal -h 15 /crc4_tb/X_0/clear
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -UNSIGNED -HEX -holdScope cnt[4:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope crc4[3:0]
+addSignal -h 15 -holdScope crc4_in
+addSignal -h 15 -UNSIGNED -HEX -holdScope data_in[25:0]
+addSignal -expanded -h 15 -UNSIGNED -HEX -holdScope data_out[29:0]
+addSignal -h 15 -holdScope data_out[29]
+addSignal -h 15 -holdScope data_out[28]
+addSignal -h 15 -holdScope data_out[27]
+addSignal -h 15 -holdScope data_out[26]
+addSignal -h 15 -holdScope data_out[25]
+addSignal -h 15 -holdScope data_out[24]
+addSignal -h 15 -holdScope data_out[23]
+addSignal -h 15 -holdScope data_out[22]
+addSignal -h 15 -holdScope data_out[21]
+addSignal -h 15 -holdScope data_out[20]
+addSignal -h 15 -holdScope data_out[19]
+addSignal -h 15 -holdScope data_out[18]
+addSignal -h 15 -holdScope data_out[17]
+addSignal -h 15 -holdScope data_out[16]
+addSignal -h 15 -holdScope data_out[15]
+addSignal -h 15 -holdScope data_out[14]
+addSignal -h 15 -holdScope data_out[13]
+addSignal -h 15 -holdScope data_out[12]
+addSignal -h 15 -holdScope data_out[11]
+addSignal -h 15 -holdScope data_out[10]
+addSignal -h 15 -holdScope data_out[9]
+addSignal -h 15 -holdScope data_out[8]
+addSignal -h 15 -holdScope data_out[7]
+addSignal -h 15 -holdScope data_out[6]
+addSignal -h 15 -holdScope data_out[5]
+addSignal -h 15 -holdScope data_out[4]
+addSignal -h 15 -holdScope data_out[3]
+addSignal -h 15 -holdScope data_out[2]
+addSignal -h 15 -holdScope data_out[1]
+addSignal -h 15 -holdScope data_out[0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope data_reg[25:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope data_reg_nt[25:0]
+addSignal -h 15 -holdScope rstn
+addSignal -h 15 -holdScope start
+addSignal -h 15 -holdScope state
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/stu02/project/JH_CRC/crc4_tb.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/crc4_tb"
+
+SCOPE_LIST_BEGIN
+"/crc4_tb"
+"/crc4_tb/X_0"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

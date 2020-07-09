@@ -1,0 +1,36 @@
+sidCmdLineBehaviorAnalysisOpt -incr -clockSkew 0 -loopUnroll 0 -bboxEmptyModule 0  -cellModel 0 -bboxIgnoreProtected 0 
+debImport "-f" "crc4.v" "crc4_tb.v" "-top" "crc4_tb"
+debLoadSimResult /home/stu02/project/JH_CRC/crc4_tb.fsdb
+wvCreateWindow
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/crc4_tb"
+wvGetSignalSetScope -win $_nWave2 "/crc4_tb/X_0"
+wvSetPosition -win $_nWave2 {("G1" 1)}
+wvSetPosition -win $_nWave2 {("G1" 1)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/crc4_tb/X_0/data_out\[29:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvSetPosition -win $_nWave2 {("G1" 1)}
+wvGetSignalClose -win $_nWave2
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+wvZoomAll -win $_nWave2
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/crc4_tb"
+wvGetSignalSetScope -win $_nWave2 "/crc4_tb/X_0"
+wvSetPosition -win $_nWave2 {("G1" 2)}
+wvSetPosition -win $_nWave2 {("G1" 2)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/crc4_tb/X_0/data_out\[29:0\]} \
+{/crc4_tb/X_0/data_in\[25:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 2 )} 
+wvSetPosition -win $_nWave2 {("G1" 2)}
+wvGetSignalClose -win $_nWave2
+debExit

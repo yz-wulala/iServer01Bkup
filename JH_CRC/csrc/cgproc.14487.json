@@ -1,0 +1,105 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "nMops": 0,
+            "start_perf": [
+                0.18291783332824707,
+                0.047724999999999997,
+                0.028431999999999999,
+                227512,
+                241424,
+                1594310045.4742429,
+                41513760665085490
+            ],
+            "child_modules": {
+                "crc4_tb": 1
+            },
+            "end_perf": [
+                0.18743801116943359,
+                0.048035000000000001,
+                0.03066,
+                229252,
+                241424,
+                41513760679119918
+            ],
+            "nQuads": 0
+        },
+        "crc4_tb": {
+            "nMops": 2449,
+            "Compiled Times": 29,
+            "start_perf": [
+                0.18751096725463867,
+                0.048078999999999997,
+                0.030689000000000001,
+                229252,
+                241424,
+                1594310045.4788361,
+                41513760679350256
+            ],
+            "child_modules": {},
+            "end_perf": [
+                0.19842290878295898,
+                0.057065999999999999,
+                0.032608999999999999,
+                233432,
+                241424,
+                41513760713165152
+            ],
+            "Compiled": "Yes",
+            "nQuads": 1030
+        }
+    },
+    "CompUnits": {
+        "IiI8P_d": {
+            "mod": "crc4_tb",
+            "out": "IiI8P_d.o",
+            "bytes": 21058,
+            "archive": "archive.28/_14487_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "size": 123364,
+            "archive": "archive.28/_14487_archive_1.a",
+            "objects": [
+                [
+                    "IiI8P_d.o",
+                    21058
+                ],
+                [
+                    "amcQwB.o",
+                    102306
+                ]
+            ]
+        }
+    ],
+    "stat": {
+        "ru_self_end": {
+            "ru_minflt": 25491,
+            "ru_utime_sec": 0.059584999999999999,
+            "ru_nivcsw": 6,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.03363,
+            "ru_maxrss_kb": 74524,
+            "ru_nvcsw": 31
+        },
+        "cpu_cycles_end": 41513760724057412,
+        "ru_childs_end": {
+            "ru_minflt": 11086,
+            "ru_utime_sec": 0.018572999999999999,
+            "ru_nivcsw": 24,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.021434000000000002,
+            "ru_maxrss_kb": 22428,
+            "ru_nvcsw": 26
+        },
+        "peak_mem_kb": 241424
+    }
+}

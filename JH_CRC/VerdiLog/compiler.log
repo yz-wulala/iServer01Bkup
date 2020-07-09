@@ -1,0 +1,820 @@
+*design* DebussyLib (btIdent Verdi_N-2017.12-SP2)
+Command arguments:
+    +define+verilog
+    -f crc4.v
+        module
+        crc4(
+        clk,
+        rstn,
+        start,
+        data_in,
+        data_out
+        );
+        input
+        clk;
+        input
+        rstn;
+        input
+        start;
+        input
+        [25:0]data_in;
+        output
+        [29:0]data_out;
+        reg
+        [3:0]crc4;
+        reg
+        [29:0]data_out;
+        reg
+        [25:0]data_reg;
+        reg
+        [25:0]data_reg_nt;
+        reg
+        clear;
+        reg
+        state;
+        reg
+        [4:0]cnt;
+        wire
+        crc4_in;
+        always@(posedge
+        clk
+        or
+        negedge
+        rstn)begin
+        if(~rstn)begin
+        state
+        <=
+        0;//rst
+        2
+        IDLE
+        end
+        else
+        begin
+        case(state)
+        1'b0
+        :begin//IDLE
+        if(start)begin
+        state
+        <=
+        1'b1
+        ;
+        end
+        end
+        1'b1
+        :begin//DO
+        if(cnt
+        ==
+        5'd26
+        )begin
+        state
+        <=
+        1'b0
+        ;
+        end
+        end
+        endcase
+        end
+        end
+        always@(posedge
+        clk
+        or
+        negedge
+        rstn)begin
+        if(~rstn)begin
+        cnt
+        <=
+        5'b00000
+        ;
+        end
+        else
+        begin
+        if(state)begin
+        cnt
+        <=
+        cnt
+        +
+        5'b00001
+        ;
+        end
+        else
+        begin
+        cnt
+        <=
+        0;
+        end
+        end
+        end
+        always@(posedge
+        clk
+        or
+        negedge
+        rstn)begin
+        if(~rstn)begin
+        data_reg
+        <=
+        0;
+        data_reg_nt
+        <=
+        0;
+        end
+        else
+        begin
+        if(~state)begin
+        data_reg
+        <=
+        data_in;
+        data_reg_nt
+        <=
+        data_in;
+        end
+        else
+        begin
+        data_reg
+        <=
+        {data_reg[0],data_reg[25:1]};
+        end
+        end
+        end
+        assign
+        crc4_in
+        =
+        data_reg[0];
+        always@(posedge
+        clk
+        or
+        negedge
+        rstn)begin
+        if(~rstn)begin
+        crc4
+        <=
+        0;
+        end
+        else
+        begin
+        if(~state)
+        begin
+        crc4
+        <=
+        0;
+        end
+        else
+        begin
+        crc4[3]
+        <=
+        crc4[2];
+        crc4[2]
+        <=
+        crc4[1];
+        crc4[1]
+        <=
+        crc4_in
+        ^
+        crc4[3]
+        ^
+        crc4[0];
+        crc4[0]
+        <=
+        crc4_in
+        ^
+        crc4[3];
+        end
+        end
+        end
+        always@(posedge
+        clk
+        or
+        negedge
+        rstn)begin
+        if(~rstn)begin
+        data_out
+        <=
+        0;
+        end
+        else
+        begin
+        if(cnt
+        ==
+        5'd26
+        )
+        begin
+        data_out
+        <=
+        {data_reg_nt[25:0],crc4[3:0]};
+        end
+        end
+        end
+        endmodule
+    crc4_tb.v
+    -top
+    crc4_tb
+
+
+*Error* failed to open source file "module" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4(" with read access: No such file or directory
+
+
+*Error* failed to open source file "clk," with read access: No such file or directory
+
+
+*Error* failed to open source file "rstn," with read access: No such file or directory
+
+
+*Error* failed to open source file "start," with read access: No such file or directory
+
+
+*Error* failed to open source file "data_in," with read access: No such file or directory
+
+
+*Error* failed to open source file "data_out" with read access: No such file or directory
+
+
+*Error* failed to open source file ");" with read access: No such file or directory
+
+
+*Error* failed to open source file "input" with read access: No such file or directory
+
+
+*Error* failed to open source file "clk;" with read access: No such file or directory
+
+
+*Error* failed to open source file "input" with read access: No such file or directory
+
+
+*Error* failed to open source file "rstn;" with read access: No such file or directory
+
+
+*Error* failed to open source file "input" with read access: No such file or directory
+
+
+*Error* failed to open source file "start;" with read access: No such file or directory
+
+
+*Error* failed to open source file "input" with read access: No such file or directory
+
+
+*Error* failed to open source file "[25:0]data_in;" with read access: No such file or directory
+
+
+*Error* failed to open source file "output" with read access: No such file or directory
+
+
+*Error* failed to open source file "[29:0]data_out;" with read access: No such file or directory
+
+
+*Error* failed to open source file "reg" with read access: No such file or directory
+
+
+*Error* failed to open source file "[3:0]crc4;" with read access: No such file or directory
+
+
+*Error* failed to open source file "reg" with read access: No such file or directory
+
+
+*Error* failed to open source file "[29:0]data_out;" with read access: No such file or directory
+
+
+*Error* failed to open source file "reg" with read access: No such file or directory
+
+
+*Error* failed to open source file "[25:0]data_reg;" with read access: No such file or directory
+
+
+*Error* failed to open source file "reg" with read access: No such file or directory
+
+
+*Error* failed to open source file "[25:0]data_reg_nt;" with read access: No such file or directory
+
+
+*Error* failed to open source file "reg" with read access: No such file or directory
+
+
+*Error* failed to open source file "clear;" with read access: No such file or directory
+
+
+*Error* failed to open source file "reg" with read access: No such file or directory
+
+
+*Error* failed to open source file "state;" with read access: No such file or directory
+
+
+*Error* failed to open source file "reg" with read access: No such file or directory
+
+
+*Error* failed to open source file "[4:0]cnt;" with read access: No such file or directory
+
+
+*Error* failed to open source file "wire" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4_in;" with read access: No such file or directory
+
+
+*Error* failed to open source file "always@(posedge" with read access: No such file or directory
+
+
+*Error* failed to open source file "clk" with read access: No such file or directory
+
+
+*Error* failed to open source file "or" with read access: No such file or directory
+
+
+*Error* failed to open source file "negedge" with read access: No such file or directory
+
+
+*Error* failed to open source file "rstn)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(~rstn)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "state" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "0;//rst" with read access: No such file or directory
+
+
+*Error* failed to open source file "2" with read access: No such file or directory
+
+
+*Error* failed to open source file "IDLE" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "else" with read access: No such file or directory
+
+
+*Error* failed to open source file "begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "case(state)" with read access: No such file or directory
+
+
+*Error* failed to open source file "1'b0" with read access: No such file or directory
+
+
+*Error* failed to open source file ":begin//IDLE" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(start)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "state" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "1'b1" with read access: No such file or directory
+
+
+*Error* failed to open source file ";" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "1'b1" with read access: No such file or directory
+
+
+*Error* failed to open source file ":begin//DO" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(cnt" with read access: No such file or directory
+
+
+*Error* failed to open source file "==" with read access: No such file or directory
+
+
+*Error* failed to open source file "5'd26" with read access: No such file or directory
+
+
+*Error* failed to open source file ")begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "state" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "1'b0" with read access: No such file or directory
+
+
+*Error* failed to open source file ";" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "endcase" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "always@(posedge" with read access: No such file or directory
+
+
+*Error* failed to open source file "clk" with read access: No such file or directory
+
+
+*Error* failed to open source file "or" with read access: No such file or directory
+
+
+*Error* failed to open source file "negedge" with read access: No such file or directory
+
+
+*Error* failed to open source file "rstn)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(~rstn)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "cnt" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "5'b00000" with read access: No such file or directory
+
+
+*Error* failed to open source file ";" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "else" with read access: No such file or directory
+
+
+*Error* failed to open source file "begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(state)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "cnt" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "cnt" with read access: No such file or directory
+
+
+*Error* failed to open source file "5'b00001" with read access: No such file or directory
+
+
+*Error* failed to open source file ";" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "else" with read access: No such file or directory
+
+
+*Error* failed to open source file "begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "cnt" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "0;" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "always@(posedge" with read access: No such file or directory
+
+
+*Error* failed to open source file "clk" with read access: No such file or directory
+
+
+*Error* failed to open source file "or" with read access: No such file or directory
+
+
+*Error* failed to open source file "negedge" with read access: No such file or directory
+
+
+*Error* failed to open source file "rstn)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(~rstn)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_reg" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "0;" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_reg_nt" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "0;" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "else" with read access: No such file or directory
+
+
+*Error* failed to open source file "begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(~state)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_reg" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_in;" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_reg_nt" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_in;" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "else" with read access: No such file or directory
+
+
+*Error* failed to open source file "begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_reg" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "{data_reg[0],data_reg[25:1]};" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "assign" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4_in" with read access: No such file or directory
+
+
+*Error* failed to open source file "=" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_reg[0];" with read access: No such file or directory
+
+
+*Error* failed to open source file "always@(posedge" with read access: No such file or directory
+
+
+*Error* failed to open source file "clk" with read access: No such file or directory
+
+
+*Error* failed to open source file "or" with read access: No such file or directory
+
+
+*Error* failed to open source file "negedge" with read access: No such file or directory
+
+
+*Error* failed to open source file "rstn)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(~rstn)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "0;" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "else" with read access: No such file or directory
+
+
+*Error* failed to open source file "begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(~state)" with read access: No such file or directory
+
+
+*Error* failed to open source file "begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "0;" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "else" with read access: No such file or directory
+
+
+*Error* failed to open source file "begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4[3]" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4[2];" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4[2]" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4[1];" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4[1]" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4_in" with read access: No such file or directory
+
+
+*Error* failed to open source file "^" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4[3]" with read access: No such file or directory
+
+
+*Error* failed to open source file "^" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4[0];" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4[0]" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4_in" with read access: No such file or directory
+
+
+*Error* failed to open source file "^" with read access: No such file or directory
+
+
+*Error* failed to open source file "crc4[3];" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "always@(posedge" with read access: No such file or directory
+
+
+*Error* failed to open source file "clk" with read access: No such file or directory
+
+
+*Error* failed to open source file "or" with read access: No such file or directory
+
+
+*Error* failed to open source file "negedge" with read access: No such file or directory
+
+
+*Error* failed to open source file "rstn)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(~rstn)begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_out" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "0;" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "else" with read access: No such file or directory
+
+
+*Error* failed to open source file "begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "if(cnt" with read access: No such file or directory
+
+
+*Error* failed to open source file "==" with read access: No such file or directory
+
+
+*Error* failed to open source file "5'd26" with read access: No such file or directory
+
+
+*Error* failed to open source file ")" with read access: No such file or directory
+
+
+*Error* failed to open source file "begin" with read access: No such file or directory
+
+
+*Error* failed to open source file "data_out" with read access: No such file or directory
+
+
+*Error* failed to open source file "<=" with read access: No such file or directory
+
+
+*Error* failed to open source file "{data_reg_nt[25:0],crc4[3:0]};" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "end" with read access: No such file or directory
+
+
+*Error* failed to open source file "endmodule" with read access: No such file or directory
+
+Highest level modules:
+crc4_tb
+
+
+*Error* view crc4 is not defined for instance X_0
+"crc4_tb.v", 10: 
+Total	202 error(s),   0 warning(s)
