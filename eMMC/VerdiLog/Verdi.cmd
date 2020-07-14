@@ -6,28 +6,85 @@ debLoadSimResult /home/stu02/project/eMMC/eMMC_Socket_tb.fsdb
 wvCreateWindow
 wvGetSignalOpen -win $_nWave2
 wvGetSignalSetScope -win $_nWave2 "/eMMC_Socket_tb"
-wvGetSignalSetScope -win $_nWave2 "/eMMC_Socket_tb/X0"
-wvSetPosition -win $_nWave2 {("G1" 28)}
-wvSetPosition -win $_nWave2 {("G1" 28)}
+srcHBSelect "eMMC_Socket_tb.TRI" -win $_nTrace1
+srcHBSelect "eMMC_Socket_tb.X0" -win $_nTrace1
+srcHBSelect "eMMC_Socket_tb.X0" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+wvGetSignalOpen -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 9)}
+wvSetPosition -win $_nWave2 {("G1" 9)}
 wvAddSignal -win $_nWave2 -clear
 wvAddSignal -win $_nWave2 -group {"G1" \
-{/eMMC_Socket_tb/X0/cmd\[47:0\]} \
-{/eMMC_Socket_tb/X0/cmd_argument\[31:0\]} \
-{/eMMC_Socket_tb/X0/cmd_i} \
-{/eMMC_Socket_tb/X0/cmd_index\[5:0\]} \
-{/eMMC_Socket_tb/X0/cmd_o} \
-{/eMMC_Socket_tb/X0/cmd_oe} \
-{/eMMC_Socket_tb/X0/cmd_reg\[39:0\]} \
-{/eMMC_Socket_tb/X0/crc7\[6:0\]} \
-{/eMMC_Socket_tb/X0/cur_state\[3:0\]} \
-{/eMMC_Socket_tb/X0/data_crc} \
-{/eMMC_Socket_tb/X0/en_crc} \
-{/eMMC_Socket_tb/X0/io_cmd} \
-{/eMMC_Socket_tb/X0/long_resp} \
-{/eMMC_Socket_tb/X0/mclk} \
-{/eMMC_Socket_tb/X0/next_state\[3:0\]} \
-{/eMMC_Socket_tb/X0/no_resp} \
-{/eMMC_Socket_tb/X0/o_clk} \
+{/eMMC_Socket_tb/cmd} \
+{/eMMC_Socket_tb/cmd_argument_tb\[31:0\]} \
+{/eMMC_Socket_tb/cmd_i_tb} \
+{/eMMC_Socket_tb/cmd_index_tb\[5:0\]} \
+{/eMMC_Socket_tb/cmd_o_tb} \
+{/eMMC_Socket_tb/cmd_oe_tb} \
+{/eMMC_Socket_tb/mclk_tb} \
+{/eMMC_Socket_tb/rstn_tb} \
+{/eMMC_Socket_tb/send_cmd_tb} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 6 7 8 9 )} 
+wvSetPosition -win $_nWave2 {("G1" 9)}
+wvGetSignalClose -win $_nWave2
+wvZoomAll -win $_nWave2
+wvZoomAll -win $_nWave2
+wvSelectGroup -win $_nWave2 {G2}
+wvZoom -win $_nWave2 12.385040 2124.034335
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/eMMC_Socket_tb"
+wvGetSignalSetScope -win $_nWave2 "/eMMC_Socket_tb"
+wvGetSignalSetScope -win $_nWave2 "/eMMC_Socket_tb/X0"
+wvGetSignalSetScope -win $_nWave2 "/eMMC_Socket_tb/X0/X_TX_CRC"
+wvSetPosition -win $_nWave2 {("G1" 11)}
+wvSetPosition -win $_nWave2 {("G1" 11)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/eMMC_Socket_tb/cmd} \
+{/eMMC_Socket_tb/cmd_argument_tb\[31:0\]} \
+{/eMMC_Socket_tb/cmd_i_tb} \
+{/eMMC_Socket_tb/cmd_index_tb\[5:0\]} \
+{/eMMC_Socket_tb/cmd_o_tb} \
+{/eMMC_Socket_tb/cmd_oe_tb} \
+{/eMMC_Socket_tb/mclk_tb} \
+{/eMMC_Socket_tb/rstn_tb} \
+{/eMMC_Socket_tb/send_cmd_tb} \
+{/eMMC_Socket_tb/X0/X_TX_CRC/crc7\[6:0\]} \
+{/eMMC_Socket_tb/X0/X_TX_CRC/data_in} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 10 11 )} 
+wvSetPosition -win $_nWave2 {("G1" 11)}
+wvGetSignalClose -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/eMMC_Socket_tb"
+wvGetSignalSetScope -win $_nWave2 "/eMMC_Socket_tb/X0"
+wvGetSignalSetScope -win $_nWave2 "/eMMC_Socket_tb/X0/X_TX_CRC"
+wvGetSignalSetScope -win $_nWave2 "/eMMC_Socket_tb/X0"
+wvSetPosition -win $_nWave2 {("G1" 21)}
+wvSetPosition -win $_nWave2 {("G1" 21)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/eMMC_Socket_tb/cmd} \
+{/eMMC_Socket_tb/cmd_argument_tb\[31:0\]} \
+{/eMMC_Socket_tb/cmd_i_tb} \
+{/eMMC_Socket_tb/cmd_index_tb\[5:0\]} \
+{/eMMC_Socket_tb/cmd_o_tb} \
+{/eMMC_Socket_tb/cmd_oe_tb} \
+{/eMMC_Socket_tb/mclk_tb} \
+{/eMMC_Socket_tb/rstn_tb} \
+{/eMMC_Socket_tb/send_cmd_tb} \
+{/eMMC_Socket_tb/X0/X_TX_CRC/crc7\[6:0\]} \
+{/eMMC_Socket_tb/X0/X_TX_CRC/data_in} \
 {/eMMC_Socket_tb/X0/recv_cnt\[7:0\]} \
 {/eMMC_Socket_tb/X0/recv_end} \
 {/eMMC_Socket_tb/X0/recv_end_delay} \
@@ -38,55 +95,35 @@ wvAddSignal -win $_nWave2 -group {"G1" \
 {/eMMC_Socket_tb/X0/rstn_crc} \
 {/eMMC_Socket_tb/X0/send_cmd} \
 {/eMMC_Socket_tb/X0/send_cnt\[5:0\]} \
-{/eMMC_Socket_tb/X0/send_end} \
 }
 wvAddSignal -win $_nWave2 -group {"G2" \
 }
-wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
-           18 19 20 21 22 23 24 25 26 27 28 )} 
-wvSetPosition -win $_nWave2 {("G1" 28)}
+wvSelectSignal -win $_nWave2 {( "G1" 12 13 14 15 16 17 18 19 20 21 )} 
+wvSetPosition -win $_nWave2 {("G1" 21)}
 wvGetSignalClose -win $_nWave2
-wvSelectSignal -win $_nWave2 {( "G1" 12 )} 
-wvSelectSignal -win $_nWave2 {( "G1" 12 )} 
-wvSetCursor -win $_nWave2 3.715512 -snap {("G1" 12)}
-srcActiveTrace "eMMC_Socket_tb.X0.io_cmd" -win $_nTrace1 -TraceByDConWave \
-           -TraceTime 0 -TraceValue 1
-nsMsgSelect -range {0 1-1}
-nsMsgAction -tab trace -index {0 1}
-nsMsgSwitchTab -tab general
-nsMsgSwitchTab -tab cmpl
-verdiDockWidgetHide -dock widgetDock_<Message>
-verdiDockWidgetSetCurTab -dock windowDock_nWave_2
-wvSelectSignal -win $_nWave2 {( "G1" 15 )} 
-wvSelectSignal -win $_nWave2 {( "G1" 22 )} 
-wvZoomOut -win $_nWave2
-wvZoomOut -win $_nWave2
-wvZoomOut -win $_nWave2
-wvScrollUp -win $_nWave2 1
-wvScrollUp -win $_nWave2 1
-wvScrollUp -win $_nWave2 1
-wvScrollUp -win $_nWave2 1
-wvScrollUp -win $_nWave2 1
-wvScrollUp -win $_nWave2 1
-wvScrollUp -win $_nWave2 1
-wvScrollUp -win $_nWave2 1
-wvScrollUp -win $_nWave2 1
 wvScrollDown -win $_nWave2 1
 wvScrollDown -win $_nWave2 1
 wvScrollDown -win $_nWave2 1
-wvSetCursor -win $_nWave2 1099.791539 -snap {("G1" 11)}
-wvSetCursor -win $_nWave2 837.228694 -snap {("G1" 10)}
-wvSetCursor -win $_nWave2 673.746168 -snap {("G1" 10)}
-wvSetCursor -win $_nWave2 1332.630288 -snap {("G1" 10)}
-srcActiveTrace "eMMC_Socket_tb.X0.data_crc" -win $_nTrace1 -TraceByDConWave \
-           -TraceTime 1320 -TraceValue 1
-verdiDockWidgetSetCurTab -dock windowDock_nWave_2
-wvSelectSignal -win $_nWave2 {( "G1" 8 )} 
-wvSetCursor -win $_nWave2 455.769467 -snap {("G1" 8)}
-wvSetCursor -win $_nWave2 1134.469651 -snap {("G1" 8)}
-srcActiveTrace "eMMC_Socket_tb.X0.crc7\[6:0\]" -win $_nTrace1 -TraceByDConWave \
-           -TraceTime 1110 -TraceValue 1111001
-nsMsgSelect -range {2-2}
-nsMsgSelect -range {0 1-1}
-nsMsgAction -tab trace -index {0 1}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 5467.995095 5635.193133
+wvZoomAll -win $_nWave2
 debExit

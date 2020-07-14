@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_N-2017.12-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 28 1920 475 198 65
+viewPort 0 28 1920 435 198 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,16 +16,16 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 8080.000000
-cursor 1130.000000
+zoom 0.000000 10100.000000
+cursor 0.000000
 marker 0.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 4
+top 1
 ; marker line index
-markerPos 28
+markerPos 21
 
 ; event list
 ; addEvent event_name event_expression
@@ -47,24 +47,18 @@ curSTATUS ByChange
 
 addGroup "G1"
 activeDirFile "" "/home/stu02/project/eMMC/eMMC_Socket_tb.fsdb"
-addSignal -h 15 -UNSIGNED -HEX /eMMC_Socket_tb/X0/cmd[47:0]
-addSignal -h 15 -UNSIGNED -HEX -holdScope cmd_argument[31:0]
-addSignal -h 15 -holdScope cmd_i
-addSignal -h 15 -UNSIGNED -HEX -holdScope cmd_index[5:0]
-addSignal -h 15 -holdScope cmd_o
-addSignal -h 15 -holdScope cmd_oe
-addSignal -h 15 -UNSIGNED -HEX -holdScope cmd_reg[39:0]
-addSignal -h 15 -UNSIGNED -HEX -holdScope crc7[6:0]
-addSignal -h 15 -UNSIGNED -HEX -holdScope cur_state[3:0]
-addSignal -h 15 -holdScope data_crc
-addSignal -h 15 -holdScope en_crc
-addSignal -h 15 -holdScope io_cmd
-addSignal -h 15 -holdScope long_resp
-addSignal -h 15 -holdScope mclk
-addSignal -h 15 -UNSIGNED -HEX -holdScope next_state[3:0]
-addSignal -h 15 -holdScope no_resp
-addSignal -h 15 -holdScope o_clk
-addSignal -h 15 -UNSIGNED -HEX -holdScope recv_cnt[7:0]
+addSignal -h 15 /eMMC_Socket_tb/cmd
+addSignal -h 15 -UNSIGNED -HEX -holdScope cmd_argument_tb[31:0]
+addSignal -h 15 -holdScope cmd_i_tb
+addSignal -h 15 -UNSIGNED -HEX -holdScope cmd_index_tb[5:0]
+addSignal -h 15 -holdScope cmd_o_tb
+addSignal -h 15 -holdScope cmd_oe_tb
+addSignal -h 15 -holdScope mclk_tb
+addSignal -h 15 -holdScope rstn_tb
+addSignal -h 15 -holdScope send_cmd_tb
+addSignal -h 15 -UNSIGNED -HEX /eMMC_Socket_tb/X0/X_TX_CRC/crc7[6:0]
+addSignal -h 15 -holdScope data_in
+addSignal -h 15 -UNSIGNED -HEX /eMMC_Socket_tb/X0/recv_cnt[7:0]
 addSignal -h 15 -holdScope recv_end
 addSignal -h 15 -holdScope recv_end_delay
 addSignal -h 15 -UNSIGNED -HEX -holdScope resp_reg[135:0]
@@ -74,7 +68,6 @@ addSignal -h 15 -holdScope rstn
 addSignal -h 15 -holdScope rstn_crc
 addSignal -h 15 -holdScope send_cmd
 addSignal -h 15 -UNSIGNED -HEX -holdScope send_cnt[5:0]
-addSignal -h 15 -holdScope send_end
 addGroup "G2"
 
 ; getSignalForm Scope Hierarchy Status
@@ -85,10 +78,13 @@ GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
 getSignalForm close
 
 "/eMMC_Socket_tb"
+"/eMMC_Socket_tb/X0"
+"/eMMC_Socket_tb/X0/X_TX_CRC"
 
 SCOPE_LIST_BEGIN
 "/eMMC_Socket_tb"
 "/eMMC_Socket_tb/X0"
+"/eMMC_Socket_tb/X0/X_TX_CRC"
 SCOPE_LIST_END
 
 GETSIGNALFORM_SCOPE_HIERARCHY_END

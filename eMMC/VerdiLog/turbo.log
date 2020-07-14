@@ -1,3 +1,3 @@
 Command Line: /root/synopsys/verdi/Verdi_N-2017.12-SP2/platform/LINUXAMD64/bin/Novas -f crc7.v eMMC_Socket.v eMMC_Socket_tb.v -ssf eMMC_Socket_tb.fsdb -top eMMC_Socket_tb
 uname(Linux iServer01 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64)
-au time 626.295121 7.748659 7.186574 delta 486248448 486248448 total 901013504 901013504
+au time 10270.713207 62.189093 109.029606 delta 485998592 485998592 total 900763648 900763648
