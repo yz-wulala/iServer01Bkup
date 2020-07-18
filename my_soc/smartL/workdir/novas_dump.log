@@ -131,7 +131,7 @@ VCS compile option:
  option[37]: -sverilog
  option[38]: -gen_obj
  option[39]: ../tb/tb.v
- option[40]: /home/stu02/project/my_soc/smartL//workdir/ckcpu_lpmd_wait.v
+ option[40]: /home/stu02/project/my_soc/smartL//workdir/intr_priority_test.v
  option[41]: +incdir+../workdir+../cpu+../tb
  option[42]: -y
  option[43]: ../cpu/
@@ -202,7 +202,7 @@ fsdb_vcs_tab=/root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64/verd
 HISTSIZE=1000
 SSH_CLIENT=183.193.44.6 32129 22
 TOOL_PATH=/home/stu03/project/csky
-WINDOWID=39845891
+WINDOWID=39868610
 SSH_TTY=/dev/pts/16
 LC_ALL=C
 USER=stu02
@@ -234,7 +234,7 @@ fsdb_vcs_a=/root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64/pli.a
 HISTCONTROL=ignoredups
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 VCS_ARG_ADDED_FOR_TMP=1
-SNPS_VCS_TMPDIR=/tmp/vcs_20200520055547_1570
+SNPS_VCS_TMPDIR=/tmp/vcs_20200717220851_3084
 SHLVL=7
 HOME=/home/stu02
 VERDI_LIB=/root/synopsys/verdi/Verdi_N-2017.12-SP2/share/PLI/VCS/LINUX64
@@ -268,9 +268,9 @@ argv[4]=+nospecify
 argv[5]=+notimingchecks
 argv[6]=+libext+.v+.sv+.inc+.h
 269 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.220 user,  213.95M sys,  0.00M vm
+          CPU/Mem usage: 0.030 sys,  0.210 user,  213.95M sys,  0.00M vm
 270 VC callback profile - scalar:0 vector:0
-271 Wed May 20 13:55:52 2020
+271 Sat Jul 18 06:08:56 2020
 272 pliAppInit
 273 Enable VD Dumper
 274 FSDB_GATE is set.
@@ -290,38 +290,38 @@ argv[6]=+libext+.v+.sv+.inc+.h
 288 *Verdi* : Begin traversing the scopes, layer (0).
 289 *Verdi* : End of traversing.
 290 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.290 user,  329.76M sys,  0.00M vm
-                   incr: 0.010 sys,  0.070 user,  26.07M sys,  0.00M vm
-                   accu: 0.010 sys,  0.070 user,  26.07M sys,  0.00M vm
-              accu incr: 0.010 sys,  0.070 user,  26.07M sys,  0.00M vm
+          CPU/Mem usage: 0.050 sys,  0.280 user,  329.76M sys,  0.00M vm
+                   incr: 0.000 sys,  0.060 user,  26.06M sys,  0.00M vm
+                   accu: 0.000 sys,  0.060 user,  26.06M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.060 user,  26.06M sys,  0.00M vm
 
-          Count usage: 13410 var,  6309 idcode,  1749 callback
-                 incr: 13410 var,  6309 idcode,  1749 callback
-                 accu: 13410 var,  6309 idcode,  1749 callback
-            accu incr: 13410 var,  6309 idcode,  1749 callback
+          Count usage: 13411 var,  6310 idcode,  1750 callback
+                 incr: 13411 var,  6310 idcode,  1750 callback
+                 accu: 13411 var,  6310 idcode,  1750 callback
+            accu incr: 13411 var,  6310 idcode,  1750 callback
 291 VC callback profile - scalar:0 vector:0
-292 Wed May 20 13:55:52 2020
+292 Sat Jul 18 06:08:56 2020
 293 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.290 user,  330.81M sys,  0.00M vm
+          CPU/Mem usage: 0.050 sys,  0.280 user,  330.81M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
-                   accu: 0.010 sys,  0.070 user,  27.12M sys,  0.00M vm
+                   accu: 0.000 sys,  0.060 user,  27.11M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
 
-          Count usage: 13410 var,  6309 idcode,  1749 callback
+          Count usage: 13411 var,  6310 idcode,  1750 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 13410 var,  6309 idcode,  1749 callback
+                 accu: 13411 var,  6310 idcode,  1750 callback
             accu incr: 0 var,  0 idcode,  0 callback
-294 VC callback profile - scalar:225 vector:134
-295 Wed May 20 13:55:52 2020
-296 End of simulation at 1008050
-297 VC callback profile - scalar:225 vector:134
-298 Wed May 20 13:55:52 2020
+294 VC callback profile - scalar:224 vector:134
+295 Sat Jul 18 06:08:56 2020
+296 End of simulation at 1565000
+297 VC callback profile - scalar:224 vector:134
+298 Sat Jul 18 06:08:56 2020
 299 Begin FSDB profile info:
-300 FSDB Writer : bc1(52496) bcn(350876) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.044120) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+300 FSDB Writer : bc1(105420) bcn(662578) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.071144) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 301 End FSDB profile info
-302 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:3 BlockUsed:3
-303                        ProduceTime:0.578851538 ConsumerTime:0.023248893 Buffer:64MB
+302 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:6 BlockUsed:6
+303                        ProduceTime:0.770241267 ConsumerTime:0.048585127 Buffer:64MB
 304 SimExit
 305 Sim process exit

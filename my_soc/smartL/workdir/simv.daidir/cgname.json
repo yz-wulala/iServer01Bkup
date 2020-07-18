@@ -1,15 +1,129 @@
 {
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "nm_coretim_top": [
+        "nm_coretim_top",
+        "Y2Mdy",
+        "module",
+        14
+    ],
+    "DAC_Socket": [
+        "DAC_Socket",
+        "czWfa",
+        "module",
+        62
+    ],
+    "nm_iu_vector": [
+        "nm_iu_vector",
+        "s8EMV",
+        "module",
+        32
+    ],
+    "nm_core_top": [
+        "nm_core_top",
+        "Mc1zR",
+        "module",
+        13
+    ],
+    "nm_ifu_ifctrl": [
+        "nm_ifu_ifctrl",
+        "ffwdF",
+        "module",
+        37
+    ],
+    "tb": [
+        "tb",
+        "g7hgQ",
+        "module",
+        2
+    ],
+    "px_had_sync": [
+        "px_had_sync",
+        "ZdDhj",
+        "module",
+        63
+    ],
+    "nm_had_top": [
+        "nm_had_top",
+        "bk3LC",
+        "module",
+        9
+    ],
+    "nm_tcipif_dummy_bus": [
+        "nm_tcipif_dummy_bus",
+        "Z1wTi",
+        "module",
+        24
+    ],
+    "intr_priority_test": [
+        "intr_priority_test",
+        "fL381",
+        "module",
+        3
+    ],
+    "nm_iu_wb": [
+        "nm_iu_wb",
+        "Vz8j5",
+        "module",
+        33
+    ],
+    "err_gen": [
+        "err_gen",
+        "f6b33",
+        "module",
+        7
+    ],
+    "nm_had_trace": [
+        "nm_had_trace",
+        "WnLhh",
+        "module",
+        10
+    ],
+    "ahb": [
+        "ahb",
+        "NHiNR",
+        "module",
+        4
+    ],
+    "nm_intc_primsk_encode": [
+        "nm_intc_primsk_encode",
+        "Apyj9",
+        "module",
+        30
+    ],
+    "nm_bmu_top": [
+        "nm_bmu_top",
+        "qK8b3",
+        "module",
+        27
+    ],
+    "ahb_fifo": [
+        "ahb_fifo",
+        "dB9jV",
+        "module",
+        5
+    ],
     "nm_had_bkpt": [
         "nm_had_bkpt",
         "b87F4",
         "module",
         15
     ],
-    "std": [
-        "std",
-        "reYIK",
+    "nm_iu_rbus": [
+        "nm_iu_rbus",
+        "ZLsZY",
         "module",
-        1
+        45
+    ],
+    "gated_clk_cell": [
+        "gated_clk_cell",
+        "TfWji",
+        "module",
+        11
     ],
     "nm_clkrst_top": [
         "nm_clkrst_top",
@@ -23,185 +137,11 @@
         "module",
         6
     ],
-    "nm_iu_pcgen": [
-        "nm_iu_pcgen",
-        "MFRLs",
-        "module",
-        43
-    ],
-    "nm_intc_primsk_encode": [
-        "nm_intc_primsk_encode",
-        "Apyj9",
-        "module",
-        30
-    ],
-    "tb": [
-        "tb",
-        "g7hgQ",
-        "module",
-        2
-    ],
-    "sfr": [
-        "sfr",
-        "NJPP6",
-        "module",
-        61
-    ],
-    "ahb": [
-        "ahb",
-        "NHiNR",
-        "module",
-        4
-    ],
-    "iahb_mem_ctrl": [
-        "iahb_mem_ctrl",
-        "IqYEE",
-        "module",
-        53
-    ],
-    "nm_mpu_top": [
-        "nm_mpu_top",
-        "SMQh5",
-        "module",
-        19
-    ],
-    "nm_iu_retire": [
-        "nm_iu_retire",
-        "FY7b6",
-        "module",
-        46
-    ],
-    "ckcpu_lpmd_wait": [
-        "ckcpu_lpmd_wait",
-        "WLFjy",
-        "module",
-        3
-    ],
-    "nm_intc_kid": [
-        "nm_intc_kid",
-        "TGzkN",
-        "module",
-        29
-    ],
-    "nm_bmu_top": [
-        "nm_bmu_top",
-        "qK8b3",
-        "module",
-        27
-    ],
-    "nm_coretim_top": [
-        "nm_coretim_top",
-        "Y2Mdy",
-        "module",
-        14
-    ],
-    "timer": [
-        "timer",
-        "t5sdY",
-        "module",
-        50
-    ],
-    "ahb_fifo": [
-        "ahb_fifo",
-        "dB9jV",
-        "module",
-        5
-    ],
     "mem_ctrl": [
         "mem_ctrl",
         "DJDDw",
         "module",
         8
-    ],
-    "syncore_fpgaram": [
-        "syncore_fpgaram",
-        "HuNY4",
-        "module",
-        49
-    ],
-    "err_gen": [
-        "err_gen",
-        "f6b33",
-        "module",
-        7
-    ],
-    "...MASTER...": [
-        "SIM",
-        "amcQw",
-        "module",
-        65
-    ],
-    "nm_had_top": [
-        "nm_had_top",
-        "bk3LC",
-        "module",
-        9
-    ],
-    "nm_iu_ctrl": [
-        "nm_iu_ctrl",
-        "vMBTV",
-        "module",
-        41
-    ],
-    "nm_had_trace": [
-        "nm_had_trace",
-        "WnLhh",
-        "module",
-        10
-    ],
-    "nm_iu_randclk": [
-        "nm_iu_randclk",
-        "CxTiV",
-        "module",
-        44
-    ],
-    "nm_tcipif_behavior_bus": [
-        "nm_tcipif_behavior_bus",
-        "BFcTc",
-        "module",
-        23
-    ],
-    "sdata_if": [
-        "sdata_if",
-        "IaDzp",
-        "module",
-        57
-    ],
-    "gated_clk_cell": [
-        "gated_clk_cell",
-        "TfWji",
-        "module",
-        11
-    ],
-    "nm_core_top": [
-        "nm_core_top",
-        "Mc1zR",
-        "module",
-        13
-    ],
-    "nm_iu_mad": [
-        "nm_iu_mad",
-        "fW2jr",
-        "module",
-        42
-    ],
-    "nm_ifu_randclk": [
-        "nm_ifu_randclk",
-        "yrU1t",
-        "module",
-        39
-    ],
-    "counter": [
-        "counter",
-        "MQn6b",
-        "module",
-        51
-    ],
-    "nm_iahbl_top": [
-        "nm_iahbl_top",
-        "hdq0P",
-        "module",
-        18
     ],
     "nm_had_bkpt_lite": [
         "nm_had_bkpt_lite",
@@ -209,11 +149,11 @@
         "module",
         16
     ],
-    "nm_had_jtag2": [
-        "nm_had_jtag2",
-        "xuvpe",
+    "timer": [
+        "timer",
+        "t5sdY",
         "module",
-        17
+        50
     ],
     "apb_if": [
         "apb_if",
@@ -221,155 +161,17 @@
         "module",
         56
     ],
-    "nm_pwrm_top_dummy": [
-        "nm_pwrm_top_dummy",
-        "Zd5t8",
-        "module",
-        20
-    ],
-    "nm_sahbl_top": [
-        "nm_sahbl_top",
-        "ksGtI",
-        "module",
-        21
-    ],
-    "nm_iu_top": [
-        "nm_iu_top",
-        "wAtNN",
-        "module",
-        31
-    ],
-    "nm_sys_io": [
-        "nm_sys_io",
-        "SgkU3",
-        "module",
-        22
-    ],
-    "nm_tcipif_dummy_bus": [
-        "nm_tcipif_dummy_bus",
-        "Z1wTi",
-        "module",
-        24
-    ],
-    "nm_cp0_top": [
-        "nm_cp0_top",
-        "kME0d",
-        "module",
-        28
-    ],
-    "nm_iu_special": [
-        "nm_iu_special",
-        "Hr3un",
-        "module",
-        47
-    ],
-    "nm_ahbl_req_arb": [
-        "nm_ahbl_req_arb",
-        "kWkfn",
-        "module",
-        26
-    ],
-    "nm_iu_wb": [
-        "nm_iu_wb",
-        "Vz8j5",
-        "module",
-        33
-    ],
-    "nm_ahbl_if": [
-        "nm_ahbl_if",
-        "pP3pe",
-        "module",
-        25
-    ],
-    "nm_iu_vector": [
-        "nm_iu_vector",
-        "s8EMV",
-        "module",
-        32
-    ],
-    "nm_lsu_top": [
-        "nm_lsu_top",
-        "rKvAH",
-        "module",
-        34
-    ],
-    "wic": [
-        "wic",
-        "Hai6u",
-        "module",
-        64
-    ],
-    "nm_cp0_randclk": [
-        "nm_cp0_randclk",
-        "aDYbH",
-        "module",
-        35
-    ],
-    "nm_ifu_ibuf_entry": [
-        "nm_ifu_ibuf_entry",
-        "juHBW",
-        "module",
-        36
-    ],
-    "nm_ifu_ifctrl": [
-        "nm_ifu_ifctrl",
-        "ffwdF",
-        "module",
-        37
-    ],
-    "nm_ifu_ifdp": [
-        "nm_ifu_ifdp",
-        "G4KjJ",
-        "module",
-        38
-    ],
-    "nm_iu_branch": [
-        "nm_iu_branch",
-        "kKbfM",
-        "module",
-        40
-    ],
-    "nm_iu_rbus": [
-        "nm_iu_rbus",
-        "ZLsZY",
-        "module",
-        45
-    ],
-    "nm_iu_gated_clk_reg_timing": [
-        "nm_iu_gated_clk_reg_timing",
-        "EUF5b",
-        "module",
-        48
-    ],
-    "fpga_clk_gen": [
-        "fpga_clk_gen",
-        "MIWiH",
-        "module",
-        52
-    ],
-    "pmu": [
-        "pmu",
-        "LLnRt",
-        "module",
-        54
-    ],
-    "usi": [
-        "usi",
-        "QGLeG",
-        "module",
-        55
-    ],
-    "spi": [
-        "spi",
-        "jdG3K",
-        "module",
-        58
-    ],
     "sync_fifo_16x16": [
         "sync_fifo_16x16",
         "Zfgw0",
         "module",
         59
+    ],
+    "nm_had_jtag2": [
+        "nm_had_jtag2",
+        "xuvpe",
+        "module",
+        17
     ],
     "uart_usi": [
         "uart_usi",
@@ -377,16 +179,214 @@
         "module",
         60
     ],
-    "DAC_Socket": [
-        "DAC_Socket",
-        "czWfa",
+    "nm_iahbl_top": [
+        "nm_iahbl_top",
+        "hdq0P",
         "module",
-        62
+        18
     ],
-    "px_had_sync": [
-        "px_had_sync",
-        "ZdDhj",
+    "nm_mpu_top": [
+        "nm_mpu_top",
+        "SMQh5",
         "module",
-        63
+        19
+    ],
+    "sdata_if": [
+        "sdata_if",
+        "IaDzp",
+        "module",
+        57
+    ],
+    "nm_pwrm_top_dummy": [
+        "nm_pwrm_top_dummy",
+        "Zd5t8",
+        "module",
+        20
+    ],
+    "syncore_fpgaram": [
+        "syncore_fpgaram",
+        "HuNY4",
+        "module",
+        49
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        65
+    ],
+    "nm_cp0_randclk": [
+        "nm_cp0_randclk",
+        "aDYbH",
+        "module",
+        35
+    ],
+    "nm_sahbl_top": [
+        "nm_sahbl_top",
+        "ksGtI",
+        "module",
+        21
+    ],
+    "nm_ahbl_req_arb": [
+        "nm_ahbl_req_arb",
+        "kWkfn",
+        "module",
+        26
+    ],
+    "nm_sys_io": [
+        "nm_sys_io",
+        "SgkU3",
+        "module",
+        22
+    ],
+    "nm_tcipif_behavior_bus": [
+        "nm_tcipif_behavior_bus",
+        "BFcTc",
+        "module",
+        23
+    ],
+    "nm_iu_top": [
+        "nm_iu_top",
+        "wAtNN",
+        "module",
+        31
+    ],
+    "nm_ahbl_if": [
+        "nm_ahbl_if",
+        "pP3pe",
+        "module",
+        25
+    ],
+    "nm_cp0_top": [
+        "nm_cp0_top",
+        "kME0d",
+        "module",
+        28
+    ],
+    "nm_iu_gated_clk_reg_timing": [
+        "nm_iu_gated_clk_reg_timing",
+        "EUF5b",
+        "module",
+        48
+    ],
+    "nm_intc_kid": [
+        "nm_intc_kid",
+        "TGzkN",
+        "module",
+        29
+    ],
+    "nm_lsu_top": [
+        "nm_lsu_top",
+        "rKvAH",
+        "module",
+        34
+    ],
+    "nm_ifu_ibuf_entry": [
+        "nm_ifu_ibuf_entry",
+        "juHBW",
+        "module",
+        36
+    ],
+    "spi": [
+        "spi",
+        "jdG3K",
+        "module",
+        58
+    ],
+    "iahb_mem_ctrl": [
+        "iahb_mem_ctrl",
+        "IqYEE",
+        "module",
+        53
+    ],
+    "nm_ifu_ifdp": [
+        "nm_ifu_ifdp",
+        "G4KjJ",
+        "module",
+        38
+    ],
+    "nm_ifu_randclk": [
+        "nm_ifu_randclk",
+        "yrU1t",
+        "module",
+        39
+    ],
+    "nm_iu_branch": [
+        "nm_iu_branch",
+        "kKbfM",
+        "module",
+        40
+    ],
+    "nm_iu_ctrl": [
+        "nm_iu_ctrl",
+        "vMBTV",
+        "module",
+        41
+    ],
+    "nm_iu_mad": [
+        "nm_iu_mad",
+        "fW2jr",
+        "module",
+        42
+    ],
+    "nm_iu_pcgen": [
+        "nm_iu_pcgen",
+        "MFRLs",
+        "module",
+        43
+    ],
+    "nm_iu_special": [
+        "nm_iu_special",
+        "Hr3un",
+        "module",
+        47
+    ],
+    "nm_iu_randclk": [
+        "nm_iu_randclk",
+        "CxTiV",
+        "module",
+        44
+    ],
+    "nm_iu_retire": [
+        "nm_iu_retire",
+        "FY7b6",
+        "module",
+        46
+    ],
+    "pmu": [
+        "pmu",
+        "LLnRt",
+        "module",
+        54
+    ],
+    "counter": [
+        "counter",
+        "MQn6b",
+        "module",
+        51
+    ],
+    "fpga_clk_gen": [
+        "fpga_clk_gen",
+        "MIWiH",
+        "module",
+        52
+    ],
+    "sfr": [
+        "sfr",
+        "NJPP6",
+        "module",
+        61
+    ],
+    "usi": [
+        "usi",
+        "QGLeG",
+        "module",
+        55
+    ],
+    "wic": [
+        "wic",
+        "Hai6u",
+        "module",
+        64
     ]
 }

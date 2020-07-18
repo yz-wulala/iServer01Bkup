@@ -9,51 +9,35 @@
 // CSKYCPU    : 801 802 803 804
 // HWCFIG     : 
 // SMART_R    : yes 
-// FUNCTION   : usi uart test
+// FUNCTION   : usi spi master test
 // METHOD     : 
 // NOTE       : 
 // ***************************************************************************
-module ckcpu_lpmd_wait();
+module intr_priority_test();
 
-`define ext_in tb.x_soc.x_apb.gpio_porta_in[0]
+`define in_a tb.x_soc.x_apb.x_gpio.gpio_porta_in[0]
+`define in_b tb.x_soc.x_apb.x_gpio.gpio_porta_in[1]
 
+reg test_a; // intr 0x22; 04
+reg test_b; // intr 0x23; 08
 
-reg ext;
-
-assign `ext_in=ext;
+assign `in_a = test_a;
+assign `in_b = test_b;
 
 initial
 begin
-    ext=1'b0;
+
     $display("************ ************");
-    #55000
-    
-    #5000
-    ext=~ext;
-    #5000
-    ext=~ext;
-    #5000
-    ext=~ext;
-    #5000
-    ext=~ext;
-    #5000
-    ext=~ext;
-    #5000
-    ext=~ext;
-    #5000
-    ext=~ext;
-    #5000
-    ext=~ext;
-    #5000
-    ext=~ext;
-    #5000
-    ext=~ext;
-    #5000
-    ext=~ext;
-    #5000
-    ext=~ext;
-    #5000
-    ext=~ext;
+    test_a = 0;
+    test_b = 0;
+    #100000
+    $display("signal a rising edge");
+    test_a = 1;
+    #6500
+    $display("signal b rising edge");
+    test_b = 1;
+    #50000;
+    $finish;
 end
 endmodule
 

@@ -7,7 +7,7 @@ UUM=FALSE
 KDB=FALSE
 USE_NOVAS_HOME=FALSE
 COSIM=FALSE
-TOP=tb ckcpu_lpmd_wait 
+TOP=tb intr_priority_test 
 
 [Value]
 WREALX=ffff534e50535f58
