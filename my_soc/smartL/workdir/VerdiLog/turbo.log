@@ -1,2 +1,3 @@
 Command Line: /root/synopsys/verdi/Verdi_N-2017.12-SP2/platform/LINUXAMD64/bin/Novas vg_dump.fsdb
 uname(Linux iServer01 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64)
+au time 206680.943154 1107.017043 2171.040584 delta 402763776 402763776 total 817528832 817528832

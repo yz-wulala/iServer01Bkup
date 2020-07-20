@@ -1,0 +1,91 @@
+Magic 271485
+Revision Verdi_N-2017.12-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 28 1920 867 226 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/stu02/project/my_soc/smartL/workdir/vg_dump.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 1115003.311768 1117692.055911
+cursor 1000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 15
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/stu02/project/my_soc/smartL/workdir/vg_dump.fsdb"
+addSignal -h 15 /tb/x_soc/x_ahb/busy_s1
+addSignal -h 15 -holdScope hready_s1
+addSignal -h 15 -holdScope hsel_s1
+addSignal -h 15 -UNSIGNED -HEX -holdScope htrans_s1[1:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope hsize_s1[2:0]
+addSignal -h 15 -holdScope biu_pad_hwrite
+addSignal -h 15 /tb/x_soc/cpu_clk
+addSignal -h 15 -UNSIGNED -HEX /tb/x_soc/x_ahb/haddr_s1[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope hresp_s1[1:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope hwdata_s1[31:0]
+addSignal -h 15 -holdScope hwrite_s1
+addSignal -h 15 -holdScope hwrite_s2
+addSignal -h 15 -holdScope hwrite_s3
+addSignal -h 15 -holdScope hwrite_s5
+addSignal -h 15 -holdScope busy_s2
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/stu02/project/my_soc/smartL/workdir/vg_dump.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/intr_priority_test"
+"/tb"
+"/tb/x_soc"
+"/tb/x_soc/x_ahb"
+"/tb/x_soc/x_ahb_fifo"
+
+SCOPE_LIST_BEGIN
+"/intr_priority_test"
+"/tb/x_soc/x_ahb_fifo"
+"/tb/x_soc/x_ahb_fifo/x_ahb_fifo_entry0"
+"/tb/x_soc/x_ahb"
+"/tb"
+"/tb/x_soc"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

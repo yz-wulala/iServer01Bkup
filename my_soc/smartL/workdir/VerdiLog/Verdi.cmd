@@ -482,3 +482,4 @@ wvSetPosition -win $_nWave2 {("G1" 15)}
 wvZoomAll -win $_nWave2
 wvZoom -win $_nWave2 1088607.361198 1134952.058640
 wvZoom -win $_nWave2 1115003.311768 1117692.055911
+debExit
