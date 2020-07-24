@@ -1,0 +1,114 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "start_perf": [
+                0.17979812622070312,
+                0.037398000000000001,
+                0.036387000000000003,
+                227904,
+                240824,
+                1595595438.4496591,
+                45498332506169558
+            ],
+            "child_modules": {
+                "WLL_FIFO_tb": 1
+            },
+            "nMops": 0,
+            "end_perf": [
+                0.18403410911560059,
+                0.037997000000000003,
+                0.037997000000000003,
+                229720,
+                240824,
+                45498332519324796
+            ],
+            "nQuads": 0
+        },
+        "WLL_FIFO_tb": {
+            "start_perf": [
+                0.1840980052947998,
+                0.038029,
+                0.038029,
+                229720,
+                240824,
+                1595595438.453959,
+                45498332519498388
+            ],
+            "child_modules": {},
+            "nMops": 1238,
+            "end_perf": [
+                0.20347189903259277,
+                0.057256000000000001,
+                0.038170999999999997,
+                236104,
+                240824,
+                45498332579592960
+            ],
+            "Compiled Times": 5,
+            "Compiled": "Yes",
+            "significant_routs": [
+                [
+                    12,
+                    "R_VCSgd_fU61C_c",
+                    4622106,
+                    1648,
+                    308
+                ]
+            ],
+            "nQuads": 612
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.4/_32627_archive_1.a",
+            "size": 129314,
+            "objects": [
+                [
+                    "fU61C_d.o",
+                    26706
+                ],
+                [
+                    "amcQwB.o",
+                    102608
+                ]
+            ]
+        }
+    ],
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "CompUnits": {
+        "fU61C_d": {
+            "archive": "archive.4/_32627_archive_1.a",
+            "checksum": 0,
+            "mode": 4,
+            "mod": "WLL_FIFO_tb",
+            "out": "fU61C_d.o",
+            "bytes": 26706
+        }
+    },
+    "stat": {
+        "ru_self_end": {
+            "ru_utime_sec": 0.059121,
+            "ru_stime_sec": 0.040082,
+            "ru_maxrss_kb": 77776,
+            "ru_minflt": 25936,
+            "ru_nivcsw": 6,
+            "ru_majflt": 0,
+            "ru_nvcsw": 31
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.014062,
+            "ru_stime_sec": 0.0241,
+            "ru_maxrss_kb": 22696,
+            "ru_minflt": 11085,
+            "ru_nivcsw": 24,
+            "ru_majflt": 0,
+            "ru_nvcsw": 27
+        },
+        "cpu_cycles_end": 45498332591241016,
+        "peak_mem_kb": 240824
+    }
+}

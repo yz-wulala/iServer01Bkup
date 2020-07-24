@@ -1,0 +1,6 @@
+sidCmdLineBehaviorAnalysisOpt -incr -clockSkew 0 -loopUnroll 0 -bboxEmptyModule 0  -cellModel 0 -bboxIgnoreProtected 0 
+verdiWindowResize -win $_Verdi_1 "0" "31" "1920" "971"
+debImport "-f" "WLL_FIFO.v" "WLL_FIFO_tb.v" "-top" "WLL_FIFO_tb"
+wvCreateWindow
+wvOpenFile -win $_nWave2 {/home/stu02/project/WLL_FIFO/WLL_FIFO_tb.fsdb}
+debExit
