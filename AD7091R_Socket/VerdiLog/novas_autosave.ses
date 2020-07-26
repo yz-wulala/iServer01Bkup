@@ -1,0 +1,81 @@
+@Verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_N-2017.12-SP2
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+powerDumped = 0
+[hb]
+postSimFile = /home/stu02/project/AD7091R_Socket/AD7091R_Socket_tb.fsdb
+syncTime = 0
+viewport = 0 31 1920 971 0 0 58 1918
+activeNode = "AD7091R_Socket_tb"
+activeScope = "AD7091R_Socket_tb"
+activeFile = "AD7091R_Socket_tb.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 0
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+amsAnnot = True
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "AD7091R_Socket_tb"
+multipleSelection = 1 0 2 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-f" "AD7091R_Socket.v" "AD7091R_Socket_tb.v" "-top" "AD7091R_Socket_tb" 
+invokeDir = /home/stu02/project/AD7091R_Socket
+[hb.sourceTab.1]
+scope = AD7091R_Socket_tb
+File = /home/stu02/project/AD7091R_Socket/AD7091R_Socket_tb.v
+Line = 1
+[nMemoryManager]
+FsdbFile = /home/stu02/project/AD7091R_Socket/AD7091R_Socket_tb.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 28 1920 867 201 65
+primaryWindow = TRUE
+SessionFile = /home/stu02/project/AD7091R_Socket/VerdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE

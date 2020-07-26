@@ -1,0 +1,114 @@
+{
+    "stat": {
+        "ru_self_end": {
+            "ru_nivcsw": 8,
+            "ru_utime_sec": 0.061274000000000002,
+            "ru_stime_sec": 0.032195000000000001,
+            "ru_nvcsw": 31,
+            "ru_maxrss_kb": 76312,
+            "ru_minflt": 26049,
+            "ru_majflt": 0
+        },
+        "ru_childs_end": {
+            "ru_nivcsw": 24,
+            "ru_utime_sec": 0.020663000000000001,
+            "ru_stime_sec": 0.019866000000000002,
+            "ru_nvcsw": 30,
+            "ru_maxrss_kb": 23220,
+            "ru_minflt": 11092,
+            "ru_majflt": 0
+        },
+        "cpu_cycles_end": 46084442596423412,
+        "peak_mem_kb": 241984
+    },
+    "Modules": {
+        "...MASTER...": {
+            "nQuads": 0,
+            "start_perf": [
+                0.18601107597351074,
+                0.052402999999999998,
+                0.025152999999999998,
+                228428,
+                241984,
+                1595784513.12832,
+                46084442539852202
+            ],
+            "nMops": 0,
+            "child_modules": {
+                "AD7091R_Socket_tb": 1
+            },
+            "end_perf": [
+                0.19065499305725098,
+                0.052402999999999998,
+                0.027448,
+                230120,
+                241984,
+                46084442554306986
+            ]
+        },
+        "AD7091R_Socket_tb": {
+            "nQuads": 678,
+            "start_perf": [
+                0.1907351016998291,
+                0.052402999999999998,
+                0.027528,
+                230120,
+                241984,
+                1595784513.133044,
+                46084442554508708
+            ],
+            "nMops": 1481,
+            "Compiled Times": 7,
+            "child_modules": {},
+            "significant_routs": [
+                [
+                    12,
+                    "R_VCSgd_ytajQ_c",
+                    3374640,
+                    2150,
+                    528
+                ]
+            ],
+            "Compiled": "Yes",
+            "end_perf": [
+                0.20099020004272461,
+                0.060121000000000001,
+                0.03006,
+                234284,
+                241984,
+                46084442586312214
+            ]
+        }
+    },
+    "CompUnits": {
+        "ytajQ_d": {
+            "out": "ytajQ_d.o",
+            "mod": "AD7091R_Socket_tb",
+            "bytes": 24584,
+            "archive": "archive.6/_26281_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.6/_26281_archive_1.a",
+            "objects": [
+                [
+                    "ytajQ_d.o",
+                    24584
+                ],
+                [
+                    "amcQwB.o",
+                    102298
+                ]
+            ],
+            "size": 126882
+        }
+    ]
+}

@@ -1,0 +1,246 @@
+{
+    "cycles_program_begin": 46084442013989266,
+    "stat": {
+        "nMops": 1481,
+        "ru_self_cgstart": {
+            "ru_nivcsw": 7,
+            "ru_utime_sec": 0.052377,
+            "ru_stime_sec": 0.025141,
+            "ru_nvcsw": 30,
+            "ru_maxrss_kb": 69992,
+            "ru_minflt": 23551,
+            "ru_majflt": 0
+        },
+        "cpu_cycles_cgstart": 46084442539682850,
+        "ru_self_end": {
+            "ru_nivcsw": 8,
+            "ru_utime_sec": 0.061353999999999999,
+            "ru_stime_sec": 0.032236000000000001,
+            "ru_nvcsw": 31,
+            "ru_maxrss_kb": 76312,
+            "ru_minflt": 26052,
+            "ru_majflt": 0
+        },
+        "ru_childs_cgstart": {
+            "ru_nivcsw": 22,
+            "ru_utime_sec": 0.019120999999999999,
+            "ru_stime_sec": 0.019061999999999999,
+            "ru_nvcsw": 28,
+            "ru_maxrss_kb": 22840,
+            "ru_minflt": 10507,
+            "ru_majflt": 0
+        },
+        "nQuads": 678,
+        "ru_childs_end": {
+            "ru_nivcsw": 24,
+            "ru_utime_sec": 0.020663000000000001,
+            "ru_stime_sec": 0.019866000000000002,
+            "ru_nvcsw": 30,
+            "ru_maxrss_kb": 23220,
+            "ru_minflt": 11092,
+            "ru_majflt": 0
+        },
+        "peak_mem_kb": 241984,
+        "Frontend(%)": 85.368517130097473,
+        "totalObjSize": 126882,
+        "cpu_cycles_end": 46084442596799134,
+        "cpu_cycles_total": 582809868,
+        "outputSizePerQuad": 187.14159292035399,
+        "CodeGen(%)": 14.631482869902532
+    },
+    "cpu_cycles_pass2_start": 46084442539620082,
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.26281.json"
+    ],
+    "perf": [
+        [
+            0.12350010871887207,
+            0.033405999999999998,
+            0.019834999999999998,
+            226012,
+            226812,
+            1595784513.065809,
+            46084442346165838,
+            "doParsingAndDesignResolution",
+            "entry"
+        ],
+        [
+            0.1281590461730957,
+            0.037220999999999997,
+            0.020677999999999998,
+            226788,
+            227436,
+            1595784513.0704679,
+            46084442360554860,
+            "doParsingAndDesignResolution",
+            "exit"
+        ],
+        [
+            0.12835502624511719,
+            0.037347999999999999,
+            0.020749,
+            226788,
+            227436,
+            1595784513.0706639,
+            46084442361152634,
+            "doPostDesignResolutionToVir2Vcs",
+            "entry"
+        ],
+        [
+            0.13062810897827148,
+            0.039586000000000003,
+            0.020778000000000001,
+            228084,
+            228088,
+            1595784513.072937,
+            46084442368189926,
+            "doUptoVir2VcsNoSepCleanup",
+            "entry"
+        ],
+        [
+            0.15980911254882812,
+            0.050164,
+            0.024036999999999999,
+            229628,
+            241984,
+            1595784513.102118,
+            46084442458657588,
+            "doUptoVir2VcsNoSepCleanup",
+            "exit"
+        ],
+        [
+            0.1598660945892334,
+            0.050201999999999997,
+            0.024055,
+            229628,
+            241984,
+            1595784513.102175,
+            46084442458801178,
+            "doRadify_vir2vcsAll",
+            "entry"
+        ],
+        [
+            0.16180801391601562,
+            0.052144000000000003,
+            0.024055,
+            229984,
+            241984,
+            1595784513.1041169,
+            46084442464851266,
+            "doRadify_vir2vcsAll",
+            "exit"
+        ],
+        [
+            0.16184210777282715,
+            0.052179000000000003,
+            0.024055,
+            229984,
+            241984,
+            1595784513.104151,
+            46084442464925286,
+            "doPostDesignResolutionToVir2Vcs",
+            "exit"
+        ],
+        [
+            0.1618649959564209,
+            0.052201999999999998,
+            0.024055,
+            229984,
+            241984,
+            1595784513.1041739,
+            46084442464993438,
+            "doGAToPass2",
+            "entry"
+        ],
+        [
+            0.18592405319213867,
+            0.052344000000000002,
+            0.025125000000000001,
+            228428,
+            241984,
+            1595784513.128233,
+            46084442539608814,
+            "DoPass2",
+            "entry"
+        ],
+        [
+            0.20191407203674316,
+            0.060121000000000001,
+            0.030984000000000001,
+            233896,
+            241984,
+            1595784513.144223,
+            46084442589166172,
+            "DoPass2",
+            "exit"
+        ]
+    ],
+    "CompileStrategy": "fullobj",
+    "MlibObjs": {},
+    "Misc": {
+        "master_pid": 26281,
+        "daidir_abs": "/home/stu02/project/AD7091R_Socket/simv.daidir",
+        "VCS_HOME": "/root/synopsys/vcs-mx/N-2017.12-SP2",
+        "archive_dir": "archive.6",
+        "daidir": "simv.daidir",
+        "cwd": "/home/stu02/project/AD7091R_Socket",
+        "csrc": "csrc",
+        "csrc_abs": "/home/stu02/project/AD7091R_Socket/csrc",
+        "default_output_dir": "csrc"
+    },
+    "NameTable": {
+        "AD7091R_Socket_tb": [
+            "AD7091R_Socket_tb",
+            "ytajQ",
+            "module",
+            1
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module",
+            2
+        ]
+    },
+    "PrevCompiledModules": {
+        "AD7091R_Socket_tb": {
+            "ytajQ_d": {
+                "bytes": 23716,
+                "out": "ytajQ_d.o",
+                "mod": "AD7091R_Socket_tb",
+                "archive": "archive.6/_26281_archive_1.a",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7502,
+                "out": "objs/amcQw_d.o",
+                "mod": "...MASTER...",
+                "mode": 4,
+                "checksum": 0
+            }
+        }
+    },
+    "rlimit": {
+        "data": -1,
+        "stack": -1
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "AD7091R_Socket_tb",
+        "AD7091R_Socket_tb"
+    ],
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 102298,
+        "archive": "archive.6/_26281_archive_1.a"
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStatus": "Successful"
+}

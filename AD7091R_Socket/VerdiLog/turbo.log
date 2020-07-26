@@ -1,0 +1,3 @@
+Command Line: /root/synopsys/verdi/Verdi_N-2017.12-SP2/platform/LINUXAMD64/bin/Novas -f AD7091R_Socket.v AD7091R_Socket_tb.v -ssf AD7091R_Socket_tb.fsdb -top AD7091R_Socket_tb
+uname(Linux iServer01 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64)
+au time 60.882226 3.975950 0.821348 delta 483561472 483561472 total 898326528 898326528
